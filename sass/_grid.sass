@@ -1,0 +1,27 @@
+$gridWidth: 1200px
+$gridColumns: 20
+$gridColumnWidth: ($gridWidth/$gridColumns)
+
+%in
+	max-width: ($gridWidth)
+	margin-left: auto
+	margin-right: auto
+.container
+	@extend %in
+
+.g-row
+	+clr
+
+%grid
+	position: relative
+	float: left
+	min-height: 1px
+	+box
+
+@mixin col($n: 1)
+	@include span($n)
+
+@mixin span($i: 1)
+	@extend %grid
+	width: ($i / $gridColumns) * 100%
+	// width: (($i * $gridWidth) / $gridColumns)

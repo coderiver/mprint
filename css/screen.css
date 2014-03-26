@@ -19,7 +19,45 @@ ul, ol { list-style-type: none; }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) { * { -webkit-text-size-adjust: none; } }
 table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
-body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; }
+.container, .page, .header, .navbar { max-width: 1200px; margin-left: auto; margin-right: auto; }
+
+.g-row { *zoom: 1; }
+.g-row:after { content: " "; display: table; clear: both; }
+
+.header__right, .nav, .search, .ask, .teaser, .teaser__slider, .teaser__menu, .sidenav { position: relative; float: left; min-height: 1px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+body { font-size: 12px; font-family: "Roboto", Arial, "Helvetica Neue", Helvetica, sans-serif; line-height: 1.4; -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -ms-font-smoothing: antialiased; -o-font-smoothing: antialiased; background: url("../img/main_bg.jpg") center top; }
+
+.page { background-color: white; }
+
+.header { position: relative; color: white; *zoom: 1; height: 85px; }
+.header:after { content: " "; display: table; clear: both; }
+.header:before { position: absolute; top: 0; left: 0; right: 0; height: 4px; background: #353535; content: ""; }
+
+.header__logo { position: relative; float: left; display: block; background: url('../img/icons-s1b29191c0d.png') 0 0 no-repeat; width: 198px; height: 60px; font: 0/0 a; text-shadow: none; color: transparent; }
+
+.header__right { float: right; width: 40%; margin-top: 20px; }
+
+.navbar { *zoom: 1; background-color: white; }
+.navbar:after { content: " "; display: table; clear: both; }
+
+.nav { width: 60%; }
+.nav li { display: inline-block; vertical-align: top; }
+
+.search { width: 20%; }
+
+.ask { width: 20%; }
+
+.teaser { width: 80%; }
+
+.teaser__slider { width: 75%; }
+.teaser__slider img { display: block; max-width: 100%; }
+
+.teaser__menu { width: 25%; }
+
+.sidenav { width: 20%; }
+
+[class^="icon-"], [class*=" icon-"] { display: inline-block; vertical-align: middle; }
 
 .l { *zoom: 1; }
 .l:after { content: " "; display: table; clear: both; }
