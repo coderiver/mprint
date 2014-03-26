@@ -26,9 +26,9 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
 .header__right, .nav, .search, .ask, .teaser, .teaser__slider, .teaser__menu, .sidenav { position: relative; float: left; min-height: 1px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
-body { font-size: 12px; font-family: "Roboto", Arial, "Helvetica Neue", Helvetica, sans-serif; line-height: 1.4; -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -ms-font-smoothing: antialiased; -o-font-smoothing: antialiased; background: url("../img/main_bg.jpg") center top; }
+body { font-size: 12px; font-family: "Roboto", Arial, "Helvetica Neue", Helvetica, sans-serif; color: #353535; line-height: 1.4; -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -ms-font-smoothing: antialiased; -o-font-smoothing: antialiased; background: url("../img/main_bg.jpg") center top; }
 
-.page { background-color: white; }
+.page { background-color: white; -webkit-box-shadow: 0 0 10px black; -moz-box-shadow: 0 0 10px black; box-shadow: 0 0 10px black; }
 
 .header { position: relative; color: white; *zoom: 1; height: 85px; }
 .header:after { content: " "; display: table; clear: both; }
@@ -38,11 +38,17 @@ body { font-size: 12px; font-family: "Roboto", Arial, "Helvetica Neue", Helvetic
 
 .header__right { float: right; width: 40%; margin-top: 20px; }
 
-.navbar { *zoom: 1; background-color: white; }
+.navbar { *zoom: 1; height: 68px; border: 1px solid #e8e8e8; border-width: 1px 0; background-color: white; }
 .navbar:after { content: " "; display: table; clear: both; }
+.navbar.is-fixed { position: fixed; top: 0; width: 100%; z-index: 1000; }
 
-.nav { width: 60%; }
-.nav li { display: inline-block; vertical-align: top; }
+.nav { width: 60%; margin-top: -1px; }
+.nav ul { display: table; width: 100%; border-collapse: collapse; }
+.nav li { display: table-cell; font-family: "Roboto Condensed", Arial, "Helvetica Neue", Helvetica, sans-serif; font-size: 15px; text-transform: uppercase; text-align: center; border-left: 1px solid #e8e8e8; margin-left: -1px; }
+.nav li:hover, .nav li.is-active { background: #353535; border-color: transparent; }
+.nav li:hover a, .nav li.is-active a { color: white; }
+.nav li:first-child { border-left: none; }
+.nav a { display: block; color: #353535; text-decoration: none; line-height: 16px; padding: 27px 0.5em; white-space: nowrap; }
 
 .search { width: 20%; }
 

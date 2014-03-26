@@ -1,6 +1,7 @@
 body
 	font-size: 12px
 	font-family: $font-base
+	color: $color-base
 	line-height: 1.4
 	+font-smoothing
 	background: url('../img/main_bg.jpg') center top
@@ -10,11 +11,12 @@ body
 
 .page
 	@extend %in
-	background-color: $bg-base
+	background-color: $color-invert
+	+box-shadow(0 0 10px #000)
 
 .header
 	position: relative
-	color: #fff
+	color: $color-invert
 	@extend %in
 	+clr
 	height: 85px
@@ -24,7 +26,7 @@ body
 		left: 0
 		right: 0
 		height: 4px
-		background: #353535
+		background: $color-base
 		content: ""
 
 .header__logo
@@ -41,12 +43,45 @@ body
 .navbar
 	@extend %in
 	+clr
+	// +box
+	height: 70px - 2px
+	border: 1px solid #e8e8e8
+	border-width: 1px 0
 	background-color: $bg-base
+	&.is-fixed
+		position: fixed
+		top: 0
+		width: 100%
+		z-index: 1000
 .nav
 	+col(12)
+	margin-top: -1px
+	ul
+		display: table
+		width: 100%
+		border-collapse: collapse
 	li
-		display: inline-block
-		vertical-align: top
+		display: table-cell
+		font-family: $font-alt
+		font-size: 15px
+		text-transform: uppercase
+		text-align: center
+		border-left: 1px solid #e8e8e8
+		margin-left: -1px
+		&:hover, &.is-active
+			background: $color-base
+			border-color: transparent
+			a
+				color: $color-invert
+		&:first-child
+			border-left: none
+	a
+		display: block
+		color: $color-base
+		text-decoration: none
+		line-height: 16px
+		padding: 27px .5em
+		white-space: nowrap
 .search
 	+col(4)
 .ask
