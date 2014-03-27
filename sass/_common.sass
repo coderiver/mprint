@@ -141,13 +141,15 @@ a
 	font-size: 15px
 	text-transform: uppercase
 	text-align: center
-	border-right: 1px solid $border-color-base
+	border-left: 1px solid $border-color-base
 	+transition(.3s)
 	&:hover, &.is-active
 		background: $color-base
 		border-color: $color-base
 		a
 			color: $color-invert
+	&:first-child
+		border: none
 	&.menu__clause_adv
 		&:before
 			position: absolute
@@ -181,6 +183,7 @@ a
 	top: -1px
 	height: 70px
 	font-family: $font-alt
+	border-left: 1px solid $border-color-base
 .search__query
 	display: block
 	width: 100%
@@ -324,6 +327,11 @@ a
 	height: 240px
 	p
 		padding: 20px 25px 0
+	&.entry_news
+		border-left: 1px dashed #bbb
+		.entry__head
+			+r(w1220)
+				border-width: 1px 0 1px
 .entry__head
 	height: 80px
 	line-height: 80px
@@ -334,9 +342,6 @@ a
 	border-width: 0 0 1px
 	&.entry__head_mod
 		border-width: 1px 0 0
-	&.entry__head_news
-		+r(w1220)
-			border-width: 1px 0 1px
 .entry__title
 	// padding-top: 28px
 	line-height: inherit
@@ -351,10 +356,12 @@ a
 	.works__list
 		+clr
 		li
-			width: 33.3%
+			width: 240px
 			height: 240px
 			float: left
 			overflow: hidden
+			+r(w1220)
+				width: 200px
 			img
 				display: block
 				max-width: 100%
