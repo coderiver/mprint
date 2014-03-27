@@ -22,10 +22,15 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 .container, .page, .navbar { max-width: 1200px; min-width: 960px; margin-left: auto; margin-right: auto; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 @media only screen and (max-width: 1200px) { .container, .page, .navbar { max-width: 960px; } }
 
+.clearfix { *zoom: 1; }
+.clearfix:after { content: " "; display: table; clear: both; }
+
 .g-row { *zoom: 1; }
 .g-row:after { content: " "; display: table; clear: both; }
 
 .header__right, .nav, .search, .search__dropdown, .ask, .teaser, .menublock, .menublock li, .footer__left, .footer__right { position: relative; float: left; min-height: 1px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+@media only screen and (max-width: 1200px) { .is-hidden-sm { display: none !important; } }
 
 /*
  *  Font Awesome 4.0.3 by @davegandy - http://fontawesome.io - @fontawesome
@@ -843,19 +848,16 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
 .fa-plus-square-o:before { content: "\f196"; }
 
-body { font-size: 12px; font-family: "Roboto", Arial, "Helvetica Neue", Helvetica, sans-serif; color: #353535; line-height: 1.4; -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -ms-font-smoothing: antialiased; -o-font-smoothing: antialiased; background: url("../img/main_bg.jpg") center top fixed; min-width: 980px; }
+body { font-size: 12px; font-family: "Roboto", Arial, "Helvetica Neue", Helvetica, sans-serif; color: #353535; line-height: 1.4; -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -ms-font-smoothing: antialiased; -o-font-smoothing: antialiased; min-width: 980px; }
+
+.bg { background-repeat: repeat; position: fixed; width: 100%; bottom: 0; top: 0; left: 0; z-index: -1; }
 
 .g-pseudo { text-decoration: none !important; border-bottom: 1px dashed; }
 .g-pseudo:hover { text-decoration: none !important; border-bottom: none; }
 
-@media only screen and (max-width: 1200px) { .is-hidden { display: none; } }
-
 .out { min-height: 100%; height: auto !important; height: 100%; margin: 0 auto -90px; }
 
 .footer, .push { height: 90px; }
-
-.clearfix { *zoom: 1; }
-.clearfix:after { content: " "; display: table; clear: both; }
 
 .page { position: relative; background-color: white; -webkit-box-shadow: 0 0 10px black; -moz-box-shadow: 0 0 10px black; box-shadow: 0 0 10px black; padding-top: 70px; }
 
@@ -893,7 +895,7 @@ body { font-size: 12px; font-family: "Roboto", Arial, "Helvetica Neue", Helvetic
 
 .search__submit { position: absolute; top: -1px; right: 0; height: 70px; width: 65px; background: none; font-size: 22px; text-align: center; line-height: 70px; -webkit-transition: 0.3s; -moz-transition: 0.3s; -o-transition: 0.3s; transition: 0.3s; }
 
-.search__dropdown { position: absolute; top: 69px; left: 0; width: 480px; background: white; z-index: 100; }
+.search__dropdown { position: absolute; top: 69px; left: 0; width: 480px; background: white; z-index: 100; display: none; }
 @media only screen and (max-width: 1200px) { .search__dropdown { width: 240px; } }
 .search__dropdown li { padding: 0 27px; border: 1px solid #e8e8e8; border-width: 0 0 1px; font-size: 14px; height: 43px; line-height: 43px; cursor: pointer; overflow: hidden; -ms-text-overflow: ellipsis; text-overflow: ellipsis; white-space: nowrap; }
 .search__dropdown li:hover, .search__dropdown li.is-selected { background: #efefef; }

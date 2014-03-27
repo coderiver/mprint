@@ -14,6 +14,9 @@ $gridColumnWidth: ($gridWidth/$gridColumns)
 .container
 	@extend %in
 
+.clearfix
+	+clr
+
 .g-row
 	+clr
 
@@ -30,3 +33,7 @@ $gridColumnWidth: ($gridWidth/$gridColumns)
 	@extend %grid
 	// width: ($i / $gridColumns) * 100%
 	width: (($i * $gridWidth) / $gridColumns)
+
+.is-hidden-sm
+	+r(w1200)
+		display: none !important

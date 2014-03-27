@@ -1,8 +1,9 @@
 $(document).ready(function() {
 
-	skrollr.init({
-		forceHeight: false
-	});
+	function parallax() {
+		var scrolled = $(window).scrollTop();
+		$('.bg').css('top',-(scrolled*0.1)+'px');
+	}
 
 	function fixNavbar() {
 		var el = $('.js-navbar'),
@@ -37,6 +38,11 @@ $(document).ready(function() {
 		if ($('.js-navbar').length) {
 			fixNavbar();
 		}
+		parallax();
 	});
+
+	// skrollr.init({
+	//	forceHeight: false
+	// });
 
 });
