@@ -26,7 +26,7 @@ a
 		text-decoration: none !important
 		border-bottom: none
 
-.bg
+#parallax-bg
 	background-repeat: repeat
 	position: fixed
 	width: 100%
@@ -127,14 +127,14 @@ a
 		position: fixed
 		z-index: 1000
 
-.menu
+.sitenav
 	top: -1px
-.menu__ul
+.sitenav__ul
 	display: table
 	width: 100%
 	border-collapse: collapse
 	+box
-.menu__clause
+.sitenav__clause
 	position: relative
 	display: table-cell
 	font-family: $font-alt
@@ -150,7 +150,7 @@ a
 			color: $color-invert
 	&:first-child
 		border: none
-	&.menu__clause_adv
+	&.sitenav__clause_adv
 		&:before
 			position: absolute
 			top: 0
@@ -160,7 +160,7 @@ a
 		&:hover, &.is-active
 			background: $color-pink
 			border-color: $color-pink
-	&.menu__clause_print
+	&.sitenav__clause_print
 		&:before
 			position: absolute
 			top: 0
@@ -351,21 +351,19 @@ a
 	height: 240px
 .news
 	height: 320px
-.works
+.latest-works
 	height: 320px
-	.works__list
-		+clr
-		li
-			width: 240px
-			height: 240px
-			float: left
-			overflow: hidden
-			+r(w1220)
-				width: 200px
-			img
-				display: block
-				max-width: 100%
-				min-height: 100%
+.latest-works__group
+	+clr
+.latest-works__item
+	width: 240px
+	height: 240px
+	float: left
+	overflow: hidden
+	img
+		display: block
+		min-width: 100%
+		max-height: 100%
 
 .subscribe
 	height: 240px

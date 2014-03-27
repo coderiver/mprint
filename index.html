@@ -14,7 +14,7 @@
 </head>
 <body>
 
-<div class="bg" style="background-image: url('img/main_bg.jpg')"></div>
+<div id="parallax-bg" style="background-image: url('img/main_bg.jpg')"></div>
 
 <!-- BEGIN  out-->
 <div class="out">
@@ -49,38 +49,38 @@
 		</div>
 	</div>
 
-
 	<!-- begin page -->
 	<div class="page">
 
 		<!-- begin navbar -->
 		<div class="navbar js-navbar">
-				<!-- begin menu -->
-				<nav class="menu col-6">
-					<ul class="menu__ul">
-						<li class="menu__clause menu__clause_adv has-dropdown">
+				<!-- begin sitenav -->
+				<nav class="sitenav col-6">
+					<ul class="sitenav__ul">
+						<li class="sitenav__clause sitenav__clause_adv has-dropdown">
 							<a href="#0">Изготовление рекламы</a>
 						</li>
-						<li class="menu__clause menu__clause_print">
+						<li class="sitenav__clause sitenav__clause_print">
 							<a href="#0">Интерьерная печать</a>
 						</li>
-						<li class="menu__clause is-active">
+						<li class="sitenav__clause is-active">
 							<a href="#0">Новости</a>
 						</li>
-						<li class="menu__clause">
+						<li class="sitenav__clause">
 							<a href="#0">О&nbsp;компании</a>
 						</li>
-						<li class="menu__clause">
+						<li class="sitenav__clause">
 							<a href="#0">Контакт</a>
 						</li>
 					</ul>
 				</nav>
-				<!-- end menu -->
+				<!-- end sitenav -->
 
 				<!-- begin search -->
 				<div class="search col-2 col-sm-1 js-searchsuggest">
 					<form action="#0">
 						<input type="text" class="search__query is-hidden-sm" placeholder="Товары и&nbsp;услуги...">
+						<button type="submit" class="search__submit"><i class="fa fa-search"></i></button>
 						<div class="search__dropdown col-4 col-sm-2">
 							<ul>
 								<li>Релкамный щит</li>
@@ -90,7 +90,6 @@
 								<li>Разработка релкамных концепций</li>
 							</ul>
 						</div>
-						<button type="submit" class="search__submit"><i class="fa fa-search"></i></button>
 					</form>
 				</div>
 				<!-- end search -->
@@ -109,67 +108,73 @@
 		</div>
 		<!-- end navbar -->
 
-		<div class="row">
-			<!-- begin teaser -->
-			<div class="teaser col-6 col-sm-8">
-				<div class="teaser__slider">
-					<img src="img/slider_1.jpg" alt="img">
-				</div>
-			</div>
-			<!-- end teaser -->
-			<div class="menublock col-4 col-sm-8">
-				<ul>
-					<li class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, reiciendis dolorum architecto temporibus nobis atque soluta eum praesentium iusto sequi debitis delectus laboriosam ipsum saepe officiis ab ullam quas quibusdam!</li>
-					<li class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, deleniti, labore, amet voluptates nesciunt incidunt quas commodi recusandae esse doloribus ullam laudantium molestias rem velit iure eum dicta omnis eligendi!</li>
-				</ul>
-			</div>
-		</div>
+		<!-- begin content -->
+		<div class="content">
 
-		<div class="row">
-			<!-- begin about -->
-			<div class="entry about col-6 col-sm-8">
-				<div class="entry__head">
-					<div class="entry__title h1">Рекламное агентство Mprint</div>
+			<div class="row">
+				<!-- begin teaser -->
+				<div class="teaser col-6 col-sm-8">
+					<div class="teaser__slider">
+						<img src="img/slider_1.jpg" alt="img">
+					</div>
 				</div>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, hic possimus quo sint quaerat minus ratione autem nobis! Beatae, aspernatur repudiandae dolorem odit laborum ut sint officia at. Illum, molestias?</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, hic possimus quo sint quaerat minus ratione autem nobis! Beatae, aspernatur repudiandae dolorem odit laborum ut sint officia at. Illum, molestias?</p>
-			</div>
-			<!-- end about -->
-			<!-- begin news -->
-			<div class="entry entry_news news col-4 col-sm-3 pull-right">
-				<div class="entry__head">
-					<div class="entry__title h1">Новости</div>
-				</div>
-				<p class="h2">Весенние скидки!</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, perspiciatis, ad dolorum sint nihil consequuntur quo temporibus unde aliquid modi. Aspernatur, doloremque, maiores error nulla quia delectus obcaecati laudantium non.</p>
-			</div>
-			<!-- end news -->
-			<!-- begin works -->
-			<div class="entry works col-6 col-sm-5">
-				<div class="entry__head entry__head_mod">
-					<div class="entry__title h1">Последние работы</div>
-				</div>
-				<ul class="works__list">
-					<li><img src="http://placehold.it/240x240" alt="img"></li>
-					<li><img src="http://placehold.it/240x240" alt="img"></li>
-					<li><img src="http://placehold.it/240x240" alt="img"></li>
-				</ul>
-			</div>
-			<!-- end works -->
-			<!-- begin subscribe -->
-			<div class="subscribe col-4 is-hidden-sm">
-				<div class="subscribe__main"></div>
-				<div class="social">
-					<ul class="social__group">
-						<li class="social__fb"><a href="#0"></a></li>
-						<li class="social__rss"><a href="#0"></a></li>
-						<li class="social__pin"><a href="#0"></a></li>
-						<li class="social__vk"><a href="#0"></a></li>
+				<!-- end teaser -->
+				<div class="menublock col-4 col-sm-8">
+					<ul>
+						<li class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, reiciendis dolorum architecto temporibus nobis atque soluta eum praesentium iusto sequi debitis delectus laboriosam ipsum saepe officiis ab ullam quas quibusdam!</li>
+						<li class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, deleniti, labore, amet voluptates nesciunt incidunt quas commodi recusandae esse doloribus ullam laudantium molestias rem velit iure eum dicta omnis eligendi!</li>
 					</ul>
 				</div>
 			</div>
-			<!-- end subscribe -->
+
+			<div class="row">
+				<!-- begin about -->
+				<div class="entry about col-6 col-sm-8">
+					<div class="entry__head">
+						<div class="entry__title h1">Рекламное агентство Mprint</div>
+					</div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, hic possimus quo sint quaerat minus ratione autem nobis! Beatae, aspernatur repudiandae dolorem odit laborum ut sint officia at. Illum, molestias?</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, hic possimus quo sint quaerat minus ratione autem nobis! Beatae, aspernatur repudiandae dolorem odit laborum ut sint officia at. Illum, molestias?</p>
+				</div>
+				<!-- end about -->
+				<!-- begin news -->
+				<div class="entry entry_news news col-4 col-sm-2 pull-right">
+					<div class="entry__head">
+						<div class="entry__title h1">Новости</div>
+					</div>
+					<p class="h2">Весенние скидки!</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, perspiciatis, ad dolorum sint nihil consequuntur quo temporibus unde aliquid modi. Aspernatur, doloremque, maiores error nulla quia delectus obcaecati laudantium non.</p>
+				</div>
+				<!-- end news -->
+				<!-- begin latest-works -->
+				<div class="entry latest-works col-6 col-sm-6">
+					<div class="entry__head entry__head_mod">
+						<div class="entry__title h1">Последние работы</div>
+					</div>
+					<ul class="latest-works__group">
+						<li class="latest-works__item"><img src="img/work_1.jpg" alt="img"></li>
+						<li class="latest-works__item"><img src="img/work_2.jpg" alt="img"></li>
+						<li class="latest-works__item"><img src="img/work_3.jpg" alt="img"></li>
+					</ul>
+				</div>
+				<!-- end latest-works -->
+				<!-- begin subscribe -->
+				<div class="subscribe col-4 is-hidden-sm">
+					<div class="subscribe__main"></div>
+					<div class="social">
+						<ul class="social__group">
+							<li class="social__fb"><a href="#0"></a></li>
+							<li class="social__rss"><a href="#0"></a></li>
+							<li class="social__pin"><a href="#0"></a></li>
+							<li class="social__vk"><a href="#0"></a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- end subscribe -->
+			</div>
+
 		</div>
+		<!-- end content -->
 
 	</div>
 	<!-- end page -->
