@@ -5,6 +5,7 @@ body
 	line-height: 1.4
 	+font-smoothing
 	background: url('../img/main_bg.jpg') center top
+	min-width: 980px
 
 .g-pseudo
 	text-decoration: none !important
@@ -12,6 +13,10 @@ body
 	&:hover
 		text-decoration: none !important
 		border-bottom: none
+
+.is-hidden
+	+r(w1200)
+		display: none
 
 .out
 	// @extend %in
@@ -121,6 +126,8 @@ body
 	+col(4)
 	top: -1px
 	font-family: $font-alt
+	+r(w1200)
+		+col(2)
 	&:hover
 		.search__submit
 			font-size: 16px
@@ -152,10 +159,12 @@ body
 	position: absolute
 	top: 70px - 1px
 	left: 0
-	+col(40)
+	+col(8)
 	background: $color-invert
 	z-index: 100
 	display: none
+	+r(w1200)
+		+col(4)
 	li
 		padding: 0 27px
 		border: 1px solid $border-color-base
@@ -176,12 +185,12 @@ body
 .teaser
 	+col(16)
 .teaser__slider
-	+col(15)
+	+col(12)
 	img //tmp
 		display: block
 		max-width: 100%
 .teaser__menu
-	+col(5)
+	+col(4)
 	li
 		display: block
 		height: 240px
@@ -204,7 +213,7 @@ body
 		color: $color-invert
 		text-decoration: underline
 .footer__left
-	+col(10)
+	+col(5)
 .footer__right
 	+col(10)
 .footer__contacts

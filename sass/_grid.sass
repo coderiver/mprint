@@ -1,12 +1,16 @@
 $gridWidth: 1200px
+$gridMinWidth: 960px
 $gridColumns: 20
 $gridColumnWidth: ($gridWidth/$gridColumns)
 
 %in
 	max-width: ($gridWidth)
+	min-width: ($gridMinWidth)
 	margin-left: auto
 	margin-right: auto
 	+box
+	+r(w1200)
+		max-width: ($gridMinWidth)
 .container
 	@extend %in
 
@@ -24,5 +28,5 @@ $gridColumnWidth: ($gridWidth/$gridColumns)
 
 @mixin span($i: 1)
 	@extend %grid
-	width: ($i / $gridColumns) * 100%
-	// width: (($i * $gridWidth) / $gridColumns)
+	// width: ($i / $gridColumns) * 100%
+	width: (($i * $gridWidth) / $gridColumns)

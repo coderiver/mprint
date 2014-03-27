@@ -19,7 +19,8 @@ ul, ol { list-style-type: none; }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) { * { -webkit-text-size-adjust: none; } }
 table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
-.container, .page, .navbar { max-width: 1200px; margin-left: auto; margin-right: auto; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.container, .page, .navbar { max-width: 1200px; min-width: 960px; margin-left: auto; margin-right: auto; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+@media only screen and (max-width: 1200px) { .container, .page, .navbar { max-width: 960px; } }
 
 .g-row { *zoom: 1; }
 .g-row:after { content: " "; display: table; clear: both; }
@@ -842,10 +843,12 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
 .fa-plus-square-o:before { content: "\f196"; }
 
-body { font-size: 12px; font-family: "Roboto", Arial, "Helvetica Neue", Helvetica, sans-serif; color: #353535; line-height: 1.4; -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -ms-font-smoothing: antialiased; -o-font-smoothing: antialiased; background: url("../img/main_bg.jpg") center top; }
+body { font-size: 12px; font-family: "Roboto", Arial, "Helvetica Neue", Helvetica, sans-serif; color: #353535; line-height: 1.4; -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -ms-font-smoothing: antialiased; -o-font-smoothing: antialiased; background: url("../img/main_bg.jpg") center top; min-width: 980px; }
 
 .g-pseudo { text-decoration: none !important; border-bottom: 1px dashed; }
 .g-pseudo:hover { text-decoration: none !important; border-bottom: none; }
+
+@media only screen and (max-width: 1200px) { .is-hidden { display: none; } }
 
 .out { min-height: 100%; height: auto !important; height: 100%; margin: 0 auto -90px; }
 
@@ -863,7 +866,7 @@ body { font-size: 12px; font-family: "Roboto", Arial, "Helvetica Neue", Helvetic
 
 .header__logo { position: relative; float: left; display: block; background: url('../img/icons-s1b29191c0d.png') 0 0 no-repeat; width: 198px; height: 60px; font: 0/0 a; text-shadow: none; color: transparent; }
 
-.header__right { float: right; width: 50%; margin-top: 20px; text-align: right; }
+.header__right { float: right; width: 600px; margin-top: 20px; text-align: right; }
 
 .contacts__group { display: inline-block; vertical-align: top; margin-left: 40px; text-align: left; font-size: 13px; }
 .contacts__group li { margin-bottom: 0.3em; }
@@ -873,14 +876,15 @@ body { font-size: 12px; font-family: "Roboto", Arial, "Helvetica Neue", Helvetic
 .navbar:after { content: " "; display: table; clear: both; }
 .navbar.is-fixed { position: fixed; z-index: 1000; }
 
-.nav { width: 60%; top: -1px; }
+.nav { width: 720px; top: -1px; }
 .nav ul { display: table; width: 100%; border-collapse: collapse; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 .nav li { display: table-cell; font-family: "Roboto Condensed", Arial, "Helvetica Neue", Helvetica, sans-serif; font-size: 15px; text-transform: uppercase; text-align: center; border-right: 1px solid #e8e8e8; -webkit-transition: 0.3s; -moz-transition: 0.3s; -o-transition: 0.3s; transition: 0.3s; }
 .nav li:hover, .nav li.is-active { background: #353535; border-color: #353535; }
 .nav li:hover a, .nav li.is-active a { color: white; }
 .nav a { display: block; color: #353535; text-decoration: none; line-height: 16px; padding: 27px 0.5em; white-space: nowrap; -webkit-transition: 0.3s; -moz-transition: 0.3s; -o-transition: 0.3s; transition: 0.3s; }
 
-.search { width: 20%; top: -1px; font-family: "Roboto Condensed", Arial, "Helvetica Neue", Helvetica, sans-serif; }
+.search { width: 240px; top: -1px; font-family: "Roboto Condensed", Arial, "Helvetica Neue", Helvetica, sans-serif; }
+@media only screen and (max-width: 1200px) { .search { width: 120px; } }
 .search:hover .search__submit { font-size: 16px; }
 
 .search__q { display: block; width: 100%; font-family: "Roboto Condensed", Arial, "Helvetica Neue", Helvetica, sans-serif; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; font-size: 14px; line-height: 20px; padding: 25px 66px 25px 27px; background: none; }
@@ -889,30 +893,31 @@ body { font-size: 12px; font-family: "Roboto", Arial, "Helvetica Neue", Helvetic
 
 .search__submit { position: absolute; top: -1px; right: 0; height: 70px; width: 65px; background: none; font-size: 22px; text-align: center; line-height: 70px; -webkit-transition: 0.3s; -moz-transition: 0.3s; -o-transition: 0.3s; transition: 0.3s; }
 
-.search__dropdown { position: absolute; top: 69px; left: 0; width: 200%; background: white; z-index: 100; display: none; }
+.search__dropdown { position: absolute; top: 69px; left: 0; width: 480px; background: white; z-index: 100; display: none; }
+@media only screen and (max-width: 1200px) { .search__dropdown { width: 240px; } }
 .search__dropdown li { padding: 0 27px; border: 1px solid #e8e8e8; border-width: 0 0 1px; font-size: 14px; height: 43px; line-height: 43px; cursor: pointer; overflow: hidden; -ms-text-overflow: ellipsis; text-overflow: ellipsis; white-space: nowrap; }
 .search__dropdown li:hover, .search__dropdown li.is-selected { background: #efefef; }
 .search__dropdown li:first-child { border-top: 1px dashed #bbbbbb; }
 
-.ask { width: 20%; }
+.ask { width: 240px; }
 
-.teaser { width: 80%; }
+.teaser { width: 960px; }
 
-.teaser__slider { width: 75%; }
+.teaser__slider { width: 720px; }
 .teaser__slider img { display: block; max-width: 100%; }
 
-.teaser__menu { width: 25%; }
+.teaser__menu { width: 240px; }
 .teaser__menu li { display: block; height: 240px; background: #353535; color: white; text-align: center; }
 
-.sidenav { width: 20%; }
+.sidenav { width: 240px; }
 
 .footer { height: 90px; color: white; }
 .footer .container { padding-top: 30px; padding-left: 25px; padding-right: 25px; }
 .footer a { color: white; text-decoration: underline; }
 
-.footer__left { width: 50%; }
+.footer__left { width: 300px; }
 
-.footer__right { width: 50%; }
+.footer__right { width: 600px; }
 
 .footer__contacts { text-align: right; }
 
