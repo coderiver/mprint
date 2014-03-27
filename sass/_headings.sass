@@ -1,15 +1,28 @@
-h1, h2, h3, .h1, .h2, .h3
+%h
 	font-family: $font-alt
 	text-transform: uppercase
 	line-height: 1
 	font-weight: normal
 	margin-bottom: 1em
 
-h1, .h1
+%h1
 	font-size: $size-h1
+	@extend %h
+%h2
+	font-size: $size-h2
+	@extend %h
+%h3
+	font-size: $size-h3
+	@extend %h
+
+// h1, h2, h3, .h1, .h2, .h3
+// 	@extend %h
+
+h1, .h1
+	@extend %h1
 
 h2, .h2
-	font-size: $size-h2
+	@extend %h2
 
 h3, .h3
-	font-size: $size-h3
+	@extend %h3

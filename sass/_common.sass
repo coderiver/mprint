@@ -318,3 +318,48 @@ a
 	float: right
 .footer__contacts
 	text-align: right
+
+
+.entry
+	height: 240px
+	p
+		padding: 20px 25px 0
+.entry__head
+	height: 80px
+	line-height: 80px
+	+box
+	position: relative
+	padding: 0 27px
+	border: 1px dashed #bbb
+	border-width: 0 0 1px
+	&.entry__head_mod
+		border-width: 1px 0 0
+	&.entry__head_news
+		+r(w1220)
+			border-width: 1px 0 1px
+.entry__title
+	// padding-top: 28px
+	line-height: inherit
+	margin-bottom: 0
+
+.about
+	height: 240px
+.news
+	height: 320px
+.works
+	height: 320px
+	.works__list
+		+clr
+		li
+			width: 33.3%
+			height: 240px
+			float: left
+			overflow: hidden
+			img
+				display: block
+				max-width: 100%
+				min-height: 100%
+.subscribe
+	height: 240px
+	background: #417184
+
