@@ -1,5 +1,9 @@
 $(document).ready(function() {
 
+	skrollr.init({
+		forceHeight: false
+	});
+
 	function fixNavbar() {
 		var el = $('.js-navbar'),
 				el_top = ($('.page').offset().top),

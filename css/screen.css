@@ -843,7 +843,7 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
 .fa-plus-square-o:before { content: "\f196"; }
 
-body { font-size: 12px; font-family: "Roboto", Arial, "Helvetica Neue", Helvetica, sans-serif; color: #353535; line-height: 1.4; -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -ms-font-smoothing: antialiased; -o-font-smoothing: antialiased; background: url("../img/main_bg.jpg") center top; min-width: 980px; }
+body { font-size: 12px; font-family: "Roboto", Arial, "Helvetica Neue", Helvetica, sans-serif; color: #353535; line-height: 1.4; -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -ms-font-smoothing: antialiased; -o-font-smoothing: antialiased; background: url("../img/main_bg.jpg") center top fixed; min-width: 980px; }
 
 .g-pseudo { text-decoration: none !important; border-bottom: 1px dashed; }
 .g-pseudo:hover { text-decoration: none !important; border-bottom: none; }
