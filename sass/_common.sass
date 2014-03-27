@@ -61,7 +61,7 @@ body
 	+hidetext
 .header__right
 	float: right
-	+col(10)
+	+col(5)
 	margin-top: 20px
 	text-align: right
 
@@ -93,7 +93,7 @@ body
 		position: fixed
 		z-index: 1000
 .nav
-	+col(12)
+	+col(6)
 	top: -1px
 	ul
 		display: table
@@ -123,11 +123,11 @@ body
 		+transition(.3s)
 
 .search
-	+col(4)
+	+col(2)
 	top: -1px
 	font-family: $font-alt
 	+r(w1200)
-		+col(2)
+		+col(1)
 	&:hover
 		.search__submit
 			font-size: 16px
@@ -159,12 +159,12 @@ body
 	position: absolute
 	top: 70px - 1px
 	left: 0
-	+col(8)
+	+col(4)
 	background: $color-invert
 	z-index: 100
 	// display: none
 	+r(w1200)
-		+col(4)
+		+col(2)
 	li
 		padding: 0 27px
 		border: 1px solid $border-color-base
@@ -180,12 +180,17 @@ body
 			border-top: 1px dashed #bbb
 
 .ask
-	+col(4)
+	+col(2)
+	height: 70px
+	top: -1px
+	background: #7bc100
+	+r(w1200)
+		+col(1)
 
 .teaser
-	+col(12)
+	+col(6)
 	+r(w1200)
-		+col(16)
+		+col(8)
 .teaser__slider
 	height: 480px
 	overflow: hidden
@@ -201,18 +206,18 @@ body
 // 		color: $color-invert
 // 		text-align: center
 .menublock
-	+col(8)
+	+col(4)
 	+r(w1200)
-		+col(16)
-	li
 		+col(8)
+	li
+		+col(4)
 		display: block
 		height: 240px
 		background: $color-base
 		color: $color-invert
 		text-align: center
 		+r(w1200)
-			+col(8)
+			+col(4)
 // .sidenav
 // 	+col(4)
 
@@ -228,8 +233,9 @@ body
 		color: $color-invert
 		text-decoration: underline
 .footer__left
-	+col(5)
+	+col(2)
 .footer__right
-	+col(10)
+	float: right
+	+col(5)
 .footer__contacts
 	text-align: right
