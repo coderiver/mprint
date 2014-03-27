@@ -19,11 +19,11 @@
 $min1920: 1920px
 $w1280: 1280px
 $w1270: 1270px
-$w1200: 1200px
+$w1220: 1220px
 $w1024: 1024px
 $w900: 900px
 $w860: 860px
-$w800: 800px    
+$w800: 800px
 $w760: 760px
 $w640: 640px
 $w560: 560px
@@ -38,8 +38,8 @@ $w320: 320px
 	@if $media == w1270
 		@media only screen and (max-width: $w1270)
 			@content
-	@if $media == w1200
-		@media only screen and (max-width: $w1200)
+	@if $media == w1220
+		@media only screen and (max-width: $w1220)
 			@content
 	@if $media == w1024
 		@media only screen and (max-width: $w1024)
@@ -227,6 +227,8 @@ $w320: 320px
 	& ::selection
 		@content
 	& ::-moz-selection
+		@content
+	& ::-webkit-selection
 		@content
 
 =sel

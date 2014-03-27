@@ -1,20 +1,23 @@
+*
+	margin: 0
+	+selection
+		color: $color-invert
+		background: $color-blue
+
 body
-	font-size: 12px
 	font-family: $font-base
-	color: $color-base
-	line-height: 1.4
+	font-size: $size-base
 	+font-smoothing
+	color: $color-base
+	background-color: $bg-invert
+	line-height: 1.4
 	min-width: 980px
 
-.bg
-	background-repeat: repeat
-	position: fixed
-	width: 100%
-	// height: 300%
-	bottom: 0
-	top: 0
-	left: 0
-	z-index: -1
+a
+	color: $link-color-base
+	text-decoration: none
+	&:hover
+		text-decoration: underline
 
 .g-pseudo
 	text-decoration: none !important
@@ -23,8 +26,16 @@ body
 		text-decoration: none !important
 		border-bottom: none
 
+.bg
+	background-repeat: repeat
+	position: fixed
+	width: 100%
+	bottom: 0
+	top: 0
+	left: 0
+	z-index: -1
+
 .out
-	// @extend %in
 	min-height: 100%
 	height: auto !important
 	height: 100%
@@ -54,20 +65,19 @@ body
 		content: ""
 	a
 		color: $color-invert
-
 .header__logo
-	position: relative
-	float: left
-	display: block
-	+s(logo)
-	+hidetext
-.header__right
+	a
+		display: block
+		+s(logo)
+		+hidetext
+.header__meta
 	float: right
-	+col(5)
 	margin-top: 20px
 	text-align: right
 
 .contacts
+	display: inline-block
+	vertical-align: top
 .contacts__group
 	display: inline-block
 	vertical-align: top
@@ -78,6 +88,28 @@ body
 		margin-bottom: 0.3em
 	&:first-child
 		margin-left: 0
+
+.lang
+	position: relative
+	display: inline-block
+	vertical-align: top
+	margin: 0 25px 0 32px
+	padding-left: 24px
+	&:before
+		position: absolute
+		top: 0
+		left: 0
+		height: 46px
+		width: 1px
+		background: rgba(#fff, .33)
+		content: ""
+.lang__trigger
+	cursor: pointer
+	&:hover
+		span
+			border: none
+	i
+		margin-left: 5px
 
 .navbar
 	position: absolute
@@ -94,27 +126,48 @@ body
 	&.is-fixed
 		position: fixed
 		z-index: 1000
-.nav
-	+col(6)
+
+.menu
 	top: -1px
-	ul
-		display: table
-		width: 100%
-		border-collapse: collapse
-		+box
-	li
-		display: table-cell
-		font-family: $font-alt
-		font-size: 15px
-		text-transform: uppercase
-		text-align: center
-		border-right: 1px solid $border-color-base
-		+transition(.3s)
+.menu__ul
+	display: table
+	width: 100%
+	border-collapse: collapse
+	+box
+.menu__clause
+	position: relative
+	display: table-cell
+	font-family: $font-alt
+	font-size: 15px
+	text-transform: uppercase
+	text-align: center
+	border-right: 1px solid $border-color-base
+	+transition(.3s)
+	&:hover, &.is-active
+		background: $color-base
+		border-color: $color-base
+		a
+			color: $color-invert
+	&.menu__clause_adv
+		&:before
+			position: absolute
+			top: 0
+			left: 0
+			+arr(20, 20, $color-pink, tl)
+			content: ""
 		&:hover, &.is-active
-			background: $color-base
-			border-color: $color-base
-			a
-				color: $color-invert
+			background: $color-pink
+			border-color: $color-pink
+	&.menu__clause_print
+		&:before
+			position: absolute
+			top: 0
+			left: 0
+			+arr(20, 20, $color-blue, tl)
+			content: ""
+		&:hover, &.is-active
+			background: $color-blue
+			border-color: $color-blue
 	a
 		display: block
 		color: $color-base
@@ -125,104 +178,130 @@ body
 		+transition(.3s)
 
 .search
-	+col(2)
 	top: -1px
+	height: 70px
 	font-family: $font-alt
-	+r(w1200)
-		+col(1)
-	&:hover
-		.search__submit
-			font-size: 16px
-.search__q
+.search__query
 	display: block
 	width: 100%
 	font-family: $font-alt
 	+box
 	font-size: 14px
 	line-height: 20px
-	padding: 25px 66px 25px 27px
+	padding: 25px 27px
 	background: none
 	&:focus
 		+placeholder-color(transparent)
 .search__submit
 	position: absolute
-	top: -1px
-	right: 0
-	height: 70px
-	width: 65px
+	top: 50%
+	margin-top: -14px
+	right: 27px
+	display: block
 	background: none
 	font-size: 22px
-	text-align: center
-	line-height: 70px
-	+transition(.3s)
-	// &:hover
-	// 	font-size: 16px
+	+r(w1220)
+		width: 100%
+		top: 0
+		right: 0
+		left: 0
+		bottom: 0
+		margin-top: 0
+		i
+			position: absolute
+			top: 50%
+			margin-top: -14px
+			left: 50%
+			margin-left: -10px
+			right: auto
+
 .search__dropdown
 	position: absolute
 	top: 70px - 1px
 	left: 0
-	+col(4)
 	background: $color-invert
 	z-index: 100
 	display: none
-	+r(w1200)
-		+col(2)
 	li
 		padding: 0 27px
 		border: 1px solid $border-color-base
-		border-width: 0 0 1px
+		border-width: 0 1px 1px
 		font-size: 14px
 		height: 43px
 		line-height: 43px
 		cursor: pointer
+		margin-left: -1px
 		+text-overflow
 		&:hover, &.is-selected
 			background: #efefef
 		&:first-child
 			border-top: 1px dashed #bbb
 
-.ask
-	+col(2)
+.request
 	height: 70px
 	top: -1px
 	background: #7bc100
-	+r(w1200)
-		+col(1)
+	color: $color-invert
+	+transition(background .3s)
+	&:hover
+		background: $bg-invert
+.request__trigger
+	position: relative
+	cursor: default
+	top: 0
+	left: 0
+	right: 0
+	height: 100%
+.request__triggerlabel
+	position: relative
+	width: 170px
+	height: 70px
+	+box
+	padding-top: 20px
+	text-align: center
+	font-family: $font-alt
+	text-transform: uppercase
+	line-height: 1
+	font-size: $size-lg
+	&:before
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		width: 1px
+		background: rgba(#fff, .4)
+		content: ""
+	span
+		text-transform: lowercase
+		font-size: $size-base
+.request__triggericon
+	font-size: 22px
+	position: absolute
+	top: 25px
+	right: 25px
+	+r(w1220)
+		left: 50%
+		right: auto
+		margin-left: -10px
 
 .teaser
-	+col(6)
-	+r(w1200)
-		+col(8)
 .teaser__slider
 	height: 480px
 	overflow: hidden
 	img //tmp
 		display: block
 		min-width: 100%
-// .teaser__menu
-// 	+col(4)
-// 	li
-// 		display: block
-// 		height: 240px
-// 		background: $color-base
-// 		color: $color-invert
-// 		text-align: center
+
 .menublock
-	+col(4)
-	+r(w1200)
-		+col(8)
 	li
-		+col(4)
 		display: block
 		height: 240px
 		background: $color-base
 		color: $color-invert
 		text-align: center
-		+r(w1200)
-			+col(4)
-// .sidenav
-// 	+col(4)
-
+		+r(w1220)
+			width: 50%
+			float: left
 
 .footer
 	height: 90px
@@ -235,9 +314,7 @@ body
 		color: $color-invert
 		text-decoration: underline
 .footer__left
-	+col(2)
 .footer__right
 	float: right
-	+col(5)
 .footer__contacts
 	text-align: right

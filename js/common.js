@@ -2,7 +2,7 @@ $(document).ready(function() {
 
 	function parallax() {
 		var scrolled = $(window).scrollTop();
-		$('.bg').css('top',-(scrolled*0.1)+'px');
+		$('.bg').css('top',-(scrolled*0.02)+'px');
 	}
 
 	function fixNavbar() {
@@ -23,7 +23,7 @@ $(document).ready(function() {
 				el_drop = ('.search__dropdown');
 
 		el.on('click', function() {
-			$(this).find(el_drop).toggleClass('is-open').slideToggle('fast');
+			$(this).find(el_drop).addClass('is-open').slideDown('fast');
 		});
 
 		//click document

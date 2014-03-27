@@ -17,24 +17,33 @@
 <div class="bg" style="background-image: url('img/main_bg.jpg')"></div>
 
 <!-- BEGIN  out-->
-<div id="skrollr-body" class="out">
+<div class="out">
 
 	<div class="header">
 		<div class="container">
-			<a href="#0" class="header__logo">logo</a>
-			<div class="header__right">
-				<div class="contacts">
-					<ul class="contacts__group">
-						<li>(+372) 56&nbsp;226&nbsp;517</li>
-						<li>(+372) 644 65&nbsp;56</li>
-					</ul>
-					<ul class="contacts__group">
-						<li><i class="fa fa-map-marker"></i> <a href="#0" class="g-pseudo">Peterburi tee 47, Tallinn</a></li>
-						<li><i class="fa fa-clock-o"></i> Пн&nbsp;&mdash; Пт: 9&nbsp;&mdash; 17:30</li>
-					</ul>
-					<ul class="contacts__group">
-						<li><i class="fa fa-envelope"></i> <a href="#0" class="g-pseudo">info@mprint.ee</a></li>
-					</ul>
+			<div class="row">
+				<div class="header__logo col-2">
+					<a href="#0">logo</a>
+				</div>
+				<div class="header__meta col-7 col-sm-5">
+					<div class="contacts">
+						<ul class="contacts__group">
+							<li>(+372) 56&nbsp;226&nbsp;517</li>
+							<li>(+372) 644 65&nbsp;56</li>
+						</ul>
+						<ul class="contacts__group">
+							<li><i class="fa fa-map-marker"></i> <a href="#0" class="g-pseudo">Peterburi tee 47, Tallinn</a></li>
+							<li><i class="fa fa-clock-o"></i> Пн&nbsp;&mdash; Пт: 9&nbsp;&mdash; 17:30</li>
+						</ul>
+						<ul class="contacts__group">
+							<li><i class="fa fa-envelope"></i> <a href="#0" class="g-pseudo">info@mprint.ee</a></li>
+						</ul>
+					</div>
+					<div class="lang">
+						<div class="lang__trigger">
+							<span class="g-pseudo">Русский</span> <i class="fa fa-angle-down"></i>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -43,21 +52,36 @@
 
 	<!-- begin page -->
 	<div class="page">
+
 		<!-- begin navbar -->
 		<div class="navbar js-navbar">
-				<nav class="nav">
-					<ul>
-						<li><a href="#0">Изготовление рекламы</a></li>
-						<li><a href="#0">Интерьерная печать</a></li>
-						<li class="is-active"><a href="#0">Новости</a></li>
-						<li><a href="#0">О&nbsp;компании</a></li>
-						<li><a href="#0">Контакт</a></li>
+				<!-- begin menu -->
+				<nav class="menu col-6">
+					<ul class="menu__ul">
+						<li class="menu__clause menu__clause_adv has-dropdown">
+							<a href="#0">Изготовление рекламы</a>
+						</li>
+						<li class="menu__clause menu__clause_print">
+							<a href="#0">Интерьерная печать</a>
+						</li>
+						<li class="menu__clause is-active">
+							<a href="#0">Новости</a>
+						</li>
+						<li class="menu__clause">
+							<a href="#0">О&nbsp;компании</a>
+						</li>
+						<li class="menu__clause">
+							<a href="#0">Контакт</a>
+						</li>
 					</ul>
 				</nav>
-				<div class="search has-dropdown js-searchsuggest">
+				<!-- end menu -->
+
+				<!-- begin search -->
+				<div class="search col-2 col-sm-1 js-searchsuggest">
 					<form action="#0">
-						<input type="text" class="search__q" placeholder="Товары и&nbsp;услуги...">
-						<div class="search__dropdown">
+						<input type="text" class="search__query is-hidden-sm" placeholder="Товары и&nbsp;услуги...">
+						<div class="search__dropdown col-4 col-sm-2">
 							<ul>
 								<li>Релкамный щит</li>
 								<li class="is-selected">Релкамный буклет</li>
@@ -69,127 +93,56 @@
 						<button type="submit" class="search__submit"><i class="fa fa-search"></i></button>
 					</form>
 				</div>
-				<div class="ask">
+				<!-- end search -->
+
+				<!-- begin request -->
+				<div class="request col-2 col-sm-1">
+					<div class="request__trigger">
+							<div class="request__triggerlabel is-hidden-sm">
+								Задать вопрос<br>
+								<span>или загрузить файл</span>
+							</div>
+							<i class="request__triggericon fa fa-upload"></i>
+					</div>
 				</div>
+				<!-- end request -->
 		</div>
 		<!-- end navbar -->
 
-		<div class="g-row">
+		<div class="row">
 			<!-- begin teaser -->
-			<div class="teaser">
+			<div class="teaser col-6 col-sm-8">
 				<div class="teaser__slider">
 					<img src="img/slider_1.jpg" alt="img">
 				</div>
 			</div>
 			<!-- end teaser -->
-			<div class="menublock">
+			<div class="menublock col-4 col-sm-8">
 				<ul>
-					<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, reiciendis dolorum architecto temporibus nobis atque soluta eum praesentium iusto sequi debitis delectus laboriosam ipsum saepe officiis ab ullam quas quibusdam!</li>
-					<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, deleniti, labore, amet voluptates nesciunt incidunt quas commodi recusandae esse doloribus ullam laudantium molestias rem velit iure eum dicta omnis eligendi!</li>
+					<li class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, reiciendis dolorum architecto temporibus nobis atque soluta eum praesentium iusto sequi debitis delectus laboriosam ipsum saepe officiis ab ullam quas quibusdam!</li>
+					<li class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, deleniti, labore, amet voluptates nesciunt incidunt quas commodi recusandae esse doloribus ullam laudantium molestias rem velit iure eum dicta omnis eligendi!</li>
 				</ul>
 			</div>
 		</div>
 
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, maiores aliquam excepturi? Quo, harum suscipit voluptatibus animi sapiente molestiae provident deleniti maxime in. Modi harum fugiat pariatur adipisci velit reprehenderit.</p>
-	<p>Porro, similique, autem, at, expedita non nemo soluta excepturi maiores hic voluptate earum illum dolores! Sunt, doloremque, velit, corporis esse adipisci nostrum ad animi minima sequi mollitia tempora dignissimos recusandae.</p>
-	<p>Corporis, fuga, ab, delectus dignissimos architecto sapiente rerum aliquid facere numquam hic natus vel ex aliquam. Non, fuga, nobis, dolores, culpa sunt adipisci ullam quam porro voluptate quas recusandae error?</p>
-	<p>Sit, aliquam id fugiat numquam nisi quasi atque. Possimus, odit, eius, eligendi, quae quam libero explicabo repudiandae voluptatem eos optio iure natus quaerat alias saepe quibusdam cum beatae numquam cumque!</p>
-	<p>Harum, quis, repellat nam laborum similique officia debitis voluptas voluptatibus culpa assumenda nemo consequuntur distinctio quia ratione impedit numquam repellendus quidem. Aspernatur, modi quibusdam magni atque asperiores totam dolorum amet.</p>
-	<p>Quas, quisquam, molestiae, dolor consequatur quasi sint suscipit perspiciatis hic itaque eaque quod consectetur perferendis obcaecati! Ea, autem, inventore, perspiciatis, fugit obcaecati minima voluptas dolorem harum beatae numquam possimus facilis.</p>
-	<p>Reiciendis, sint, odio quasi laborum est veniam minus numquam eius eaque excepturi quisquam quaerat. Sit, modi aspernatur officiis accusamus animi excepturi molestiae dicta suscipit magni similique ex repellendus qui cumque.</p>
-	<p>Voluptatem, incidunt, vel fuga minus ipsa quo accusantium tempora delectus rerum placeat accusamus numquam eum perspiciatis recusandae natus! Eligendi, eius eos sit quibusdam debitis porro est. Inventore, neque natus corrupti.</p>
-	<p>Quos, error omnis rem sequi adipisci eligendi commodi labore laborum. Beatae, accusantium praesentium laudantium accusamus quia sit culpa impedit ex hic molestias eveniet voluptates repellat quaerat ea autem explicabo itaque!</p>
-	<p>Alias, quibusdam, magnam totam nam aut facere iure dolore quas. Magni, voluptas sit repellendus soluta illum autem vel eius repellat quibusdam dicta hic esse quos culpa exercitationem id quasi expedita.</p>
-	<p>Nostrum, delectus, dolores, possimus, at nulla architecto quisquam necessitatibus soluta similique velit consequatur vero voluptatem. Obcaecati, officiis, quisquam enim debitis earum consequatur nemo expedita quibusdam illum eos tempore porro dicta!</p>
-	<p>Recusandae, neque, fugiat, at, animi facilis quia distinctio ipsam labore sed eaque quisquam assumenda cumque maxime dolorum eum iusto possimus nostrum amet eius voluptas. Deserunt, quo iusto corrupti similique animi.</p>
-	<p>Cumque, dicta, optio sit aperiam non enim nihil ratione cum ut dolorum soluta tempora necessitatibus aut hic reprehenderit! Adipisci, odit consectetur earum velit mollitia esse molestiae corrupti aut hic rem.</p>
-	<p>Modi, architecto, ipsum, consequuntur quo placeat dignissimos dolore repellendus molestias error veniam et explicabo perferendis unde fugit assumenda. Voluptas, explicabo illo non nostrum sapiente eligendi totam laudantium modi dolorum unde?</p>
-	<p>Quasi, accusantium, consectetur, eius, labore ab debitis molestias esse maiores tenetur eaque ullam architecto! Sed animi placeat expedita voluptatum vero ducimus maxime velit nostrum quis! Atque, nesciunt sunt quos illum.</p>
-	<p>Error, debitis aliquam qui a optio voluptates in perferendis saepe libero. Fuga, debitis, numquam odio officiis omnis non quia eum aliquid et atque! Nesciunt blanditiis quidem error officiis laboriosam molestiae.</p>
-	<p>Recusandae, repellat, nostrum provident numquam laudantium nihil omnis libero suscipit ut placeat commodi delectus ducimus. Sed, voluptatum, placeat, consectetur, quis similique laudantium magni mollitia hic quibusdam sequi aliquid enim blanditiis.</p>
-	<p>Sed, nulla eveniet sapiente ipsa facere ex maxime? Sunt, iusto est minus soluta sequi quisquam ducimus! Alias, animi, dignissimos odit autem deserunt in quae error numquam sint at fuga illo.</p>
-	<p>Aut, tempora, fuga mollitia atque temporibus dicta sed saepe impedit consectetur ratione sint libero molestias tenetur ipsa voluptates nisi vero voluptas reiciendis debitis architecto soluta! Et, ipsa mollitia odio molestias!</p>
-	<p>Quae, neque reprehenderit dicta consequatur unde? Modi, molestias, adipisci, mollitia nesciunt ipsam ipsum earum natus magnam est quos nam porro eos incidunt eveniet ad quibusdam animi nisi corrupti cum quas?</p>
-	<p>Nobis, dolorem, ducimus repellendus harum reprehenderit delectus nemo impedit natus porro voluptas dolor sunt hic at quibusdam repellat nihil error iure quasi autem quo! Eos, itaque labore eaque consectetur eveniet.</p>
-	<p>Similique, fuga, porro, alias, provident assumenda cum et aspernatur nesciunt eaque sequi autem veritatis voluptate cumque magnam sapiente enim odio laboriosam dolore quisquam veniam sint necessitatibus recusandae ut doloribus praesentium!</p>
-	<p>Omnis, laboriosam, eius, doloribus perferendis est ducimus accusantium numquam fuga aperiam quam dolorum consectetur ipsa ab. Iure, quibusdam rerum animi! Officiis, voluptatum labore voluptate excepturi qui amet quos odit iure.</p>
-	<p>Atque, consequuntur, provident tempore numquam nostrum doloremque sequi ea a minima quas perspiciatis quibusdam mollitia molestias autem dolorum vel totam facilis sint nisi odio. Dolor, ad, quae! Odio, sapiente quidem!</p>
-	<p>Tempora, accusantium, dolorem, earum natus consequuntur velit quae repudiandae eos totam sint provident sapiente mollitia fugiat facilis iusto! Perspiciatis, eum, temporibus nesciunt ratione natus eius. Ea vero accusamus eveniet libero.</p>
-	<p>Fugit, facere rerum eos provident repudiandae mollitia velit deleniti sequi tenetur qui. Est, aspernatur, nemo, laborum, commodi rerum blanditiis eligendi adipisci placeat delectus tenetur fuga architecto accusantium voluptatem fugiat distinctio.</p>
-	<p>Maxime excepturi dolorum dolores amet at fugiat sed quo ducimus illo incidunt! Nisi, soluta, alias, laborum expedita repudiandae cumque ab maiores minima fugit dicta porro libero optio odio. Placeat, laudantium?</p>
-	<p>Deleniti, odit libero repellendus qui est voluptas cumque aut perferendis reiciendis nam! Aliquam, pariatur ipsa consequatur minima hic laboriosam consequuntur officiis impedit optio libero porro molestiae illum quo ullam deserunt.</p>
-	<p>Id, omnis, obcaecati, asperiores magni nulla quam soluta natus est quae nihil ex qui illum officia quas modi distinctio recusandae possimus enim praesentium laborum hic impedit adipisci delectus. Harum, ullam!</p>
-	<p>Iste, eius, atque sed odit quam repellat quisquam laborum numquam ipsum dolorem omnis inventore soluta placeat voluptatibus ex. Error, fuga veritatis corrupti aut accusamus asperiores laudantium obcaecati iusto earum officiis!</p>
-	<p>Illum, ab, quis culpa corporis neque libero unde eligendi suscipit nam soluta necessitatibus ad vitae debitis provident reiciendis maxime iusto eum excepturi ipsa quae laboriosam minima nostrum expedita ex et.</p>
-	<p>Quod, totam, culpa excepturi eos officia sapiente eum incidunt sequi consequatur velit autem rerum nesciunt nemo recusandae nobis blanditiis eligendi! Illo, beatae molestias eius consequatur amet commodi sapiente possimus cum!</p>
-	<p>Qui, quos, aliquid, ratione exercitationem recusandae officiis blanditiis repellat fugit dolores quibusdam minus voluptatum aperiam repudiandae. Neque repellendus dignissimos omnis quae. Beatae, at, temporibus repellendus autem ratione labore aut quis!</p>
-	<p>Cumque, dignissimos, eius vitae dolor molestias molestiae necessitatibus tenetur eligendi nostrum maxime labore unde modi pariatur iusto ratione. Unde, quidem doloremque cum nemo aperiam est quis fuga eveniet officiis eum!</p>
-	<p>Expedita, ratione, tempora, ducimus at et esse nesciunt ipsa earum magnam dolores ipsam ullam ea perferendis eum rem rerum est illo architecto totam nam quam similique eaque nemo nostrum aliquid.</p>
-	<p>Suscipit, harum, dolorum doloribus repellat optio ipsam incidunt magni a iusto architecto labore totam officia atque nostrum eveniet alias delectus tempora doloremque quis veritatis excepturi voluptatem mollitia quibusdam ut cupiditate.</p>
-	<p>Asperiores, harum, quos, perferendis itaque ipsum odit quaerat dignissimos facere consequatur fugiat sit et labore ea minus dolorem alias libero excepturi vero cum aut deleniti molestiae quisquam! Voluptates, amet, fugiat.</p>
-	<p>Delectus, suscipit, iusto qui tenetur labore sapiente sed fuga. Repellendus, voluptates, libero quidem sequi labore sint laborum. Temporibus, numquam, praesentium. Aspernatur, debitis, aut veniam hic sed amet soluta ipsam doloremque.</p>
-	<p>Aut, ea, dolorum, commodi, beatae eaque in unde quae quisquam ratione tenetur quis sit numquam animi aliquam dolore earum voluptatum ipsa non! Earum, hic adipisci deleniti eligendi non quae. Ex!</p>
-	<p>Accusamus, aperiam, velit doloremque error incidunt delectus distinctio amet at commodi magnam fugiat molestiae quia sequi dolore fuga iste cupiditate quibusdam cumque nobis ipsam consequatur dignissimos aut natus iure ad.</p>
-	<p>Hic, architecto, alias culpa totam iusto quo earum ea incidunt accusantium voluptatem doloremque qui quam dolores. Veniam, blanditiis, quasi, repellendus consectetur voluptate ea natus vel sit ipsa corrupti nobis nostrum!</p>
-	<p>Omnis, cupiditate, quibusdam debitis aspernatur sit inventore ad. Tenetur, in expedita optio consequuntur consectetur placeat cumque voluptatum assumenda quod mollitia. Minus, dolorem voluptates eos pariatur magni blanditiis veniam enim quis?</p>
-	<p>Nulla, in officiis doloremque sequi quibusdam temporibus porro. Amet, dolore, magni minima eum voluptatibus ex dolor ea quaerat quae assumenda adipisci architecto maiores? A numquam quae corrupti vitae maiores voluptatum.</p>
-	<p>Fuga, numquam, eos eligendi earum animi nobis explicabo non illo nemo debitis neque nesciunt iure porro inventore consequatur quod consequuntur accusantium mollitia illum eum placeat accusamus veniam esse voluptates at!</p>
-	<p>Officiis culpa vero quis minus obcaecati corporis expedita eius eos delectus necessitatibus. Obcaecati, facilis ex quidem et aperiam minima unde distinctio maxime similique quod. Perspiciatis, cum libero accusantium amet nobis!</p>
-	<p>Illum nisi nobis explicabo asperiores repudiandae. Eius, molestias, incidunt deserunt ratione pariatur placeat earum tempore omnis fugiat repudiandae a consequuntur voluptas sunt quo neque quisquam officia itaque quis culpa maxime.</p>
-	<p>Hic illum ex iure minima quod. Accusamus, doloremque, est, dolor, eaque nisi aspernatur ratione sed consequuntur rerum quia incidunt eius ab veritatis amet modi cum dignissimos dolorem accusantium dicta ipsam.</p>
-	<p>Repellat, sunt, facere quisquam eaque atque natus sequi quidem sed soluta odit vel aliquam dignissimos corporis necessitatibus temporibus delectus saepe? Quam, quae, ex fuga veritatis eaque quibusdam necessitatibus at obcaecati.</p>
-	<p>Laudantium, ipsum, repudiandae, dolorum, ipsa quas deleniti natus perferendis ea dignissimos vero vel accusamus voluptate asperiores? Repellendus explicabo dignissimos esse. Eligendi, tempora, eveniet earum possimus molestias laboriosam accusantium doloremque minima.</p>
-	<p>Veniam, delectus sequi nisi dolor quis eligendi distinctio animi officia voluptates quas alias aliquid nam tempore. Vero, minima non vel veritatis facilis numquam saepe. Dolorem, iusto porro quod temporibus quia?</p>
-	<p>Distinctio, ad, illo, reiciendis iusto magni ut illum quasi sint impedit aliquid id enim provident rem. Et, sequi, veritatis, impedit provident quis accusantium pariatur eos unde asperiores voluptates deserunt modi.</p>
-	<p>Quia, facere, placeat, totam dolor pariatur voluptates labore ratione possimus cum quod assumenda molestiae dicta vel eligendi earum quam repellendus itaque officiis voluptas alias! A aut quos omnis voluptas obcaecati?</p>
-	<p>Minima, ducimus, culpa asperiores nemo tempore nostrum sint ad harum quas laborum natus cum sunt rem autem doloribus veritatis omnis deserunt ex laboriosam pariatur? Veniam iusto aliquam cum molestias blanditiis.</p>
-	<p>Eaque, at, provident, asperiores unde cupiditate numquam facere quam et reiciendis iste quos odit inventore molestiae ea minus impedit labore voluptatum quibusdam doloribus ullam vero voluptatem deserunt sequi! Nostrum, dicta?</p>
-	<p>Sint, a, accusantium, ducimus, ab officia repudiandae delectus voluptates in cum deserunt quidem dolorum facere ipsam minus cupiditate iusto recusandae dolore architecto eius ullam soluta est laboriosam sed quasi nulla.</p>
-	<p>Repudiandae, perspiciatis, tempore, eius, esse veritatis totam omnis consequatur recusandae laborum quos molestias accusantium illum officia quas ratione quae ab quia mollitia eligendi iure cupiditate optio iusto reprehenderit magni dicta.</p>
-	<p>Blanditiis alias quisquam aliquam odio quibusdam. Aliquid, sunt, cum odit ipsa distinctio earum quae iste tempore impedit veniam voluptatibus enim numquam magnam ad labore culpa placeat in ut optio quam.</p>
-	<p>Explicabo, officia, esse, alias, minima magni debitis itaque doloremque quidem harum nisi ipsa voluptas ea earum atque eos tempore dolorem dolorum reprehenderit ratione sed eaque odio possimus aliquid similique aliquam.</p>
-	<p>Quisquam, nulla minima nostrum sapiente veritatis eius molestias sed repudiandae ipsam odit voluptatem tempora numquam molestiae quas quaerat deserunt facere. Voluptatibus, dolorem nulla veritatis natus consectetur aliquid perferendis dolore delectus.</p>
-	<p>Laborum, eius, sunt earum voluptas nobis maiores repellat id doloribus cum dolorum corporis iusto? Iste, doloribus, cupiditate soluta esse rerum fugit voluptatum labore autem excepturi vitae veniam amet minus. Veritatis!</p>
-	<p>Quasi, odio, ullam, nisi explicabo quam eos quaerat ducimus blanditiis tempore esse enim nemo fugiat tempora cumque eius non ex eligendi laudantium at odit aliquam adipisci quos consequuntur sapiente sequi!</p>
-	<p>Labore, quibusdam, delectus, id modi animi debitis dicta saepe voluptas blanditiis incidunt asperiores quis eligendi voluptatum hic sit! Qui quas perferendis facilis voluptatibus quae assumenda consequuntur et a nam molestias.</p>
-	<p>Sapiente, architecto, delectus, ut dolore incidunt fugiat ratione modi natus nostrum error officia repudiandae vel possimus ipsa quidem reiciendis magnam sed officiis aperiam nulla ducimus libero facere velit vero ea.</p>
-	<p>Excepturi, fugiat, earum, itaque ipsum blanditiis laborum nihil repellendus unde placeat assumenda incidunt cupiditate eveniet dolor. Temporibus quibusdam velit vero. Quidem asperiores natus unde voluptatibus aut maxime quod voluptate nihil.</p>
-	<p>Molestiae, repudiandae, dolorum temporibus impedit nisi reiciendis hic iusto optio expedita! Maiores, voluptates, obcaecati incidunt odit ipsam repellat iure voluptas suscipit culpa libero. Itaque, ut atque placeat cumque impedit obcaecati.</p>
-	<p>Cum, dolorum, harum veritatis ducimus cupiditate vero quod laboriosam molestiae voluptas provident modi reiciendis est nobis nam repudiandae. Autem, obcaecati, nemo corporis nam eos id soluta quod magnam maiores ipsa!</p>
-	<p>Enim, ipsum, nemo, animi facilis beatae labore modi ipsa aperiam architecto hic laboriosam neque ad minus sint officia quis ut autem! Magnam, nobis et excepturi suscipit placeat expedita quis eius.</p>
-	<p>Quam sed odio incidunt. Culpa, debitis, perspiciatis, dolores maxime aperiam exercitationem sit sapiente saepe esse quo quas aut laboriosam impedit nostrum provident? Non, iste ipsa quam neque sequi libero architecto.</p>
-	<p>Voluptatum, cupiditate, consequuntur sapiente minus tempora quidem aperiam sint rerum asperiores deleniti cumque iusto consectetur unde voluptate iure aut perspiciatis dignissimos placeat veniam in. Quis, quod deserunt minima enim ea.</p>
-	<p>Adipisci, eligendi aliquid veritatis facere odit quibusdam quae accusamus praesentium possimus labore dolores magnam deserunt reprehenderit obcaecati dolorem laborum itaque rerum dignissimos debitis minus quisquam fugit quia cum totam voluptates.</p>
-	<p>Dolores, aliquid, soluta, iure, illum ipsa animi enim fugiat reprehenderit commodi officia ratione nihil a? Harum, non, expedita cum perferendis nostrum veniam molestiae placeat et alias itaque omnis blanditiis incidunt!</p>
-	<p>Odio, sed laudantium nostrum officiis eius pariatur aperiam fuga. Eius, cum, dolor labore a delectus eos eligendi velit alias hic natus. Doloremque, dolorem, aliquid quidem beatae impedit rerum officia dolor!</p>
-	<p>Autem, tempore, aut quam consequuntur ea similique consectetur reprehenderit beatae delectus suscipit unde quis voluptates voluptas qui molestias voluptatibus minima voluptate vel possimus voluptatum fuga error maiores deserunt accusamus magnam.</p>
-	<p>Recusandae, aliquam, ullam, esse, commodi dolorem consequatur repellendus accusantium nesciunt est mollitia vitae itaque assumenda error quis quia voluptatum magni corporis id saepe fugiat tenetur aut sed. Accusantium, alias, ratione!</p>
-	<p>Nostrum, corporis, temporibus sint laboriosam numquam cumque tempora nesciunt minus amet quod. Veritatis, dolor expedita aperiam at placeat non consectetur cupiditate iusto iure quae! Culpa itaque aut accusantium ipsa quo.</p>
-	<p>Esse, tenetur, consectetur, perspiciatis, ex ad voluptate enim voluptatum consequatur corporis illum delectus doloremque harum quia provident exercitationem quam officia atque sequi assumenda illo cumque accusamus cum modi ipsa facilis!</p>
-	<p>Earum, labore dolores aliquam debitis dolore aperiam. Est ipsa explicabo fuga numquam tempora. Soluta, pariatur esse possimus tempore iusto animi distinctio dolore aliquam recusandae sit necessitatibus non suscipit consequatur impedit.</p>
-	<p>Ullam, laudantium, minima perspiciatis dolor assumenda facere nisi sit non autem illo! Dolorem, cum, ipsam, expedita, non at laborum asperiores alias tempore sequi molestiae eum soluta sapiente recusandae ratione ipsum.</p>
-	<p>Quaerat, explicabo numquam a eaque minima quibusdam corporis adipisci ipsa delectus dicta ut ab praesentium nemo quos fugit assumenda exercitationem nihil quidem maxime distinctio sequi eligendi voluptates dolor dignissimos cum.</p>
-	<p>Error, voluptate, distinctio rerum eum laudantium praesentium dolores aperiam laboriosam sapiente nihil aspernatur ipsa repellat nobis repudiandae sint quia commodi unde odio dignissimos illo natus nulla totam numquam molestias cupiditate!</p>
-	<p>Ipsum fuga voluptatum molestiae dicta facilis. Quaerat, sint a consequatur mollitia laborum numquam similique. Alias, repudiandae, fuga, accusantium officiis tenetur provident perferendis saepe enim repellat delectus maxime magnam ipsam molestiae.</p>
-	<p>Dolorem, culpa, fugiat, omnis rerum consectetur hic nemo distinctio velit repudiandae vel vitae magnam sapiente nobis perferendis corporis quae nesciunt deserunt beatae dicta voluptatum laborum quis sint ab. Quidem, nam.</p>
-	<p>Fugiat, iste dicta mollitia modi molestias incidunt deleniti odit recusandae deserunt fugit numquam praesentium delectus necessitatibus rem ea temporibus ratione accusamus expedita neque quo dolorem a aliquam voluptas consequuntur reprehenderit?</p>
-	<p>Asperiores, et, magni, earum maiores laborum nostrum praesentium debitis magnam harum ullam sint numquam tempore ut quidem quos nihil odio. Odit harum quae voluptas reprehenderit animi! Provident, beatae saepe necessitatibus.</p>
-	<p>Voluptas, delectus error ratione. Rerum, eum, deleniti, iure delectus corporis vel nesciunt quidem quisquam mollitia aperiam repellat dignissimos ipsam tenetur itaque suscipit cupiditate omnis fugiat tempora officia cumque adipisci beatae?</p>
-	<p>Magnam, doloribus, quisquam, iusto asperiores dignissimos aperiam illum tempore excepturi recusandae dolorem a aspernatur nisi ab cum iure voluptatibus qui alias atque soluta nemo adipisci itaque quidem hic laborum porro.</p>
-	<p>Cum, fuga, maxime inventore commodi aliquid a in vitae unde velit labore ut voluptatum consequatur autem accusamus assumenda temporibus consectetur molestiae sint repellat corporis veritatis ea quaerat exercitationem fugit nemo!</p>
-	<p>Alias architecto sunt aliquid vero quibusdam. In, odit ex iste voluptatum esse amet mollitia eum sapiente velit laborum similique itaque quibusdam consequatur natus quos illo animi quisquam repellendus vero ullam.</p>
-	<p>Excepturi, eaque, consectetur, qui consequatur fugiat aliquam debitis ratione nobis temporibus dicta alias voluptate cupiditate ea repellendus inventore officiis id. Quo, esse at ipsam hic eum ea debitis consequuntur totam.</p>
-	<p>Ex, adipisci, voluptas nam rem in impedit nobis nulla corrupti alias iusto ducimus totam praesentium repellendus aut sed. Aliquid doloribus corrupti dolorum quasi numquam porro totam dolor iure beatae inventore.</p>
-	<p>Natus, minima, perferendis, aliquid optio tenetur architecto fugiat officia soluta harum cupiditate hic quo aliquam officiis veritatis totam dolorem minus fugit quos repellat ut repellendus vero voluptates velit. Molestias, vero?</p>
-	<p>Veniam, praesentium, quasi molestiae impedit perferendis distinctio non odio illo ducimus inventore tempora saepe error doloremque aspernatur sunt asperiores sint libero ipsa explicabo ad dolorem corporis temporibus voluptate incidunt nesciunt.</p>
-	<p>Modi, ipsum, eaque, corporis ipsa temporibus maxime nihil quibusdam sit error magnam reprehenderit voluptates delectus vero unde a enim sequi vel illo soluta sint impedit eos libero laboriosam quasi reiciendis.</p>
-	<p>Voluptates, omnis ipsa minima consequatur non quasi sit reprehenderit corporis nam cupiditate delectus magni fugit ad accusamus laborum dicta repudiandae officiis ut provident cumque explicabo optio iure odit adipisci id.</p>
-	<p>Beatae, ut amet debitis nulla eum incidunt sit repellendus iste minima fugit? Ipsa, eaque ut harum laudantium quasi dolorem laboriosam sint nesciunt voluptas earum suscipit veritatis repellat eius repellendus modi?</p>
-	<p>Consectetur, similique amet ex magnam reiciendis ipsa sapiente alias. Perspiciatis, adipisci officiis aliquid. Iusto et accusamus in dolore earum possimus atque! Delectus, labore iste modi exercitationem praesentium possimus inventore quam.</p>
-	<p>Quo, natus, quaerat earum dolore odio ab praesentium voluptatem unde distinctio at porro voluptatibus ratione maiores? Esse, doloribus, nulla quia ab labore voluptates quae quam ut et eum ipsam fuga.</p>
-	<p>Eveniet, possimus, debitis nam blanditiis molestiae dolorem quae esse similique ea autem deserunt praesentium ab accusamus inventore qui facilis laudantium nemo non fuga voluptatibus reiciendis consequuntur aliquam numquam aut unde.</p>
-	<p>Tempora, sit, adipisci saepe ab laboriosam odit. Nam, esse, iure, itaque velit expedita eaque omnis accusamus placeat eum autem dicta fugiat tenetur nisi obcaecati eveniet accusantium voluptatum asperiores amet ex!</p>
-	<p>Quae placeat harum blanditiis cum modi explicabo beatae illo quas. Obcaecati, ipsam, sunt labore doloremque unde vero saepe esse molestiae accusamus praesentium possimus numquam nemo dolore natus pariatur quas similique.</p>
+		<div class="row">
+			<div class="col-6 col-sm-8">
+				<div class="h1">Рекламное агентство Mprint</div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, hic possimus quo sint quaerat minus ratione autem nobis! Beatae, aspernatur repudiandae dolorem odit laborum ut sint officia at. Illum, molestias?</p>
+			</div>
+			<div class="col-4 col-sm-4 pull-right">
+				<div class="h1">Новости</div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, perspiciatis, ad dolorum sint nihil consequuntur quo temporibus unde aliquid modi. Aspernatur, doloremque, maiores error nulla quia delectus obcaecati laudantium non.</p>
+			</div>
+			<div class="col-6 col-sm-4">
+				<div class="h1">Последние работы</div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, perspiciatis, ad dolorum sint nihil consequuntur quo temporibus unde aliquid modi. Aspernatur, doloremque, maiores error nulla quia delectus obcaecati laudantium non.</p>
+			</div>
+			<div class="col-4 is-hidden-sm">
+				<div class="h1">Подписка</div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, perspiciatis, ad dolorum sint nihil consequuntur quo temporibus unde aliquid modi. Aspernatur, doloremque, maiores error nulla quia delectus obcaecati laudantium non.</p>
+			</div>
+		</div>
 
 	</div>
 	<!-- end page -->
@@ -200,15 +153,17 @@
 
 <!-- begin footer -->
 <div class="footer">
-	<div class="container clearfix">
-		<div class="footer__left">
-			<div class="footer__copy">Copyright 2014 Mprint</div>
-			<div class="footer__design">Designed by&nbsp;Aprol Designs</div>
-		</div>
-		<div class="footer__right">
-			<div class="footer__contacts">
-				<p>(+372) 56&nbsp;226&nbsp;517, (+372) 644 65&nbsp;56</p>
-				<p><i class="fa fa-map-marker"></i> Peterburi tee 47, <i class="fa fa-envelope"></i> Tallinn <a href="#0" class="g-pseudo">info@mprint.ee</a></p>
+	<div class="container">
+		<div class="row">
+			<div class="footer__left col-2">
+				<div class="footer__copy">Copyright 2014 Mprint</div>
+				<div class="footer__design">Designed by&nbsp;Aprol Designs</div>
+			</div>
+			<div class="footer__right col-5">
+				<div class="footer__contacts">
+					<p>(+372) 56&nbsp;226&nbsp;517, (+372) 644 65&nbsp;56</p>
+					<p><i class="fa fa-map-marker"></i> Peterburi tee 47, <i class="fa fa-envelope"></i> Tallinn <a href="#0" class="g-pseudo">info@mprint.ee</a></p>
+				</div>
 			</div>
 		</div>
 	</div>

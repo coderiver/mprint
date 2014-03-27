@@ -1,23 +1,26 @@
 $gridWidth: 1200px
-$gridMinWidth: 960px
 $gridColumns: 10
-$gridColumnWidth: ($gridWidth/$gridColumns)
+
+$gridWidth-sm: 960px
+$gridColumns-sm: 8
 
 %in
 	max-width: ($gridWidth)
-	min-width: ($gridMinWidth)
 	margin-left: auto
 	margin-right: auto
 	+box
-	+r(w1200)
-		max-width: ($gridMinWidth)
+	+r(w1220)
+		max-width: ($gridWidth-sm)
 .container
 	@extend %in
 
 .clearfix
 	+clr
 
-.g-row
+.pull-right
+	float: right !important
+
+.row
 	+clr
 
 %grid
@@ -26,14 +29,17 @@ $gridColumnWidth: ($gridWidth/$gridColumns)
 	min-height: 1px
 	+box
 
-@mixin col($n: 1)
-	@include span($n)
+@for $i from 1 through $gridColumns
+	.col-#{$i}
+		@extend %grid
+		width: (($i * $gridWidth) / $gridColumns)
 
-@mixin span($i: 1)
-	@extend %grid
-	// width: ($i / $gridColumns) * 100%
-	width: (($i * $gridWidth) / $gridColumns)
+@for $n from 1 through $gridColumns-sm
+	+r(w1220)
+		.col-sm-#{$n}
+			@extend %grid
+			width: (($n * $gridWidth-sm) / $gridColumns-sm)
 
 .is-hidden-sm
-	+r(w1200)
+	+r(w1220)
 		display: none !important
