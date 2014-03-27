@@ -183,23 +183,38 @@ body
 	+col(4)
 
 .teaser
-	+col(16)
-.teaser__slider
 	+col(12)
+	+r(w1200)
+		+col(16)
+.teaser__slider
+	height: 480px
+	overflow: hidden
 	img //tmp
 		display: block
-		max-width: 100%
-.teaser__menu
-	+col(4)
+		min-width: 100%
+// .teaser__menu
+// 	+col(4)
+// 	li
+// 		display: block
+// 		height: 240px
+// 		background: $color-base
+// 		color: $color-invert
+// 		text-align: center
+.menublock
+	+col(8)
+	+r(w1200)
+		+col(16)
 	li
+		+col(8)
 		display: block
 		height: 240px
 		background: $color-base
 		color: $color-invert
 		text-align: center
-
-.sidenav
-	+col(4)
+		+r(w1200)
+			+col(8)
+// .sidenav
+// 	+col(4)
 
 
 .footer

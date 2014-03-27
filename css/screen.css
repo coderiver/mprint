@@ -25,7 +25,7 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 .g-row { *zoom: 1; }
 .g-row:after { content: " "; display: table; clear: both; }
 
-.header__right, .nav, .search, .search__dropdown, .ask, .teaser, .teaser__slider, .teaser__menu, .sidenav, .footer__left, .footer__right { position: relative; float: left; min-height: 1px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.header__right, .nav, .search, .search__dropdown, .ask, .teaser, .menublock, .menublock li, .footer__left, .footer__right { position: relative; float: left; min-height: 1px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
 /*
  *  Font Awesome 4.0.3 by @davegandy - http://fontawesome.io - @fontawesome
@@ -901,15 +901,16 @@ body { font-size: 12px; font-family: "Roboto", Arial, "Helvetica Neue", Helvetic
 
 .ask { width: 240px; }
 
-.teaser { width: 960px; }
+.teaser { width: 720px; }
+@media only screen and (max-width: 1200px) { .teaser { width: 960px; } }
 
-.teaser__slider { width: 720px; }
-.teaser__slider img { display: block; max-width: 100%; }
+.teaser__slider { height: 480px; overflow: hidden; }
+.teaser__slider img { display: block; min-width: 100%; }
 
-.teaser__menu { width: 240px; }
-.teaser__menu li { display: block; height: 240px; background: #353535; color: white; text-align: center; }
-
-.sidenav { width: 240px; }
+.menublock { width: 480px; }
+@media only screen and (max-width: 1200px) { .menublock { width: 960px; } }
+.menublock li { width: 480px; display: block; height: 240px; background: #353535; color: white; text-align: center; }
+@media only screen and (max-width: 1200px) { .menublock li { width: 480px; } }
 
 .footer { height: 90px; color: white; }
 .footer .container { padding-top: 30px; padding-left: 25px; padding-right: 25px; }
