@@ -893,7 +893,7 @@ body { font-size: 12px; font-family: "Roboto", Arial, "Helvetica Neue", Helvetic
 
 .search__submit { position: absolute; top: -1px; right: 0; height: 70px; width: 65px; background: none; font-size: 22px; text-align: center; line-height: 70px; -webkit-transition: 0.3s; -moz-transition: 0.3s; -o-transition: 0.3s; transition: 0.3s; }
 
-.search__dropdown { position: absolute; top: 69px; left: 0; width: 480px; background: white; z-index: 100; display: none; }
+.search__dropdown { position: absolute; top: 69px; left: 0; width: 480px; background: white; z-index: 100; }
 @media only screen and (max-width: 1200px) { .search__dropdown { width: 240px; } }
 .search__dropdown li { padding: 0 27px; border: 1px solid #e8e8e8; border-width: 0 0 1px; font-size: 14px; height: 43px; line-height: 43px; cursor: pointer; overflow: hidden; -ms-text-overflow: ellipsis; text-overflow: ellipsis; white-space: nowrap; }
 .search__dropdown li:hover, .search__dropdown li.is-selected { background: #efefef; }
