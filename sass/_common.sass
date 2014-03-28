@@ -143,6 +143,7 @@ a
 	text-align: center
 	border-left: 1px solid $border-color-base
 	+transition(.3s)
+	// margin-left: -1px
 	&:hover, &.is-active
 		background: $color-base
 		border-color: $color-base
@@ -150,6 +151,7 @@ a
 			color: $color-invert
 	&:first-child
 		border: none
+		// margin-left: 0
 	&.sitenav__clause_adv
 		&:before
 			position: absolute
@@ -164,7 +166,7 @@ a
 		&:before
 			position: absolute
 			top: 0
-			left: 0
+			left: -1px
 			+arr(20, 20, $color-blue, tl)
 			content: ""
 		&:hover, &.is-active
@@ -323,37 +325,20 @@ a
 	text-align: right
 
 
-.entry
-	height: 240px
-	p
-		padding: 20px 25px 0
-	&.entry_news
-		border-left: 1px dashed #bbb
-		.entry__head
-			+r(w1220)
-				border-width: 1px 0 1px
-	&.entry_mod
-		.entry__head
-			border-width: 1px 0 0
-.entry__head
-	height: 80px
-	line-height: 80px
-	+box
-	position: relative
-	padding: 0 27px
-	border: 1px dashed #bbb
-	border-width: 0 0 1px
-.entry__title
-	// padding-top: 28px
-	line-height: inherit
-	margin-bottom: 0
-
 .about
 	height: 240px
-.news
+.spring-discounts
 	height: 320px
+	.headline
+		border-width: 0 0 1px 1px
+		+r(w1220)
+			border-width: 1px 0 1px 1px
+	.thumbnail
+		border-left: 1px dashed #bbb
 .latest-works
 	height: 320px
+	.headline
+		border-width: 1px 0
 .latest-works__group
 	+clr
 .latest-works__item
@@ -369,12 +354,8 @@ a
 .subscribe
 	height: 240px
 	background: #417184
-.subscribe__main
-	width: 240px
-	min-height: 1px
-	float: left
+
 .social
-	overflow: hidden
 .social__group
 	+clr
 	li
@@ -390,6 +371,30 @@ a
 		&.social__vk
 			background: #263749
 
-
-
+.headline
+	position: relative
+	height: 80px
+	line-height: 80px
+	+box
+	position: relative
+	padding: 0 27px
+	border: 1px dashed #bbb
+	border-width: 0 0 1px
+.title
+	display: inline-block
+	vertical-align: middle
+	line-height: 1
+	margin-bottom: 0 !important
+.thumbnail
+	float: left
+	width: 240px
+	height: 240px
+	overflow: hidden
+	img
+		display: block
+		max-width: 100%
+		min-height: 100%
+.caption
+	overflow: hidden
+	padding: 10px 27px
 
