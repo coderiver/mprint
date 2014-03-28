@@ -992,9 +992,9 @@ a:hover { text-decoration: underline; }
 .entry p { padding: 20px 25px 0; }
 .entry.entry_news { border-left: 1px dashed #bbbbbb; }
 @media only screen and (max-width: 1220px) { .entry.entry_news .entry__head { border-width: 1px 0 1px; } }
+.entry.entry_mod .entry__head { border-width: 1px 0 0; }
 
 .entry__head { height: 80px; line-height: 80px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; position: relative; padding: 0 27px; border: 1px dashed #bbbbbb; border-width: 0 0 1px; }
-.entry__head.entry__head_mod { border-width: 1px 0 0; }
 
 .entry__title { line-height: inherit; margin-bottom: 0; }
 
