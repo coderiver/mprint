@@ -1046,6 +1046,7 @@ a:hover { text-decoration: underline; }
 .social__group { *zoom: 1; }
 .social__group:after { content: " "; display: table; clear: both; }
 .social__group li { position: relative; float: left; width: 120px; height: 120px; line-height: 120px; text-align: center; }
+.social__group li span { font: 0/0 a; text-shadow: none; color: transparent; }
 .social__group li i { display: inline-block; vertical-align: middle; line-height: 1; font-size: 32px; }
 .social__group li a { display: block; height: 100%; color: white; }
 .social__group li a:before { position: absolute; top: 0; right: 0; bottom: 0; left: 0; background: rgba(0, 0, 0, 0.5); content: ""; -webkit-transition: 0.3s; -moz-transition: 0.3s; -o-transition: 0.3s; transition: 0.3s; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100); opacity: 1; }
