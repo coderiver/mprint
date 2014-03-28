@@ -2,7 +2,7 @@ $(document).ready(function() {
 
 	function parallax() {
 		var scrolled = $(window).scrollTop();
-		$('#parallax-bg').css('top',-(scrolled*0.02)+'px');
+		$('#parallax-bg').css('top',-(scrolled*0.08)+'px');
 	}
 
 	function fixNavbar() {

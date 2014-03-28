@@ -297,16 +297,82 @@ a
 		display: block
 		min-width: 100%
 
-.menublock
-	li
-		display: block
+.main-services
+	overflow: hidden
+	height: 480px
+	+r(w1220)
 		height: 240px
-		background: $color-base
-		color: $color-invert
-		text-align: center
+.main-services__item
+	position: relative
+	// overflow: hidden
+	display: block
+	height: 240px
+	color: $color-invert
+	text-align: center
+	+box
+	+r(w1220)
+		width: 50%
+		float: left
+		border-bottom: 1px dashed #727272
+	&.main-services__item_adv
+		background: #454545
+		&:before
+			position: absolute
+			top: 0
+			left: 0
+			+arr(20, 20, $color-pink, tl)
+			content: ""
+	&.main-services__item_print
+		background: #353535
+		border-top: 1px dashed #727272
 		+r(w1220)
-			width: 50%
-			float: left
+			border-top: none
+			border-left: 1px dashed #727272
+		&:before
+			position: absolute
+			top: -1px
+			left: 0
+			+arr(20, 20, $color-blue, tl)
+			content: ""
+			+r(w1220)
+				left: -1px
+
+
+.main-services__cover
+	float: left
+	width: 240px
+	height: 240px
+	padding: 50px
+	border-right: 1px dashed #727272
+	+box
+.main-services__icon
+	margin-bottom: 25px
+
+.main-services__title
+	text-transform: uppercase
+	font-weight: 500
+	font-size: 16px
+	line-height: 1
+
+.main-services__list
+	overflow: hidden
+	li
+		text-align: left
+		border-top: 1px dashed #727272
+		&:first-child
+			border: none
+		.main-services__more
+			text-align: right
+			font-size: 13px
+			font-family: $font-base
+	a
+		display: block
+		padding: 12px 30px
+		color: $color-invert
+		text-decoration: none
+		font-size: 14px
+		line-height: 15px
+		font-family: $font-alt
 
 .footer
 	height: 90px
@@ -334,7 +400,15 @@ a
 		+r(w1220)
 			border-width: 1px 0 1px 1px
 	.thumbnail
-		border-left: 1px dashed #bbb
+		position: relative
+		&:before
+			position: absolute
+			top: 0
+			bottom: 0
+			left: 0
+			width: 1px
+			border-left: 1px dashed #bbb
+			content: ""
 .latest-works
 	height: 320px
 	.headline
@@ -354,22 +428,62 @@ a
 .subscribe
 	height: 240px
 	background: #417184
-
+	text-align: center
+	color: $color-invert
+.subscribe__icon
+	padding-top: 26px
+	margin-bottom: 20px
+	i
+		font-size: 68px
+.subscribe__title
+	text-transform: uppercase
+	font-size: 16px
+	font-weight: 500
+	margin-bottom: 35px
+.subscribe__link
+	font-size: 13px
+	cursor: pointer
 .social
+	// float: right
 .social__group
 	+clr
 	li
+		position: relative
 		float: left
 		width: 120px
 		height: 120px
+		line-height: 120px
+		text-align: center
+		i
+			display: inline-block
+			vertical-align: middle
+			line-height: 1
+			font-size: 32px
+		a
+			display: block
+			height: 100%
+			color: $color-invert
+			&:before
+				position: absolute
+				top: 0
+				right: 0
+				bottom: 0
+				left: 0
+				background: rgba(#000, .5)
+				content: ""
+				+transition(.3s)
+				+opacity(1)
+			&:hover
+				&:before
+					+opacity(0)
 		&.social__fb
-			background: #1d2c4c
+			background: #3b5998
 		&.social__rss
-			background: #7a4200
+			background: #f48400
 		&.social__pin
-			background: #681b1e
+			background: #d1373d
 		&.social__vk
-			background: #263749
+			background: #4d6e92
 
 .headline
 	position: relative
@@ -396,5 +510,7 @@ a
 		min-height: 100%
 .caption
 	overflow: hidden
-	padding: 10px 27px
+	padding: 25px 27px
+	p
+		margin-bottom: 0.3em
 
