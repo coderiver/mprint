@@ -376,20 +376,56 @@ a
 
 .footer
 	height: 90px
-	color: $color-invert
+	color: #c7c7c7
 	.container
 		padding-top: 30px
 		padding-left: 25px
 		padding-right: 25px
 	a //test
-		color: $color-invert
+		color: #c7c7c7
 		text-decoration: underline
 .footer__left
 .footer__right
 	float: right
-.footer__contacts
 	text-align: right
-
+.footer__contacts
+	// text-align: right
+	margin-left: 30px
+	display: inline-block
+	vertical-align: top
+.footer__social
+	position: relative
+	display: inline-block
+	vertical-align: top
+	line-height: 1.1
+	padding-right: 45px
+	&:before
+		position: absolute
+		top: -5px
+		// margin-top: -23px
+		right: 0
+		height: 46px
+		width: 1px
+		background: rgba(#fff, .33)
+		content: ""
+	ul
+		display: inline-block
+		vertical-align: top
+		padding-top: 2px
+	li
+		display: inline-block
+		vertical-align: middle
+		font-size: 22px
+		margin-left: 19px
+		&:first-child
+			margin-left: 0
+		span
+			+hidetext
+.footer__social-title
+	display: inline-block
+	vertical-align: top
+	margin-right: 23px
+	font-size: $size-sm
 
 .about
 	height: 240px
@@ -496,11 +532,21 @@ a
 	padding: 0 27px
 	border: 1px dashed #bbb
 	border-width: 0 0 1px
+	.link-more
+		position: absolute
+		right: 27px
+		top: 41px
+		line-height: 1
+		text-transform: uppercase
 .title
+	// float: left
 	display: inline-block
 	vertical-align: middle
 	line-height: 1
 	margin-bottom: 0 !important
+.link-more
+	font-size: $size-base
+	font-family: $font-alt
 .thumbnail
 	float: left
 	width: 240px
@@ -515,4 +561,13 @@ a
 	padding: 25px 27px
 	p
 		margin-bottom: 0.3em
-
+.g-date
+	display: inline-block
+	color: #b6b6b6
+	font-size: $size-base
+.info
+	+clr
+	.g-date
+		float: left
+	.link-more
+		float: right
