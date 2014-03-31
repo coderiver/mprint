@@ -3,7 +3,7 @@
 <!--[if gt IE 8]><!--><html><!--<![endif]-->
 <head>
 	<meta charset="utf-8">
-	<title>Template</title>
+	<title>index.html</title>
 	<meta name="viewport" content="initial-scale=1">
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
 	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,700,300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
@@ -79,15 +79,16 @@
 				<!-- begin search -->
 				<div class="search col-2 col-sm-1 js-searchsuggest">
 					<form action="#0">
-						<input type="text" class="search__query is-hidden-sm" placeholder="Товары и&nbsp;услуги...">
+						<input type="text" class="search__query is-hidden-sm" placeholder="Товары и&nbsp;услуги..." value="Рекламны">
 						<button type="submit" class="search__submit"><i class="fa fa-search"></i></button>
 						<div class="search__dropdown col-4 col-sm-2">
+							<div class="dline"></div>
 							<ul>
-								<li>Релкамный щит</li>
-								<li class="is-selected">Релкамный буклет</li>
-								<li>Релкамная шляпа</li>
-								<li>Релкамные штучки</li>
-								<li>Разработка релкамных концепций</li>
+								<li><a href="#0"><mark>Релкамн</mark>ый щит</a></li>
+								<li class="is-selected"><a href="#0"><mark>Релкамн</mark>ый буклет</a></li>
+								<li><a href="#0"><mark>Релкамн</mark>ая шляпа</a></li>
+								<li><a href="#0"><mark>Релкамн</mark>ые штучки</a></li>
+								<li><a href="#0">Разработка <mark>релкамн</mark>ых концепций</a></li>
 							</ul>
 						</div>
 					</form>
@@ -123,10 +124,12 @@
 				<ul class="main-services col-4 col-sm-8">
 					<li class="main-services__item main-services__item_adv">
 						<div class="main-services__cover">
+							<a href="#" class="main-services__cover-hotzone"></a>
 							<div class="main-services__icon">
 								<i class="icon-flag"></i>
 							</div>
 							<div class="main-services__title">Изготовление рекламы</div>
+							<div class="dline-vert dline_right dline_dark"></div>
 						</div>
 						<ul class="main-services__list">
 							<li><a href="#0">Билборды</a></li>
@@ -138,11 +141,14 @@
 						</ul>
 					</li>
 					<li class="main-services__item main-services__item_print">
+						<div class="dline dline_dark is-hidden-sm"></div>
 						<div class="main-services__cover">
+							<a href="#" class="main-services__cover-hotzone"></a>
 							<div class="main-services__icon">
 								<i class="icon-roll"></i>
 							</div>
 							<div class="main-services__title">Интерьерная печать</div>
+							<div class="dline-vert dline_right dline_dark"></div>
 						</div>
 						<ul class="main-services__list">
 							<li><a href="#0">Билборды</a></li>
@@ -161,6 +167,7 @@
 				<!-- begin about -->
 				<div class="about col-6 col-sm-8">
 					<div class="headline">
+						<div class="dline dline_bottom"></div>
 						<h2 class="title h1">Рекламное агентство Mprint</h2>
 						<a href="#0" class="link-more">Подробнее...</a>
 					</div>
@@ -172,9 +179,12 @@
 				<!-- end about -->
 				<!-- begin spring-discounts -->
 				<div class="spring-discounts col-4 col-sm-4 pull-right">
+					<div class="dline-vert"></div>
 					<div class="headline">
 						<h2 class="title h1">Новости</h2>
 						<a href="#0" class="link-more">Посмотреть все новости...</a>
+						<div class="dline is-hidden"></div>
+						<div class="dline dline_bottom"></div>
 					</div>
 					<div class="thumbnail"><img src="img/news_1.jpg" alt="img"></div>
 					<div class="caption">
@@ -190,6 +200,7 @@
 				<!-- begin latest-works -->
 				<div class="latest-works col-6 col-sm-4">
 					<div class="headline">
+						<div class="dline"></div>
 						<h2 class="title h1">Последние работы</h2>
 						<a href="#0" class="link-more">Посмотреть все работы...</a>
 					</div>

@@ -39,6 +39,7 @@ $(document).ready(function() {
 			fixNavbar();
 		}
 		parallax();
+
 	});
 
 	// skrollr.init({
