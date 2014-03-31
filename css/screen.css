@@ -1018,8 +1018,8 @@ a:hover { text-decoration: underline; }
 .main-services__list li { position: relative; text-align: left; }
 .main-services__list li:before { background: url("../img/dline_extradark.png") !important; }
 .main-services__list li:first-child:before { content: none; }
-.main-services__list li .main-services__more { text-align: right; font-size: 13px; font-family: "Roboto", Arial, "Helvetica Neue", Helvetica, sans-serif; padding: 10px 30px; }
-.main-services__list a { display: block; padding: 13px 30px; color: white; text-decoration: none; font-size: 14px; line-height: 15px; font-family: "Roboto Condensed", Arial, "Helvetica Neue", Helvetica, sans-serif; }
+.main-services__list li .main-services__more { text-align: right; font-size: 13px; font-family: "Roboto", Arial, "Helvetica Neue", Helvetica, sans-serif; }
+.main-services__list a { display: block; padding: 13px 30px 12px; color: white; text-decoration: none; font-size: 14px; line-height: 15px; font-family: "Roboto Condensed", Arial, "Helvetica Neue", Helvetica, sans-serif; }
 
 .footer { height: 90px; color: #c7c7c7; }
 .footer .container { padding-top: 30px; padding-left: 25px; padding-right: 25px; }
@@ -1075,7 +1075,7 @@ a:hover { text-decoration: underline; }
 .social__group li.social__vk { background: #4d6e92; }
 
 .headline { position: relative; height: 77px; line-height: 77px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; position: relative; padding: 0 27px; }
-.headline .link-more { position: absolute; right: 41px; top: 41px; line-height: 1; text-transform: uppercase; font-family: "Roboto Condensed", Arial, "Helvetica Neue", Helvetica, sans-serif; }
+.headline .link-more { position: absolute; right: 41px; top: 39px; line-height: 1; text-transform: uppercase; font-family: "Roboto Condensed", Arial, "Helvetica Neue", Helvetica, sans-serif; }
 
 .title { display: inline-block; vertical-align: middle; line-height: 1; margin-bottom: 0 !important; }
 
