@@ -1005,7 +1005,7 @@ a:hover { text-decoration: underline; }
 .main-services__item.main-services__item_print .main-services__list a:hover { background: #454545; }
 
 .main-services__cover { position: relative; float: left; width: 240px; height: 241px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 50px; z-index: 20; }
-.main-services__cover:hover .dline_right { display: none; }
+.main-services__cover:hover:before { display: none; }
 .main-services__cover a { color: white; text-decoration: none; }
 
 .main-services__cover-hotzone { position: absolute; top: 0; left: 0; right: 0; bottom: 0; }
@@ -1016,7 +1016,6 @@ a:hover { text-decoration: underline; }
 
 .main-services__list { overflow: hidden; }
 .main-services__list li { position: relative; text-align: left; }
-.main-services__list li:before { background: url("../img/dline_extradark.png") !important; }
 .main-services__list li:first-child:before { content: none; }
 .main-services__list li .main-services__more { text-align: right; font-size: 13px; font-family: "Roboto", Arial, "Helvetica Neue", Helvetica, sans-serif; }
 .main-services__list a { display: block; padding: 13px 30px 12px; color: white; text-decoration: none; font-size: 14px; line-height: 15px; font-family: "Roboto Condensed", Arial, "Helvetica Neue", Helvetica, sans-serif; }
@@ -1041,10 +1040,11 @@ a:hover { text-decoration: underline; }
 .about { height: 240px; }
 
 .spring-discounts { height: 317px; }
+.spring-discounts .headline:before { display: none; }
+@media only screen and (max-width: 1220px) { .spring-discounts .headline:before { display: block; } }
 .spring-discounts .thumbnail { position: relative; }
 
 .latest-works { height: 317px; }
-.latest-works .headline { border-width: 1px 0; }
 
 .latest-works__group { *zoom: 1; }
 .latest-works__group:after { content: " "; display: table; clear: both; }
@@ -1074,6 +1074,9 @@ a:hover { text-decoration: underline; }
 .social__group li.social__pin { background: #d1373d; }
 .social__group li.social__vk { background: #4d6e92; }
 
+.box-body { position: relative; *zoom: 1; }
+.box-body:after { content: " "; display: table; clear: both; }
+
 .headline { position: relative; height: 77px; line-height: 77px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; position: relative; padding: 0 27px; }
 .headline .link-more { position: absolute; right: 41px; top: 39px; line-height: 1; text-transform: uppercase; font-family: "Roboto Condensed", Arial, "Helvetica Neue", Helvetica, sans-serif; }
 
@@ -1098,14 +1101,14 @@ a:hover { text-decoration: underline; }
 
 .head__title { margin-bottom: 0; line-height: 1; display: inline-block; vertical-align: middle; }
 
-.main-services__list li:before, .dline, .dline-vert, .dline_right { position: absolute; top: 0; left: 0; right: 0; height: 1px; background: url("../img/dline.png"); background-repeat: repeat-x; content: ""; z-index: 10; }
+.search__dropdown:before, .main-services__list li:before, .about .box-body:before, .spring-discounts .headline:before, .spring-discounts .box-body:before, .latest-works .headline:before, .dline, .main-services__cover:before, .spring-discounts:before, .dline-vert, .dline_bottom, .dline_right { position: absolute; top: 0; left: 0; right: 0; height: 1px; background: url("../img/dline.png"); background-repeat: repeat-x; content: ""; z-index: 10; }
 
-.dline-vert { right: auto; height: auto; bottom: 0; width: 1px; background-repeat: repeat-y; }
+.main-services__cover:before, .spring-discounts:before, .dline-vert { right: auto; height: auto; bottom: 0; width: 1px; background-repeat: repeat-y; }
 
 .dline_bottom { top: auto; bottom: 0; }
 
-.dline_right { top: 0; left: auto; bottom: 0; right: 0; }
+.main-services__cover:before, .dline_right { top: 0; left: auto; bottom: 0; right: 0; }
 
-.dline_dark { background: url("../img/dline_dark.png"); }
+.main-services__cover:before, .dline_dark { background: url("../img/dline_dark.png"); }
 
-.dline_xdark { background: url("../img/dline_extradark.png"); }
+.main-services__list li:before, .dline_xdark { background: url("../img/dline_extradark.png"); }

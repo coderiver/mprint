@@ -228,6 +228,8 @@ a
 	background: $color-invert
 	z-index: 100
 	display: none
+	&:before
+		@extend %dline
 	li
 		// margin-left: -1px
 		+text-overflow
@@ -367,8 +369,12 @@ a
 	+box
 	padding: 50px
 	z-index: 20
+	&:before
+		@extend %dline_vert
+		@extend %dline_right
+		@extend %dline_dark
 	&:hover
-		.dline_right
+		&:before
 			display: none
 	a
 		color: $color-invert
@@ -396,7 +402,7 @@ a
 		text-align: left
 		&:before
 			@extend %dline
-			background: url('../img/dline_extradark.png') !important
+			@extend %dline_xdark
 		&:first-child
 			&:before
 				content: none
@@ -466,15 +472,31 @@ a
 
 .about
 	height: 240px
+	.box-body
+		&:before
+			@extend %dline
 .spring-discounts
 	height: 317px
+	&:before
+		@extend %dline_vert
 	.headline
+		&:before
+			@extend %dline
+			display: none
+			+r(w1220)
+				@extend %dline
+				display: block
+	.box-body
+		&:before
+			@extend %dline
 	.thumbnail
 		position: relative
 .latest-works
 	height: 317px
 	.headline
-		border-width: 1px 0
+		&:before
+			@extend %dline
+		// border-width: 1px 0
 .latest-works__group
 	+clr
 .latest-works__item
@@ -552,6 +574,10 @@ a
 		&.social__vk
 			background: #4d6e92
 
+.box
+.box-body
+	position: relative
+	+clr
 .headline
 	position: relative
 	height: 77px
@@ -621,26 +647,42 @@ a
 	z-index: 10
 .dline
 	@extend %dline
-.dline-vert
+
+%dline_vert
 	@extend %dline
 	right: auto
 	height: auto
 	bottom: 0
 	width: 1px
 	background-repeat: repeat-y
-.dline_bottom
+.dline-vert
+	@extend %dline_vert
+
+%dline_bottom
+	@extend %dline
 	top: auto
 	bottom: 0
-.dline_right
+.dline_bottom
+	@extend %dline_bottom
+
+%dline_right
 	@extend %dline
 	top: 0
 	left: auto
 	bottom: 0
 	right: 0
-.dline_dark
+.dline_right
+	@extend %dline_right
+
+%dline_dark
 	background: url('../img/dline_dark.png')
-.dline_xdark
+.dline_dark
+	@extend %dline_dark
+
+%dline_xdark
 	background: url('../img/dline_extradark.png')
+.dline_xdark
+	@extend %dline_xdark
 // <div class="dline dline_dark"></div>
 // <div class="dline dline_bottom"></div>
 // <div class="dline-vert dline_xdark"></div>
