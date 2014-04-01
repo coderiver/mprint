@@ -687,3 +687,62 @@ a
 // <div class="dline dline_bottom"></div>
 // <div class="dline-vert dline_xdark"></div>
 // <div class="dline-vert dline_right"></div>
+
+
+.main-heading
+	padding: 0 27px
+	height: 84px
+	line-height: 84px
+	position: relative
+.main-heading__title
+	@extend %h1
+	margin-bottom: 0
+	display: inline-block
+	vertical-align: middle
+	line-height: 1
+
+.news
+.news__group
+	overflow: hidden
+.news__item
+	height: 480px
+	// overflow: hidden
+	&:before
+		@extend %dline_vert
+		@extend %dline_right
+		right: -1px
+	// &:first-child
+	// 	&:before
+	// 		content: none
+	.headline
+		height: 85px
+		line-height: 85px
+		background: $bg-invert
+	.title
+		color: $color-invert
+	.box-body
+		height: 395px
+		overflow: hidden
+
+.loadmoar
+	padding-top: 25px
+	padding-bottom: 20px
+	text-align: center
+	clear: both
+	a
+		height: 60px
+		line-height: 1
+		display: inline-block
+		position: relative
+		font-family: $font-alt
+		font-size: 16px
+		text-transform: uppercase
+		color: $color-blue
+		text-decoration: none
+		&:before
+			position: absolute
+			bottom: 0
+			left: 50%
+			margin-left: -32px
+			+s(arr)
+			content: ""
