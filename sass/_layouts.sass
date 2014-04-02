@@ -1,9 +1,49 @@
 // default layout
-.l
+.layout
 	+clr
-	.l-col1
-		float: left
-		width: 20%
-	.l-col2
-		float: right
-		width: 70%
+	&.has-fixedsidebar
+		.l-main
+			&:before
+				content: ""
+			+r(w1220)
+				width: 720px
+		.l-sidebar
+			position: relative
+			display: block
+			background: #fff
+			&.is-fixed
+				position: fixed
+				top: 70px
+				// bottom: 0
+.l-main
+	float: left
+	width: 960px
+	+box
+	position: relative
+	&:before
+		position: absolute
+		top: 0
+		right: -1px
+		bottom: 0
+		width: 1px
+		background: $border-color-base
+		content: ""
+		// border-right: 1px solid #e6e6e6
+	+r(w1220)
+		&:before
+			content: none
+.l-sidebar
+	position: relative
+	float: right
+	width: 240px
+	+box
+	&:before
+		position: absolute
+		top: 0
+		left: 0
+		bottom: 0
+		width: 1px
+		background: $border-color-base
+		content: ""
+	+r(w1220)
+		display: none
