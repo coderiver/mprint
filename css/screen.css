@@ -1123,13 +1123,13 @@ a:hover { text-decoration: underline; }
 .info .g-date { float: left; }
 .info .link-more { float: right; }
 
-.search__dropdown:before, .main-services__list li:before, .about .box-body:before, .spring-discounts .headline:before, .spring-discounts .box-body:before, .latest-works .headline:before, .dline, .main-services__cover:before, .spring-discounts:before, .dline-vert, .news__item:before, .dline_bottom, .contact__main .headline_extra:before, .faq .headline_extra:before, .dline_right, .contact__main .thumbnail:before { position: absolute; top: 0; left: 0; right: 0; height: 1px; background: url("../img/dline.png"); background-repeat: repeat-x; content: ""; z-index: 10; }
+.search__dropdown:before, .main-services__list li:before, .about .box-body:before, .spring-discounts .headline:before, .spring-discounts .box-body:before, .latest-works .headline:before, .dline, .main-services__cover:before, .spring-discounts:before, .dline-vert, .news__item:before, .catalog__item-inner:before, .dline_bottom, .contact__main .headline_extra:before, .faq .headline_extra:before, .dline_right, .contact__main .thumbnail:before, .catalog__item:before { position: absolute; top: 0; left: 0; right: 0; height: 1px; background: url("../img/dline.png"); background-repeat: repeat-x; content: ""; z-index: 10; }
 
-.main-services__cover:before, .spring-discounts:before, .dline-vert, .news__item:before { right: auto; height: auto; bottom: 0; width: 1px; background-repeat: repeat-y; }
+.main-services__cover:before, .spring-discounts:before, .dline-vert, .news__item:before, .catalog__item-inner:before { right: auto; height: auto; bottom: 0; width: 1px; background-repeat: repeat-y; }
 
 .dline_bottom, .contact__main .headline_extra:before, .faq .headline_extra:before { top: auto; bottom: 0; }
 
-.main-services__cover:before, .dline_right, .news__item:before { top: 0; left: auto; bottom: 0; right: 0; }
+.main-services__cover:before, .dline_right, .news__item:before, .catalog__item-inner:before { top: 0; left: auto; bottom: 0; right: 0; }
 
 .main-services__cover:before, .dline_dark { background: url("../img/dline_dark.png"); }
 
@@ -1168,6 +1168,13 @@ a:hover { text-decoration: underline; }
 .sidenav > li.is-active .sidenav__head i { background: url('../img/icons-s72267aa69e.png') 0 -585px no-repeat; width: 9px; height: 6px; }
 .sidenav > li.is-active .sidenav__sub { display: block; }
 .sidenav > li.is-active .sidenav__head, .sidenav > li:hover .sidenav__head { border-color: #efefef; background: #efefef; }
+
+.catalog__list { overflow: hidden; }
+
+.catalog__item { height: 395px; }
+
+.catalog__item-inner { padding: 15px 27px; }
+.catalog__item-inner:before { right: -1px; }
 
 .faq__main { padding: 30px 27px; }
 

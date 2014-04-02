@@ -849,6 +849,23 @@ a
 			border-color: #efefef
 			background: #efefef
 
+.catalog
+	.headline_extra
+		// &:before
+		// 	@extend %dline
+		// 	@extend %dline_bottom
+.catalog__list
+	overflow: hidden
+.catalog__item
+	height: 395px
+	&:before
+		@extend %dline
+.catalog__item-inner
+	padding: 15px 27px
+	&:before
+		@extend %dline_vert
+		@extend %dline_right
+		right: -1px
 .faq
 	.headline_extra
 		&:before
