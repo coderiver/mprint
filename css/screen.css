@@ -1123,34 +1123,32 @@ a:hover { text-decoration: underline; }
 .info .g-date { float: left; }
 .info .link-more { float: right; }
 
-.search__dropdown:before, .main-services__list li:before, .about .box-body:before, .spring-discounts .headline:before, .spring-discounts .box-body:before, .latest-works .headline:before, .dline, .main-services__cover:before, .spring-discounts:before, .dline-vert, .news__item:before, .catalog__item-inner:before, .dline_bottom, .contact__main .headline_extra:before, .faq .headline_extra:before, .dline_right, .contact__main .thumbnail:before, .catalog__item:before { position: absolute; top: 0; left: 0; right: 0; height: 1px; background: url("../img/dline.png"); background-repeat: repeat-x; content: ""; z-index: 10; }
+.search__dropdown:before, .main-services__list li:before, .about .box-body:before, .spring-discounts .headline:before, .spring-discounts .box-body:before, .latest-works .headline:before, .dline, .main-services__cover:before, .spring-discounts:before, .dline-vert, .news [class^="col-"]:before, .news [class*=" col-"]:before, .catalog__item:before, .dline_bottom, .contact .headline_extra:before, .faq .headline_extra:before, .dline_right, .contact .thumbnail:before, .catalog [class^="col-"]:before, .catalog [class*=" col-"]:before { position: absolute; top: 0; left: 0; right: 0; height: 1px; background: url("../img/dline.png"); background-repeat: repeat-x; content: ""; z-index: 10; }
 
-.main-services__cover:before, .spring-discounts:before, .dline-vert, .news__item:before, .catalog__item-inner:before { right: auto; height: auto; bottom: 0; width: 1px; background-repeat: repeat-y; }
+.main-services__cover:before, .spring-discounts:before, .dline-vert, .news [class^="col-"]:before, .news [class*=" col-"]:before, .catalog__item:before { right: auto; height: auto; bottom: 0; width: 1px; background-repeat: repeat-y; }
 
-.dline_bottom, .contact__main .headline_extra:before, .faq .headline_extra:before { top: auto; bottom: 0; }
+.dline_bottom, .contact .headline_extra:before, .faq .headline_extra:before { top: auto; bottom: 0; }
 
-.main-services__cover:before, .dline_right, .news__item:before, .catalog__item-inner:before { top: 0; left: auto; bottom: 0; right: 0; }
+.main-services__cover:before, .dline_right, .news [class^="col-"]:before, .news [class*=" col-"]:before, .catalog__item:before { top: 0; left: auto; bottom: 0; right: 0; }
 
 .main-services__cover:before, .dline_dark { background: url("../img/dline_dark.png"); }
 
 .main-services__list li:before, .dline_xdark { background: url("../img/dline_extradark.png"); }
 
-.news__group { overflow: hidden; }
-
-.news__item { height: 480px; }
-.news__item:before { right: -1px; }
-.news__item .headline { height: 85px; line-height: 85px; background: #353535; }
-.news__item .title { color: white; }
-.news__item .box-body { height: 395px; overflow: hidden; }
+.news .section { overflow: hidden; }
+.news [class^="col-"], .news [class*=" col-"] { height: 480px; }
+.news [class^="col-"]:before, .news [class*=" col-"]:before { right: -1px; }
+.news [class^="col-"] .headline, .news [class*=" col-"] .headline { height: 85px; line-height: 85px; background: #353535; }
+.news [class^="col-"] .title, .news [class*=" col-"] .title { color: white; }
+.news [class^="col-"] .box-body, .news [class*=" col-"] .box-body { height: 395px; overflow: hidden; }
 
 .loadmoar { padding-top: 25px; padding-bottom: 20px; text-align: center; clear: both; }
 .loadmoar a { height: 60px; line-height: 1; display: inline-block; position: relative; font-family: "Roboto Condensed", Arial, "Helvetica Neue", Helvetica, sans-serif; font-size: 16px; text-transform: uppercase; color: #00aeef; text-decoration: none; }
 .loadmoar a:before { position: absolute; bottom: 0; left: 50%; margin-left: -32px; background: url('../img/icons-s5314def4ee.png') 0 -471px no-repeat; width: 63px; height: 31px; content: ""; }
 
-.contact__map iframe { display: block; }
-
-.contact__main .thumbnail { position: relative; float: none; height: 230px; width: auto; overflow: hidden; }
-.contact__main .caption { padding: 25px 27px 14px; }
+.contact iframe { display: block; }
+.contact .thumbnail { position: relative; float: none; height: 230px; width: auto; overflow: hidden; }
+.contact .caption { padding: 25px 27px 14px; }
 
 .contact__action { padding: 30px 27px; }
 .contact__action .btn { display: block; text-align: center; font-size: 13px; line-height: 1; font-family: "Roboto Condensed", Arial, "Helvetica Neue", Helvetica, sans-serif; text-decoration: none; background: #00aeef; color: white; padding: 17px 10px; }
@@ -1169,13 +1167,12 @@ a:hover { text-decoration: underline; }
 .sidenav > li.is-active .sidenav__sub { display: block; }
 .sidenav > li.is-active .sidenav__head, .sidenav > li:hover .sidenav__head { border-color: #efefef; background: #efefef; }
 
-.catalog__list { overflow: hidden; }
+.catalog .section { overflow: hidden; }
+.catalog [class^="col-"], .catalog [class*=" col-"] { height: 395px; }
+.catalog [class^="col-"] .h2, .catalog [class*=" col-"] .h2 { margin-bottom: 10px; }
 
-.catalog__item { height: 395px; }
-.catalog__item .h2 { margin-bottom: 10px; }
-
-.catalog__item-inner { padding: 15px 27px; }
-.catalog__item-inner:before { right: -1px; }
+.catalog__item { padding: 15px 27px; }
+.catalog__item:before { right: -1px; }
 
 .catalog__picture { margin-bottom: 35px; height: 205px; }
 .catalog__picture img { display: block; max-width: 100%; max-height: 230px; margin-left: auto; margin-right: auto; }
@@ -1184,22 +1181,22 @@ a:hover { text-decoration: underline; }
 
 .catalog__item-more { text-align: right; }
 
-.faq__main { padding: 30px 27px; }
+.faq .content__inner { padding: 30px 27px; }
+.faq .section { margin-bottom: 35px; }
 
-.faq__section { margin-bottom: 35px; }
+.reply { background-color: #f9f9f9; padding: 15px 25px 15px 53px; position: relative; }
+.reply .icon-reply { position: absolute; top: 16px; left: 15px; }
+.reply:before { position: absolute; top: -6px; bottom: -6px; left: 0; width: 1px; background: #c6c6c6; content: ""; }
+.reply p { margin-bottom: 0.5em; color: #5a5a5a; }
 
-.faq__content { background-color: #f9f9f9; padding: 15px 25px 15px 53px; position: relative; }
-.faq__content .icon-reply { position: absolute; top: 16px; left: 15px; }
-.faq__content:before { position: absolute; top: -6px; bottom: -6px; left: 0; width: 1px; background: #c6c6c6; content: ""; }
-.faq__content p { margin-bottom: 0.5em; color: #5a5a5a; }
-
-.portfolio__item { height: 240px; overflow: hidden; -webkit-transform: translate3d(0, 0, 0); -moz-transform: translate3d(0, 0, 0); -ms-transform: translate3d(0, 0, 0); -o-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); }
-.portfolio__item.is-preload { display: none; }
-.portfolio__item .loadmoar { padding: 0; height: 100%; width: 100%; }
-.portfolio__item .loadmoar a { display: block; height: 100%; line-height: 240px; width: 100%; }
-.portfolio__item .loadmoar a:before { content: none; }
-.portfolio__item .loadmoar a span { display: inline-block; vertical-align: middle; position: relative; height: 60px; line-height: 1; }
-.portfolio__item .loadmoar a span:before { position: absolute; bottom: 0; left: 50%; margin-left: -32px; background: url('../img/icons-s5314def4ee.png') 0 -471px no-repeat; width: 63px; height: 31px; content: ""; }
+.portfolio [class^="col-"], .portfolio [class*=" col-"] { height: 240px; overflow: hidden; -webkit-transform: translate3d(0, 0, 0); -moz-transform: translate3d(0, 0, 0); -ms-transform: translate3d(0, 0, 0); -o-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); }
+.portfolio [class^="col-"].has-loadbtn, .portfolio [class*=" col-"].has-loadbtn { float: right; }
+.portfolio [class^="col-"].is-preload, .portfolio [class*=" col-"].is-preload { display: none; }
+.portfolio .loadmoar { padding: 0; height: 100%; width: 100%; }
+.portfolio .loadmoar a { display: block; height: 100%; line-height: 240px; width: 100%; }
+.portfolio .loadmoar a:before { content: none; }
+.portfolio .loadmoar a span { display: inline-block; vertical-align: middle; position: relative; height: 60px; line-height: 1; }
+.portfolio .loadmoar a span:before { position: absolute; bottom: 0; left: 50%; margin-left: -32px; background: url('../img/icons-s5314def4ee.png') 0 -471px no-repeat; width: 63px; height: 31px; content: ""; }
 
 .work { position: relative; }
 .work:hover .work__overlay { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; }

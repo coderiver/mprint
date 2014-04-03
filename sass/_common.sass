@@ -705,27 +705,24 @@ a
 
 
 .news
-.news__group
-	overflow: hidden
-.news__item
-	height: 480px
-	// overflow: hidden
-	&:before
-		@extend %dline_vert
-		@extend %dline_right
-		right: -1px
-	// &:first-child
-	// 	&:before
-	// 		content: none
-	.headline
-		height: 85px
-		line-height: 85px
-		background: $bg-invert
-	.title
-		color: $color-invert
-	.box-body
-		height: 395px
+	.section
 		overflow: hidden
+	[class^="col-"],
+	[class*=" col-"]
+		height: 480px
+		&:before
+			@extend %dline_vert
+			@extend %dline_right
+			right: -1px
+		.headline
+			height: 85px
+			line-height: 85px
+			background: $bg-invert
+		.title
+			color: $color-invert
+		.box-body
+			height: 395px
+			overflow: hidden
 
 .loadmoar
 	padding-top: 25px
@@ -749,10 +746,9 @@ a
 			margin-left: -32px
 			+s(arr)
 			content: ""
-.contact__map
+.contact
 	iframe
 		display: block
-.contact__main
 	.headline_extra
 		&:before
 			@extend %dline_bottom
@@ -850,19 +846,16 @@ a
 			background: #efefef
 
 .catalog
-	.headline_extra
-		// &:before
-		// 	@extend %dline
-		// 	@extend %dline_bottom
-.catalog__list
-	overflow: hidden
+	.section
+		overflow: hidden
+	[class^="col-"],
+	[class*=" col-"]
+		height: 395px
+		&:before
+			@extend %dline
+		.h2
+			margin-bottom: 10px
 .catalog__item
-	height: 395px
-	&:before
-		@extend %dline
-	.h2
-		margin-bottom: 10px
-.catalog__item-inner
 	padding: 15px 27px
 	&:before
 		@extend %dline_vert
@@ -887,11 +880,12 @@ a
 		&:before
 			@extend %dline
 			@extend %dline_bottom
-.faq__main
-	padding: 30px 27px
-.faq__section
-	margin-bottom: 35px
-.faq__content
+	.content__inner
+		padding: 30px 27px
+	.section
+		margin-bottom: 35px
+
+.reply
 	background-color: #f9f9f9
 	padding: 15px 25px 15px 53px
 	position: relative
@@ -912,16 +906,16 @@ a
 		// font-size: $size-sm
 		color: #5a5a5a
 
-
 .portfolio
-.portfolio__section
-.portfolio__list
-.portfolio__item
-	height: 240px
-	overflow: hidden
-	+gpu
-	&.is-preload
-		display: none
+	[class^="col-"],
+	[class*=" col-"]
+		height: 240px
+		overflow: hidden
+		+gpu
+		&.has-loadbtn
+			float: right
+		&.is-preload
+			display: none
 	.loadmoar
 		padding: 0
 		height: 100%
@@ -946,6 +940,7 @@ a
 					margin-left: -32px
 					+s(arr)
 					content: ""
+
 .work
 	position: relative
 	&:hover
