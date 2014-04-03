@@ -591,6 +591,27 @@ a
 .box-body
 	position: relative
 	+clr
+
+.page-header
+	position: relative
+	+box
+	padding: 0 27px
+	height: 84px
+	line-height: 84px
+	.title
+		@extend %h1
+		margin-bottom: 0
+		display: inline-block
+		vertical-align: middle
+		line-height: 1
+	.link-more
+		position: absolute
+		right: 41px
+		top: 39px
+		line-height: 1
+		text-transform: uppercase
+		font-family: $font-alt
+
 .headline
 	position: relative
 	height: 77px
@@ -598,17 +619,6 @@ a
 	+box
 	position: relative
 	padding: 0 27px
-	&.headline_extra
-		padding: 0 27px
-		height: 84px
-		line-height: 84px
-		position: relative
-		.title
-			@extend %h1
-			margin-bottom: 0
-			display: inline-block
-			vertical-align: middle
-			line-height: 1
 	.link-more
 		position: absolute
 		right: 41px
@@ -749,7 +759,7 @@ a
 .contact
 	iframe
 		display: block
-	.headline_extra
+	.page-header
 		&:before
 			@extend %dline_bottom
 	.thumbnail
@@ -876,19 +886,19 @@ a
 	text-align: right
 
 .faq
-	.headline_extra
+	.page-header
 		&:before
 			@extend %dline
 			@extend %dline_bottom
 	.content__inner
 		padding: 30px 27px
-	.section
-		margin-bottom: 35px
+
 
 .reply
 	background-color: #f9f9f9
 	padding: 15px 25px 15px 53px
 	position: relative
+	margin-bottom: 35px
 	.icon-reply
 		position: absolute
 		top: 16px
