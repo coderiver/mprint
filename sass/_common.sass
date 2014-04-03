@@ -42,13 +42,6 @@ a
 	left: 0
 	z-index: -1
 
-.out
-	min-height: 100%
-	height: auto !important
-	height: 100%
-	margin: 0 auto -90px
-.footer, .push
-	height: 90px
 
 .page
 	position: relative
@@ -56,541 +49,6 @@ a
 	background-color: $color-invert
 	+box-shadow(0 0 10px #000)
 	padding-top: 70px
-
-.header
-	position: relative
-	color: $color-invert
-	+clr
-	height: 85px
-	&:before
-		position: absolute
-		top: 0
-		left: 0
-		right: 0
-		height: 4px
-		background: $color-base
-		content: ""
-	a
-		color: $color-invert
-.header__logo
-	a
-		display: block
-		+s(logo)
-		+hidetext
-.header__meta
-	float: right
-	margin-top: 20px
-	text-align: right
-
-.contacts
-	display: inline-block
-	vertical-align: top
-.contacts__group
-	display: inline-block
-	vertical-align: top
-	margin-left: 40px
-	text-align: left
-	font-size: 13px
-	li
-		margin-bottom: 0.3em
-	&:first-child
-		margin-left: 0
-
-.lang
-	position: relative
-	display: inline-block
-	vertical-align: top
-	margin: 0 25px 0 32px
-	padding-left: 24px
-	&:before
-		position: absolute
-		top: 0
-		left: 0
-		height: 46px
-		width: 1px
-		background: rgba(#fff, .33)
-		content: ""
-.lang__trigger
-	cursor: pointer
-	&:hover
-		span
-			border: none
-	i
-		margin-left: 5px
-
-.navbar
-	position: absolute
-	top: 0
-	left: 0
-	right: 0
-	// width: 100%
-	// @extend %in
-	+clr
-	+box
-	height: 70px
-	border: 1px solid $border-color-base
-	border-width: 1px 0
-	background-color: $bg-base
-	width: 1200px
-	margin-left: auto
-	margin-right: auto
-	+r(w1220)
-		width: 960px
-	&.is-fixed
-		position: fixed
-		z-index: 1000
-
-.sitenav
-	top: -1px
-.sitenav__ul
-	display: table
-	width: 100%
-	border-collapse: collapse
-	+box
-.sitenav__clause
-	position: relative
-	display: table-cell
-	font-family: $font-alt
-	font-size: 15px
-	text-transform: uppercase
-	text-align: center
-	border-left: 1px solid $border-color-base
-	+transition(.3s)
-	// margin-left: -1px
-	&:hover, &.is-active
-		background: $color-base
-		border-color: $color-base
-		a
-			color: $color-invert
-	&:first-child
-		border: none
-		// margin-left: 0
-	&.sitenav__clause_adv
-		&:before
-			position: absolute
-			top: 0
-			left: 0
-			+arr(20, 20, $color-pink, tl)
-			content: ""
-		&:hover, &.is-active
-			background: $color-pink
-			border-color: $color-pink
-	&.sitenav__clause_print
-		&:before
-			position: absolute
-			top: 0
-			left: -1px
-			+arr(20, 20, $color-blue, tl)
-			content: ""
-		&:hover, &.is-active
-			background: $color-blue
-			border-color: $color-blue
-	a
-		display: block
-		color: $color-base
-		text-decoration: none
-		line-height: 16px
-		padding: 27px .5em
-		white-space: nowrap
-		+transition(.3s)
-
-.search
-	top: -1px
-	height: 70px
-	font-family: $font-alt
-	border-left: 1px solid $border-color-base
-.search__query
-	display: block
-	width: 100%
-	font-family: $font-alt
-	+box
-	font-size: 14px
-	line-height: 20px
-	padding: 25px 27px
-	background: none
-	+font-smoothing
-	&:focus
-		+placeholder-color(transparent)
-.search__submit
-	position: absolute
-	top: 50%
-	margin-top: -14px
-	right: 27px
-	display: block
-	background: none
-	font-size: 22px
-	+r(w1220)
-		width: 100%
-		top: 0
-		right: 0
-		left: 0
-		bottom: 0
-		margin-top: 0
-		i
-			position: absolute
-			top: 50%
-			margin-top: -14px
-			left: 50%
-			margin-left: -10px
-			right: auto
-
-.search__dropdown
-	position: absolute
-	top: 70px - 1px
-	left: -1px
-	background: $color-invert
-	z-index: 100
-	display: none
-	&:before
-		@extend %dline
-	li
-		// margin-left: -1px
-		+text-overflow
-		color: $color-base
-		mark
-			font-weight: bold
-			background: none
-		a
-			display: block
-			font-family: $font-alt
-			font-weight: normal
-			padding: 0 27px
-			border: 1px solid $border-color-base
-			border-width: 0 1px 1px
-			font-size: 14px
-			height: 43px
-			line-height: 43px
-			color: $color-base
-			text-decoration: none
-		&:hover, &.is-selected
-			background: #efefef
-		// &:first-child
-		// 	border-top: 1px dashed #bbb
-
-.request
-	height: 70px
-	top: -1px
-	background: #7bc100
-	color: $color-invert
-	+transition(background .3s)
-	&:hover
-		background: $bg-invert
-.request__trigger
-	position: relative
-	cursor: default
-	top: 0
-	left: 0
-	right: 0
-	height: 100%
-.request__triggerlabel
-	position: relative
-	width: 170px
-	height: 70px
-	+box
-	padding-top: 20px
-	text-align: center
-	font-family: $font-alt
-	text-transform: uppercase
-	line-height: 1
-	font-size: $size-lg
-	&:before
-		position: absolute
-		top: 0
-		right: 0
-		bottom: 0
-		width: 1px
-		background: rgba(#fff, .4)
-		content: ""
-	span
-		text-transform: lowercase
-		font-size: $size-base
-.request__triggericon
-	font-size: 22px
-	position: absolute
-	top: 25px
-	right: 25px
-	+r(w1220)
-		left: 50%
-		right: auto
-		margin-left: -10px
-
-.teaser
-.teaser__slider
-	height: 480px
-	overflow: hidden
-	img //tmp
-		display: block
-		min-width: 100%
-
-.main-services
-	overflow: hidden
-	height: 480px
-	+r(w1220)
-		height: 240px
-.main-services__item
-	position: relative
-	overflow: hidden
-	display: block
-	height: 240px
-	color: $color-invert
-	text-align: center
-	+box
-	+r(w1220)
-		width: 50%
-		float: left
-	&.main-services__item_adv
-		background: #454545
-		&:before
-			position: absolute
-			top: 0
-			left: 0
-			+arr(20, 20, $color-pink, tl)
-			content: ""
-		.main-services__cover
-			&:hover
-				background: $color-pink
-		.main-services__list
-			a
-				&:hover
-					background: #555555
-	&.main-services__item_print
-		background: #353535
-		&:before
-			position: absolute
-			top: -1px
-			left: 0
-			+arr(20, 20, $color-blue, tl)
-			content: ""
-			z-index: 20
-			+r(w1220)
-				left: -1px
-		.main-services__cover
-			position: relative
-			&:hover
-				background: $color-blue
-		.main-services__list
-			a
-				&:hover
-					background: #454545
-
-
-.main-services__cover
-	position: relative
-	float: left
-	width: 240px
-	height: 241px
-	+box
-	padding: 50px
-	z-index: 20
-	&:before
-		@extend %dline_vert
-		@extend %dline_right
-		@extend %dline_dark
-	&:hover
-		&:before
-			display: none
-	a
-		color: $color-invert
-		text-decoration: none
-.main-services__cover-hotzone
-	position: absolute
-	top: 0
-	left: 0
-	right: 0
-	bottom: 0
-.main-services__icon
-	margin-bottom: 25px
-
-.main-services__title
-	text-transform: uppercase
-	font-weight: 500
-	font-size: 16px
-	line-height: 1
-	color: $color-invert
-
-.main-services__list
-	overflow: hidden
-	li
-		position: relative
-		text-align: left
-		&:before
-			@extend %dline
-			@extend %dline_xdark
-		&:first-child
-			&:before
-				content: none
-		.main-services__more
-			text-align: right
-			font-size: 13px
-			font-family: $font-base
-			// padding: 15px 30px
-	a
-		display: block
-		padding: 13px 30px 12px
-		color: $color-invert
-		text-decoration: none
-		font-size: 14px
-		line-height: 15px
-		font-family: $font-alt
-
-.footer
-	height: 90px
-	color: #c7c7c7
-	.container
-		padding-top: 30px
-		padding-left: 25px
-		padding-right: 25px
-	a //test
-		color: #c7c7c7
-		text-decoration: underline
-.footer__right
-	float: right
-	text-align: right
-.footer__contacts
-	margin-left: 30px
-	display: inline-block
-	vertical-align: top
-.footer__social
-	position: relative
-	display: inline-block
-	vertical-align: top
-	line-height: 1.1
-	padding-right: 45px
-	&:before
-		position: absolute
-		top: -5px
-		right: 0
-		height: 46px
-		width: 1px
-		background: rgba(#fff, .33)
-		content: ""
-	ul
-		display: inline-block
-		vertical-align: top
-		padding-top: 2px
-	li
-		display: inline-block
-		vertical-align: middle
-		font-size: 22px
-		margin-left: 19px
-		&:first-child
-			margin-left: 0
-		span
-			+hidetext
-.footer__social-title
-	display: inline-block
-	vertical-align: top
-	margin-right: 23px
-	font-size: $size-sm
-
-.about
-	height: 240px
-	.box-body
-		&:before
-			@extend %dline
-.spring-discounts
-	height: 317px
-	&:before
-		@extend %dline_vert
-	.headline
-		&:before
-			@extend %dline
-			display: none
-			+r(w1220)
-				@extend %dline
-				display: block
-	.box-body
-		&:before
-			@extend %dline
-	.thumbnail
-		position: relative
-.latest-works
-	height: 317px
-	.headline
-		&:before
-			@extend %dline
-		// border-width: 1px 0
-.latest-works__group
-	+clr
-.latest-works__item
-	width: 240px
-	height: 240px
-	float: left
-	overflow: hidden
-	img
-		display: block
-		min-width: 100%
-		max-height: 100%
-
-.subscribe
-	height: 240px
-	background: #417184
-	text-align: center
-	color: $color-invert
-	font-family: $font-base
-.subscribe__icon
-	padding-top: 26px
-	margin-bottom: 20px
-	i
-		font-size: 68px
-.subscribe__title
-	font-family: $font-base
-	font-weight: 500
-	font-size: 16px
-	text-transform: uppercase
-	margin-bottom: 35px
-.subscribe__link
-	font-size: 13px
-	cursor: pointer
-.social
-	// float: right
-.social__group
-	+clr
-	li
-		position: relative
-		float: left
-		width: 120px
-		height: 120px
-		line-height: 120px
-		text-align: center
-		+gpu
-		span
-			+hidetext
-		i
-			display: inline-block
-			vertical-align: middle
-			line-height: 1
-			font-size: 32px
-		a
-			display: block
-			height: 100%
-			color: $color-invert
-			&:before
-				position: absolute
-				top: 0
-				right: 0
-				bottom: 0
-				left: 0
-				background: rgba(#000, .5)
-				content: ""
-				+transition(.3s)
-				+opacity(1)
-			&:hover
-				&:before
-					+opacity(0)
-		&.social__fb
-			background: #3b5998
-		&.social__rss
-			background: #f48400
-		&.social__pin
-			background: #d1373d
-		&.social__vk
-			background: #4d6e92
-
-.box
-.box-body
-	position: relative
-	+clr
 
 .page-header
 	position: relative
@@ -626,37 +84,92 @@ a
 		line-height: 1
 		text-transform: uppercase
 		font-family: $font-alt
-.title
-	display: inline-block
-	vertical-align: middle
-	line-height: 1
-	margin-bottom: 0 !important
-.link-more
-	font-size: $size-base
-.thumbnail
-	float: left
-	width: 240px
-	height: 240px
-	overflow: hidden
-	img
-		display: block
-		max-width: 100%
-		min-height: 100%
+	.title
+		display: inline-block
+		vertical-align: middle
+		line-height: 1
+		margin-bottom: 0 !important
+
+
+
+
+.box-body
+	position: relative
+	+clr
+
+.box
+	.thumbnail
+		float: left
+		width: 240px
+		height: 240px
+		overflow: hidden
+		img
+			display: block
+			max-width: 100%
+			min-height: 100%
+	.caption
+		overflow: hidden
+
+
 .caption
-	overflow: hidden
 	padding: 25px 27px
 	p
 		margin-bottom: 0.7em
-.g-date
-	display: inline-block
-	color: #b6b6b6
-	font-size: $size-base
+
+.thumbnail
+	> img, > a img
+		display: block
+		margin-left: auto
+		margin-right: auto
+		max-width: 100%
+
 .info
 	+clr
 	.g-date
 		float: left
 	.link-more
 		float: right
+
+.g-date
+	display: inline-block
+	color: #b6b6b6
+	font-size: $size-base
+
+.link-more
+	font-size: $size-base
+
+
+
+
+
+
+
+.loadmoar
+	padding-top: 25px
+	padding-bottom: 20px
+	text-align: center
+	clear: both
+	a
+		height: 60px
+		line-height: 1
+		display: inline-block
+		position: relative
+		font-family: $font-alt
+		font-size: 16px
+		text-transform: uppercase
+		color: $color-blue
+		text-decoration: none
+		&:before
+			position: absolute
+			bottom: 0
+			left: 50%
+			margin-left: -32px
+			+s(arr)
+			content: ""
+
+
+
+
 
 
 %dline
@@ -714,291 +227,10 @@ a
 
 
 
-.news
-	.section
-		overflow: hidden
-	[class^="col-"],
-	[class*=" col-"]
-		height: 480px
-		&:before
-			@extend %dline_vert
-			@extend %dline_right
-			right: -1px
-		.headline
-			height: 85px
-			line-height: 85px
-			background: $bg-invert
-		.title
-			color: $color-invert
-		.box-body
-			height: 395px
-			overflow: hidden
-
-.loadmoar
-	padding-top: 25px
-	padding-bottom: 20px
-	text-align: center
-	clear: both
-	a
-		height: 60px
-		line-height: 1
-		display: inline-block
-		position: relative
-		font-family: $font-alt
-		font-size: 16px
-		text-transform: uppercase
-		color: $color-blue
-		text-decoration: none
-		&:before
-			position: absolute
-			bottom: 0
-			left: 50%
-			margin-left: -32px
-			+s(arr)
-			content: ""
-.contact
-	iframe
-		display: block
-	.page-header
-		&:before
-			@extend %dline_bottom
-	.thumbnail
-		position: relative
-		float: none
-		height: 230px
-		width: auto
-		overflow: hidden
-		&:before
-			@extend %dline
-	.caption
-		padding: 25px 27px 14px
-.contact__action
-	padding: 30px 27px
-	.btn
-		display: block
-		text-align: center
-		font-size: $size-base
-		line-height: 1
-		font-family: $font-alt
-		text-decoration: none
-		background: $color-blue
-		color: $color-invert
-		padding: 17px 10px
-		b
-			display: block
-			font-size: $size-h2
-			font-weight: normal
-			text-transform: uppercase
 
 
-.sidenav
-	position: relative
-	font-family: $font-alt
-	border: 1px solid $border-color-base
-	border-width: 0 0 1px
-	// margin-bottom: 20px
-	&:before
-		position: absolute
-		top: 0
-		left: 0
-		+s(side_shadow)
-		content: ""
-	.sidenav__sub
-		display: none
-		a
-			display: block
-			position: relative
-			padding: 2px 35px
-			font-size: 15px
-			color: $color-base
-			text-decoration: none
-		li
-			margin-bottom: 10px
-			&.is-active, &:hover
-				a
-					&:before
-						position: absolute
-						top: 50%
-						margin-top: -4px
-						left: 24px
-						+s(caret)
-						content: ""
-	.sidenav__head
-		+box
-		border: 1px solid $border-color-base
-		border-width: 1px 0 0
-		cursor: pointer
-		height: 41px
-		line-height: 41px
-		span
-			font-size: 15px
-			position: relative
-			display: block
-			padding: 0 45px 0 25px
-			text-transform: uppercase
-		i
-			position: absolute
-			right: 28px
-			top: 50%
-			margin-top: -3px
-			+s(arrow_down)
-	> li.is-active
-		.sidenav__head
-			i
-				+s(arrow_up)
-		.sidenav__sub
-			display: block
-			// border: 1px solid $border-color-base
-			// border-width: 0 0 1px
-	> li.is-active, > li:hover
-		.sidenav__head
-			border-color: #efefef
-			background: #efefef
-
-.catalog
-	.section
-		overflow: hidden
-	[class^="col-"],
-	[class*=" col-"]
-		height: 395px
-		&:before
-			@extend %dline
-		.h2
-			margin-bottom: 10px
-.catalog__item
-	padding: 15px 27px
-	&:before
-		@extend %dline_vert
-		@extend %dline_right
-		right: -1px
-.catalog__picture
-	margin-bottom: 35px
-	height: 205px
-	img
-		display: block
-		max-width: 100%
-		max-height: 230px
-		margin-left: auto
-		margin-right: auto
-.catalog__item-desc
-	margin-bottom: 10px
-.catalog__item-more
-	text-align: right
-
-.faq
-	.page-header
-		&:before
-			@extend %dline
-			@extend %dline_bottom
-	.content__inner
-		padding: 30px 27px
 
 
-.reply
-	background-color: #f9f9f9
-	padding: 15px 25px 15px 53px
-	position: relative
-	margin-bottom: 35px
-	.icon-reply
-		position: absolute
-		top: 16px
-		left: 15px
-	&:before
-		position: absolute
-		top: -6px
-		bottom: -6px
-		left: 0
-		width: 1px
-		background: #c6c6c6
-		content: ""
-	p
-		margin-bottom: 0.5em
-		// font-size: $size-sm
-		color: #5a5a5a
 
-.portfolio
-	[class^="col-"],
-	[class*=" col-"]
-		height: 240px
-		overflow: hidden
-		+gpu
-		&.has-loadbtn
-			float: right
-		&.is-preload
-			display: none
-	.loadmoar
-		padding: 0
-		height: 100%
-		width: 100%
-		a
-			display: block
-			height: 100%
-			line-height: 240px
-			width: 100%
-			&:before
-				content: none
-			span
-				display: inline-block
-				vertical-align: middle
-				position: relative
-				height: 60px
-				line-height: 1
-				&:before
-					position: absolute
-					bottom: 0
-					left: 50%
-					margin-left: -32px
-					+s(arr)
-					content: ""
 
-.work
-	position: relative
-	&:hover
-		.work__overlay
-			+opacity(0)
-		.work__zoom
-			+opacity(1)
-		.work__desc
-			bottom: 0
-.work__picture
-	img
-		display: block
-		width: 240px
-		height: 240px
-.work__overlay
-	position: absolute
-	top: 0
-	left: 0
-	right: 0
-	bottom: 0
-	+opacity(1)
-	+transition(.3s all)
-	content: ""
-	background: rgba(#fff, .3)
-.work__zoom
-	position: absolute
-	top: 60px
-	left: 50%
-	margin-left: -36px
-	width: 72px
-	height: 72px
-	line-height: 72px
-	+border-radius(50%)
-	background: rgba(#fff, .5)
-	text-align: center
-	+transition(.3s all)
-	+opacity(0)
-	cursor: pointer
-	i
-		display: inline-block
-		vertical-align: middle
-		+s(zoom)
-.work__desc
-	position: absolute
-	bottom: -240px
-	left: 0
-	right: 0
-	padding: 10px 15px
-	+box
-	background: #fff
-	+transition(.3s all)
+

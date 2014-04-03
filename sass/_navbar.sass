@@ -1,0 +1,195 @@
+.navbar
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	// width: 100%
+	// @extend %in
+	+clr
+	+box
+	height: 70px
+	border: 1px solid $border-color-base
+	border-width: 1px 0
+	background-color: $bg-base
+	width: 1200px
+	margin-left: auto
+	margin-right: auto
+	+r(w1220)
+		width: 960px
+	&.is-fixed
+		position: fixed
+		z-index: 1000
+
+.sitenav
+	top: -1px
+.sitenav__ul
+	display: table
+	width: 100%
+	border-collapse: collapse
+	+box
+.sitenav__clause
+	position: relative
+	display: table-cell
+	font-family: $font-alt
+	font-size: 15px
+	text-transform: uppercase
+	text-align: center
+	border-left: 1px solid $border-color-base
+	+transition(.3s)
+	// margin-left: -1px
+	&:hover, &.is-active
+		background: $color-base
+		border-color: $color-base
+		a
+			color: $color-invert
+	&:first-child
+		border: none
+		// margin-left: 0
+	&.sitenav__clause_adv
+		&:before
+			position: absolute
+			top: 0
+			left: 0
+			+arr(20, 20, $color-pink, tl)
+			content: ""
+		&:hover, &.is-active
+			background: $color-pink
+			border-color: $color-pink
+	&.sitenav__clause_print
+		&:before
+			position: absolute
+			top: 0
+			left: -1px
+			+arr(20, 20, $color-blue, tl)
+			content: ""
+		&:hover, &.is-active
+			background: $color-blue
+			border-color: $color-blue
+	a
+		display: block
+		color: $color-base
+		text-decoration: none
+		line-height: 16px
+		padding: 27px .5em
+		white-space: nowrap
+		+transition(.3s)
+
+.search
+	top: -1px
+	height: 70px
+	font-family: $font-alt
+	border-left: 1px solid $border-color-base
+.search__query
+	display: block
+	width: 100%
+	font-family: $font-alt
+	+box
+	font-size: 14px
+	line-height: 20px
+	padding: 25px 27px
+	background: none
+	+font-smoothing
+	&:focus
+		+placeholder-color(transparent)
+.search__submit
+	position: absolute
+	top: 50%
+	margin-top: -14px
+	right: 27px
+	display: block
+	background: none
+	font-size: 22px
+	+r(w1220)
+		width: 100%
+		top: 0
+		right: 0
+		left: 0
+		bottom: 0
+		margin-top: 0
+		i
+			position: absolute
+			top: 50%
+			margin-top: -14px
+			left: 50%
+			margin-left: -10px
+			right: auto
+
+.search__dropdown
+	position: absolute
+	top: 70px - 1px
+	left: -1px
+	background: $color-invert
+	z-index: 100
+	display: none
+	&:before
+		@extend %dline
+	li
+		// margin-left: -1px
+		+text-overflow
+		color: $color-base
+		mark
+			font-weight: bold
+			background: none
+		a
+			display: block
+			font-family: $font-alt
+			font-weight: normal
+			padding: 0 27px
+			border: 1px solid $border-color-base
+			border-width: 0 1px 1px
+			font-size: 14px
+			height: 43px
+			line-height: 43px
+			color: $color-base
+			text-decoration: none
+		&:hover, &.is-selected
+			background: #efefef
+		// &:first-child
+		// 	border-top: 1px dashed #bbb
+
+.request
+	height: 70px
+	top: -1px
+	background: #7bc100
+	color: $color-invert
+	+transition(background .3s)
+	&:hover
+		background: $bg-invert
+.request__trigger
+	position: relative
+	cursor: default
+	top: 0
+	left: 0
+	right: 0
+	height: 100%
+.request__triggerlabel
+	position: relative
+	width: 170px
+	height: 70px
+	+box
+	padding-top: 20px
+	text-align: center
+	font-family: $font-alt
+	text-transform: uppercase
+	line-height: 1
+	font-size: $size-lg
+	&:before
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		width: 1px
+		background: rgba(#fff, .4)
+		content: ""
+	span
+		text-transform: lowercase
+		font-size: $size-base
+.request__triggericon
+	font-size: 22px
+	position: absolute
+	top: 25px
+	right: 25px
+	+r(w1220)
+		left: 50%
+		right: auto
+		margin-left: -10px

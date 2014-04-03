@@ -1,0 +1,22 @@
+.news
+	.section
+		overflow: hidden
+	[class^="col-"],
+	[class*=" col-"]
+		height: 480px
+		&:before
+			@extend %dline_vert
+			@extend %dline_right
+			right: -1px
+		.headline
+			height: 85px
+			line-height: 85px
+			background: $bg-invert
+		.title
+			color: $color-invert
+		.thumbnail
+			height: 395px
+			overflow: hidden
+			> img
+				height: 240px
+				max-height: 240px

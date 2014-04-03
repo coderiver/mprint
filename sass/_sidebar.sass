@@ -1,0 +1,62 @@
+.sidenav
+	position: relative
+	font-family: $font-alt
+	border: 1px solid $border-color-base
+	border-width: 0 0 1px
+	&:before
+		position: absolute
+		top: 0
+		left: 0
+		+s(side_shadow)
+		content: ""
+	.sidenav__sub
+		display: none
+		a
+			display: block
+			position: relative
+			padding: 2px 35px
+			font-size: 15px
+			color: $color-base
+			text-decoration: none
+		li
+			margin-bottom: 10px
+			&.is-active, &:hover
+				a
+					&:before
+						position: absolute
+						top: 50%
+						margin-top: -4px
+						left: 24px
+						+s(caret)
+						content: ""
+	.sidenav__head
+		+box
+		border: 1px solid $border-color-base
+		border-width: 1px 0 0
+		cursor: pointer
+		height: 41px
+		line-height: 41px
+		span
+			font-size: 15px
+			position: relative
+			display: block
+			padding: 0 45px 0 25px
+			text-transform: uppercase
+		i
+			position: absolute
+			right: 28px
+			top: 50%
+			margin-top: -3px
+			+s(arrow_down)
+	> li.is-active
+		.sidenav__head
+			i
+				+s(arrow_up)
+		.sidenav__sub
+			display: block
+			// border: 1px solid $border-color-base
+			// border-width: 0 0 1px
+	> li.is-active, > li:hover
+		.sidenav__head
+			border-color: #efefef
+			background: #efefef

@@ -1,0 +1,60 @@
+.header
+	position: relative
+	color: $color-invert
+	+clr
+	height: 85px
+	&:before
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		height: 4px
+		background: $color-base
+		content: ""
+	a
+		color: $color-invert
+.header__logo
+	a
+		display: block
+		+s(logo)
+		+hidetext
+.header__meta
+	float: right
+	margin-top: 20px
+	text-align: right
+
+.contacts
+	display: inline-block
+	vertical-align: top
+.contacts__group
+	display: inline-block
+	vertical-align: top
+	margin-left: 40px
+	text-align: left
+	font-size: 13px
+	li
+		margin-bottom: 0.3em
+	&:first-child
+		margin-left: 0
+
+.lang
+	position: relative
+	display: inline-block
+	vertical-align: top
+	margin: 0 25px 0 32px
+	padding-left: 24px
+	&:before
+		position: absolute
+		top: 0
+		left: 0
+		height: 46px
+		width: 1px
+		background: rgba(#fff, .33)
+		content: ""
+.lang__trigger
+	cursor: pointer
+	&:hover
+		span
+			border: none
+	i
+		margin-left: 5px

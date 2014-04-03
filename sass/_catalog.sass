@@ -1,0 +1,21 @@
+.catalog
+	.section
+		overflow: hidden
+	[class^="col-"],
+	[class*=" col-"]
+		height: 395px
+		&:before
+			@extend %dline
+		.h2
+			margin-bottom: 10px
+		.thumbnail
+			padding-top: 15px
+			&:before
+				@extend %dline_vert
+				@extend %dline_right
+				right: -1px
+			> a
+				display: block
+				height: 230px
+				img
+					max-height: 230px

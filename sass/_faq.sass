@@ -1,0 +1,29 @@
+.faq
+	.page-header
+		&:before
+			@extend %dline
+			@extend %dline_bottom
+	.content__inner
+		padding: 30px 27px
+
+
+.reply
+	background-color: #f9f9f9
+	padding: 15px 25px 15px 53px
+	position: relative
+	margin-bottom: 35px
+	.icon-reply
+		position: absolute
+		top: 16px
+		left: 15px
+	&:before
+		position: absolute
+		top: -6px
+		bottom: -6px
+		left: 0
+		width: 1px
+		background: #c6c6c6
+		content: ""
+	p
+		margin-bottom: 0.5em
+		color: #5a5a5a
