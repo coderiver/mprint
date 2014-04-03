@@ -911,3 +911,89 @@ a
 		margin-bottom: 0.5em
 		// font-size: $size-sm
 		color: #5a5a5a
+
+
+.portfolio
+.portfolio__section
+.portfolio__list
+.portfolio__item
+	height: 240px
+	overflow: hidden
+	+gpu
+	&.is-preload
+		display: none
+	.loadmoar
+		padding: 0
+		height: 100%
+		width: 100%
+		a
+			display: block
+			height: 100%
+			line-height: 240px
+			width: 100%
+			&:before
+				content: none
+			span
+				display: inline-block
+				vertical-align: middle
+				position: relative
+				height: 60px
+				line-height: 1
+				&:before
+					position: absolute
+					bottom: 0
+					left: 50%
+					margin-left: -32px
+					+s(arr)
+					content: ""
+.work
+	position: relative
+	&:hover
+		.work__overlay
+			+opacity(0)
+		.work__zoom
+			+opacity(1)
+		.work__desc
+			bottom: 0
+.work__picture
+	img
+		display: block
+		width: 240px
+		height: 240px
+.work__overlay
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	+opacity(1)
+	+transition(.3s all)
+	content: ""
+	background: rgba(#fff, .3)
+.work__zoom
+	position: absolute
+	top: 60px
+	left: 50%
+	margin-left: -36px
+	width: 72px
+	height: 72px
+	line-height: 72px
+	+border-radius(50%)
+	background: rgba(#fff, .5)
+	text-align: center
+	+transition(.3s all)
+	+opacity(0)
+	cursor: pointer
+	i
+		display: inline-block
+		vertical-align: middle
+		+s(zoom)
+.work__desc
+	position: absolute
+	bottom: -240px
+	left: 0
+	right: 0
+	padding: 10px 15px
+	+box
+	background: #fff
+	+transition(.3s all)

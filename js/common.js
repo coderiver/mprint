@@ -18,6 +18,15 @@ $(document).ready(function() {
 		}
 	}
 
+	function workLoad() {
+		$('.has-loadbtn').on('click', function() {
+			$(this).siblings().removeClass('is-preload');
+			$(this).siblings().removeClass('is-hidden');
+			$(this).remove();
+			return false;
+		});
+	} workLoad();
+
 	function posSidebar() {
 
 		var el = $('.js-sidebar'),
