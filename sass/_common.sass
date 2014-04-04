@@ -77,6 +77,11 @@ a
 	+box
 	position: relative
 	padding: 0 27px
+	.title
+		display: inline-block
+		vertical-align: middle
+		line-height: 1
+		margin-bottom: 0 !important
 	.link-more
 		position: absolute
 		right: 41px
@@ -84,31 +89,7 @@ a
 		line-height: 1
 		text-transform: uppercase
 		font-family: $font-alt
-	.title
-		display: inline-block
-		vertical-align: middle
-		line-height: 1
-		margin-bottom: 0 !important
 
-
-
-
-.box-body
-	position: relative
-	+clr
-
-.box
-	.thumbnail
-		float: left
-		width: 240px
-		height: 240px
-		overflow: hidden
-		img
-			display: block
-			max-width: 100%
-			min-height: 100%
-	.caption
-		overflow: hidden
 
 
 .caption
@@ -117,6 +98,8 @@ a
 		margin-bottom: 0.7em
 
 .thumbnail
+	a
+		display: block
 	> img, > a img
 		display: block
 		margin-left: auto
@@ -138,10 +121,65 @@ a
 .link-more
 	font-size: $size-base
 
+.item_preview
+	position: relative
+	.thumbnail a
+		&:before
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			+opacity(1)
+			+transition(.3s all)
+			content: ""
+			background: rgba(#fff, .3)
+	&:hover
+		.thumbnail a
+			&:before
+				+opacity(0)
+		.icon-zoom
+			+opacity(1)
+		.caption
+			bottom: 0
+	.icon-zoom
+		position: absolute
+		top: 60px
+		left: 50%
+		margin-left: -36px
+		+transition(.4s all)
+		+opacity(0)
+	.caption
+		position: absolute
+		bottom: -240px
+		left: 0
+		right: 0
+		padding: 10px 15px
+		+box
+		background: #fff
+		+transition(.3s all)
+		p
+			margin-bottom: 0
+	.info .link-more
+		float: none
 
 
+.box-body
+	position: relative
+	+clr
 
-
+.box
+	.thumbnail
+		float: left
+		width: 240px
+		height: 240px
+		overflow: hidden
+		img
+			display: block
+			max-width: 100%
+			min-height: 100%
+	.caption
+		overflow: hidden
 
 
 .loadmoar

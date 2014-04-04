@@ -1,6 +1,5 @@
 .portfolio
-	[class^="col-"],
-	[class*=" col-"]
+	.item
 		height: 240px
 		overflow: hidden
 		+gpu
@@ -33,55 +32,3 @@
 					+s(arr)
 					content: ""
 
-
-.work
-	position: relative
-	&:hover
-		.work__overlay
-			+opacity(0)
-		.work__zoom
-			+opacity(1)
-		.work__desc
-			bottom: 0
-.work__picture
-	img
-		display: block
-		width: 240px
-		height: 240px
-.work__overlay
-	position: absolute
-	top: 0
-	left: 0
-	right: 0
-	bottom: 0
-	+opacity(1)
-	+transition(.3s all)
-	content: ""
-	background: rgba(#fff, .3)
-.work__zoom
-	position: absolute
-	top: 60px
-	left: 50%
-	margin-left: -36px
-	width: 72px
-	height: 72px
-	line-height: 72px
-	+border-radius(50%)
-	background: rgba(#fff, .5)
-	text-align: center
-	+transition(.3s all)
-	+opacity(0)
-	cursor: pointer
-	i
-		display: inline-block
-		vertical-align: middle
-		+s(zoom)
-.work__desc
-	position: absolute
-	bottom: -240px
-	left: 0
-	right: 0
-	padding: 10px 15px
-	+box
-	background: #fff
-	+transition(.3s all)

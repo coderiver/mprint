@@ -1,8 +1,7 @@
 .news
-	.section
+	.row
 		overflow: hidden
-	[class^="col-"],
-	[class*=" col-"]
+	.item
 		height: 480px
 		&:before
 			@extend %dline_vert
@@ -14,9 +13,6 @@
 			background: $bg-invert
 		.title
 			color: $color-invert
-		.thumbnail
+		.caption
 			height: 395px
 			overflow: hidden
-			> img
-				height: 240px
-				max-height: 240px

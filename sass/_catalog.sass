@@ -1,8 +1,7 @@
 .catalog
-	.section
+	.row
 		overflow: hidden
-	[class^="col-"],
-	[class*=" col-"]
+	.item
 		height: 395px
 		&:before
 			@extend %dline
@@ -10,12 +9,10 @@
 			margin-bottom: 10px
 		.thumbnail
 			padding-top: 15px
+			height: 230px
+			img
+				max-height: 230px
 			&:before
 				@extend %dline_vert
 				@extend %dline_right
 				right: -1px
-			> a
-				display: block
-				height: 230px
-				img
-					max-height: 230px
