@@ -1,0 +1,596 @@
+*
+	margin: 0
+	+selection
+		color: $color-invert
+		background: $color-blue
+
+body
+	font-family: $font-base
+	font-size: $size-base
+	+font-smoothing
+	color: $color-base
+	background-color: $bg-invert
+	line-height: 1.2
+	min-width: 980px
+
+a
+	color: $link-color-base
+	text-decoration: none
+	&:hover
+		text-decoration: none
+
+=fa
+	display: inline-block
+	font-family: FontAwesome
+	font-style: normal
+	font-weight: normal
+	line-height: 1
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+
+
+.b-request
+	.b-request__content
+		display: none
+		&.is-open
+			display: block
+
+
+.form__group
+	+clr
+	margin-bottom: 14px
+	&.form__group_mod
+		.form__label
+			line-height: 1
+			height: auto
+			// padding-top: 4px
+.form__label
+	position: relative
+	display: block
+	float: left
+	width: 172px
+	height: 39px
+	line-height: 39px
+	+box
+	span
+		position: relative
+		padding: 0 10px 0 14px
+		display: inline-block
+		vertical-align: middle
+		line-height: 1.3
+	i
+		position: absolute
+		top: 2px
+		left: -6px
+		+s(tooltip)
+.form__control
+	width: 254px
+	float: right
+.form__control_copy
+	.input
+		margin-right: 5px
+.form__moreinfo
+	margin-top: 6px
+	&.form__moreinfo_adr
+		.input
+			margin-left: -19px
+			width: 230px
+	.select_small
+		float: right
+	li
+		position: relative
+		padding-left: 43px
+		+clr
+		// height: 45px
+	li + li
+		.form__moreinfo-label span
+			&:before
+				+s(three_long)
+				top: 50%
+				margin-top: -64px
+.form__moreinfo-label
+	// position: relative
+	float: left
+	height: 41px
+	line-height: 41px
+	span
+		position: relative
+		line-height: 1
+		display: inline-block
+		vertical-align: middle
+		&:before
+			position: absolute
+			top: 50%
+			margin-top: -25px
+			left: -18px
+			+s(three)
+			content: ""
+.input
+	display: inline-block
+	vertical-align: middle
+	width: 100%
+	+box
+	padding: 9px 15px
+	line-height: 19px
+	font-size: $size-base
+	font-family: $font-base
+	border: 1px solid #d2d2d2
+	background: #fafafa
+	color: #767676
+	+placeholder-color(#767676)
+	&:focus
+		+placeholder-color(transparent)
+.input_small
+	width: 206px
+.input_xsmall
+	width: 40px
+	padding-left: 8px
+	padding-right: 8px
+	// text-align: center
+.textarea
+	width: 100%
+	+box
+	padding: 9px 15px
+	line-height: 19px
+	font-size: $size-base
+	font-family: $font-base
+	border: 1px solid #d2d2d2
+	background: #fafafa
+	color: #767676
+	+placeholder-color(#767676)
+	&:focus
+		+placeholder-color(transparent)
+	height: 88px
+	resize: none
+
+.select
+	position: relative
+	height: 39px
+	line-height: 39px
+	color: #353535
+	font-size: $size-base
+	font-family: $font-base
+	background: #fafafa
+	border: 1px solid #d2d2d2
+	&.select_small
+		width: 143px
+	&:hover
+		cursor: pointer
+	span
+		display: block
+		padding: 0px 32px 0 11px
+		overflow: hidden
+		text-overflow: ellipsis
+		white-space: nowrap
+		em
+			font-style: normal
+		i
+			// +fa
+			position: absolute
+			right: 14px
+			top: 50%
+			margin-top: -8px
+			// content: "\f107"
+			// // +s(arrow)
+			// color: #767676
+	&.is-open
+		.select__drop
+			display: block
+	.select__drop
+		display: none
+		position: absolute
+		top: 100%
+		left: -1px
+		right: -1px
+		// width: 100%
+		background-color: #fafafa
+		z-index: 100
+		border: 1px solid #d2d2d2
+		ul
+			margin: 0
+			// padding: 5px 0
+		li
+			padding: 2px 11px
+			margin: 0
+			&:before
+				content: none
+			&:hover
+				background-color: rgba(#ccc, .4)
+				cursor: pointer
+			span
+				padding: 0
+
+
+.radio
+	margin-bottom: 9px
+	label
+		position: relative
+		display: block
+		min-height: 16px
+		padding-left: 24px
+		cursor: pointer
+		input
+			opacity: 0
+			width: 16px
+			height: 16px
+		i
+			+s(radio)
+		input, i
+			position: absolute
+			top: 0
+			left: 0
+		input:checked + i:after
+			content: ""
+			position: absolute
+			top: 0
+			left: 0
+			+s(radio_checked)
+
+.checkbox
+	margin-bottom: 9px
+	label
+		position: relative
+		display: block
+		min-height: 14px
+		padding-left: 24px
+		cursor: pointer
+		input
+			opacity: 0
+			width: 14px
+			height: 14px
+		i
+			+s(checkbox)
+		input, i
+			position: absolute
+			top: 0
+			left: 0
+		input:checked + i:after
+			content: ""
+			position: absolute
+			top: 0
+			left: 0
+			+s(checkbox_checked)
+
+.btn
+	display: block
+	text-align: center
+	font-size: $size-base
+	line-height: 1
+	font-family: $font-alt
+	text-decoration: none
+	background: $color-blue
+	color: $color-invert
+	padding: 17px 10px
+	b
+		display: block
+		font-size: $size-h2
+		font-weight: normal
+		text-transform: uppercase
+
+.article
+	.row
+		position: relative
+		padding: 25px 27px
+		&:before
+			@extend %dline
+		&:first-child
+			&:before
+				display: none
+		> p
+			margin-bottom: 0.7em
+		> ul
+			li
+				padding-left: 9px
+				margin-top: 0.7em
+				&:first-child
+					margin-top: 0
+				&:before
+					content: "\f105"
+					+fa
+					margin-right: 5px
+	.share-widget
+		margin-top: 40px
+		margin-bottom: -10px
+
+.share-widget
+	+clr
+.share-widget__title
+	float: left
+	text-transform: uppercase
+	font-size: $font-base
+	font-family: $font-alt
+.share-widget__content
+	float: right
+	img
+		display: block
+
+.g-pseudo
+	text-decoration: none !important
+	border-bottom: 1px dashed
+	&:hover
+		text-decoration: none !important
+		border-bottom: none
+.g-pseudo-dark
+	color: $color-base
+	text-decoration: none !important
+	border-bottom: 1px dashed $color-base
+	&:hover
+		text-decoration: none !important
+		border-bottom: none
+
+#parallax-bg
+	background-repeat: repeat
+	position: fixed
+	width: 100%
+	bottom: 0
+	top: 0
+	left: 0
+	z-index: -1
+
+
+.page
+	position: relative
+	@extend %in
+	background-color: $color-invert
+	+box-shadow(0 0 10px #000)
+	padding-top: 70px
+
+.page-header
+	position: relative
+	+box
+	padding: 0 27px
+	height: 84px
+	line-height: 84px
+	.title
+		@extend %h1
+		margin-bottom: 0
+		display: inline-block
+		vertical-align: middle
+		line-height: 1
+	.link-more
+		position: absolute
+		right: 41px
+		top: 39px
+		line-height: 1
+		text-transform: uppercase
+		font-family: $font-alt
+		font-size: $size-base
+
+.headline
+	position: relative
+	height: 77px
+	line-height: 77px
+	+box
+	position: relative
+	padding: 0 27px
+	.title
+		display: inline-block
+		vertical-align: middle
+		line-height: 1
+		margin-bottom: 0 !important
+	.link-more
+		position: absolute
+		right: 41px
+		top: 39px
+		line-height: 1
+		text-transform: uppercase
+		font-family: $font-alt
+		font-size: $size-base
+
+
+
+.caption
+	padding: 25px 27px
+	p
+		margin-bottom: 0.7em
+
+.thumbnail
+	a
+		display: block
+	> img, > a img
+		display: block
+		margin-left: auto
+		margin-right: auto
+		max-width: 100%
+
+.info
+	+clr
+	.g-date
+		float: left
+	.link-more
+		float: right
+
+.g-date
+	display: inline-block
+	color: #b6b6b6
+	font-size: $size-base
+
+.items
+	&.works
+		.item
+			height: 240px
+			overflow: hidden
+			+gpu
+			&.has-loadbtn
+				float: right
+			&.is-preload
+				display: none
+		.loadmoar
+			padding: 0
+			height: 100%
+			width: 100%
+			a
+				display: block
+				height: 100%
+				line-height: 240px
+				width: 100%
+				&:before
+					content: none
+				span
+					display: inline-block
+					vertical-align: middle
+					position: relative
+					height: 60px
+					line-height: 1
+					&:before
+						position: absolute
+						bottom: 0
+						left: 50%
+						margin-left: -32px
+						+s(arr)
+						content: ""
+
+.preview
+	position: relative
+	overflow: hidden
+	.thumbnail a
+		&:before
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			+opacity(1)
+			+transition(.3s all)
+			content: ""
+			background: rgba(#fff, .3)
+	&:hover
+		.thumbnail a
+			&:before
+				+opacity(0)
+		.icon-zoom
+			+opacity(1)
+			+scale(1)
+		.caption
+			bottom: 0
+	.icon-zoom
+		position: absolute
+		top: 60px
+		left: 50%
+		margin-left: -36px
+		+transition(.3s all)
+		+opacity(0)
+		+scale(0)
+	.caption
+		position: absolute
+		bottom: -240px
+		left: 0
+		right: 0
+		padding: 10px 15px
+		+box
+		background: #fff
+		+transition(.3s all)
+		p
+			margin-bottom: 0
+	.info .link-more
+		float: none
+
+
+.box-body
+	position: relative
+	+clr
+
+// .box
+// 	.thumbnail
+// 		float: left
+// 		width: 240px
+// 		height: 240px
+// 		overflow: hidden
+// 		img
+// 			display: block
+// 			max-width: 100%
+// 			min-height: 100%
+// 	.caption
+// 		overflow: hidden
+
+
+.loadmoar
+	padding-top: 25px
+	padding-bottom: 20px
+	text-align: center
+	clear: both
+	a
+		height: 60px
+		line-height: 1
+		display: inline-block
+		position: relative
+		font-family: $font-alt
+		font-size: 16px
+		text-transform: uppercase
+		color: $color-blue
+		text-decoration: none
+		&:before
+			position: absolute
+			bottom: 0
+			left: 50%
+			margin-left: -32px
+			+s(arr)
+			content: ""
+
+
+
+
+
+
+%dline
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	height: 1px
+	background: url('../img/dline.png')
+	background-repeat: repeat-x
+	content: ""
+	z-index: 10
+.dline
+	@extend %dline
+
+%dline_vert
+	@extend %dline
+	right: auto
+	height: auto
+	bottom: 0
+	width: 1px
+	background-repeat: repeat-y
+.dline-vert
+	@extend %dline_vert
+
+%dline_bottom
+	@extend %dline
+	top: auto
+	bottom: 0
+.dline_bottom
+	@extend %dline_bottom
+
+%dline_right
+	@extend %dline
+	top: 0
+	left: auto
+	bottom: 0
+	right: 0
+.dline_right
+	@extend %dline_right
+
+%dline_dark
+	background: url('../img/dline_dark.png')
+.dline_dark
+	@extend %dline_dark
+
+%dline_xdark
+	background: url('../img/dline_extradark.png')
+.dline_xdark
+	@extend %dline_xdark
+// <div class="dline dline_dark"></div>
+// <div class="dline dline_bottom"></div>
+// <div class="dline-vert dline_xdark"></div>
+// <div class="dline-vert dline_right"></div>
+
+
+
+
+
+
+
+
+
+

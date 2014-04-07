@@ -1,0 +1,221 @@
+
+.teaser
+.teaser__slider
+	height: 480px
+	overflow: hidden
+	img //tmp
+		display: block
+		min-width: 100%
+
+.main-services
+	overflow: hidden
+	height: 480px
+	+r(w1220)
+		height: 240px
+.main-services__item
+	position: relative
+	overflow: hidden
+	display: block
+	height: 240px
+	color: $color-invert
+	text-align: center
+	+box
+	+r(w1220)
+		width: 50%
+		float: left
+	&.main-services__item_adv
+		background: #454545
+		&:before
+			position: absolute
+			top: 0
+			left: 0
+			+arr(20, 20, $color-pink, tl)
+			content: ""
+		.main-services__cover
+			&:hover
+				background: $color-pink
+		.main-services__list
+			a
+				&:hover
+					background: #555555
+	&.main-services__item_print
+		background: #353535
+		&:before
+			position: absolute
+			top: -1px
+			left: 0
+			+arr(20, 20, $color-blue, tl)
+			content: ""
+			z-index: 20
+			+r(w1220)
+				left: -1px
+		.main-services__cover
+			position: relative
+			&:hover
+				background: $color-blue
+		.main-services__list
+			a
+				&:hover
+					background: #454545
+
+
+.main-services__cover
+	position: relative
+	float: left
+	width: 240px
+	height: 241px
+	+box
+	padding: 50px
+	z-index: 20
+	&:before
+		@extend %dline_vert
+		@extend %dline_right
+		@extend %dline_dark
+	&:hover
+		&:before
+			display: none
+	a
+		color: $color-invert
+		text-decoration: none
+.main-services__cover-hotzone
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+.main-services__icon
+	margin-bottom: 25px
+
+.main-services__title
+	text-transform: uppercase
+	font-weight: 500
+	font-size: 16px
+	line-height: 1
+	color: $color-invert
+
+.main-services__list
+	overflow: hidden
+	li
+		position: relative
+		text-align: left
+		&:before
+			@extend %dline
+			@extend %dline_xdark
+		&:first-child
+			&:before
+				content: none
+		.main-services__more
+			text-align: right
+			font-size: 13px
+			font-family: $font-base
+			// padding: 15px 30px
+	a
+		display: block
+		padding: 13px 30px 12px
+		color: $color-invert
+		text-decoration: none
+		font-size: 14px
+		line-height: 15px
+		font-family: $font-alt
+
+.about
+	height: 240px
+	.caption
+		position: relative
+		&:before
+			@extend %dline
+
+.spring-discounts
+	height: 317px
+	&:before
+		@extend %dline_vert
+	.headline
+		position: relative
+		&:before
+			@extend %dline_bottom
+			display: block
+			+r(w1220)
+				@extend %dline_bottom
+				display: none
+	.caption
+		overflow: hidden
+		&:before
+			@extend %dline
+			display: none
+			+r(w1220)
+				@extend %dline
+				display: block
+	.thumbnail
+		position: relative
+		float: left
+
+.latest-works
+	height: 317px
+	.headline
+		&:before
+			@extend %dline
+
+.subscribe
+	height: 240px
+	background: #417184
+	text-align: center
+	color: $color-invert
+	font-family: $font-base
+.subscribe__icon
+	padding-top: 26px
+	margin-bottom: 20px
+	i
+		font-size: 68px
+.subscribe__title
+	font-family: $font-base
+	font-weight: 500
+	font-size: 16px
+	text-transform: uppercase
+	margin-bottom: 35px
+.subscribe__link
+	font-size: 13px
+	cursor: pointer
+
+.social-widget
+.social-widget__group
+	+clr
+	.social-widget__item
+		position: relative
+		float: left
+		width: 120px
+		height: 120px
+		line-height: 120px
+		text-align: center
+		+gpu
+		span
+			+hidetext
+		i
+			display: inline-block
+			vertical-align: middle
+			line-height: 1
+			font-size: 32px
+		a
+			display: block
+			height: 100%
+			color: $color-invert
+			&:before
+				position: absolute
+				top: 0
+				right: 0
+				bottom: 0
+				left: 0
+				background: rgba(#000, .5)
+				content: ""
+				+transition(.3s)
+				+opacity(1)
+			&:hover
+				&:before
+					+opacity(0)
+		&.social-widget__item_fb
+			background: #3b5998
+		&.social-widget__item_rss
+			background: #f48400
+		&.social-widget__item_pin
+			background: #d1373d
+		&.social-widget__item_vk
+			background: #4d6e92
