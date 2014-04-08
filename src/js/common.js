@@ -1,5 +1,25 @@
 $(document).ready(function() {
 
+	function formBlocks() {
+		// $('.form__moreinfo').hide();
+
+		$('.js-params input').on('click', function() {
+			if ($(this).parent().parent().hasClass('is-active')) {
+				$(this).parent().parent().removeClass('is-active');
+				// $(this).parent().parent().addClass('is-active');
+				// $(this).parent().parent().find('.form__moreinfo').hide();
+			}
+			// $(this).parent().parent().addClass('is-active');
+			else {
+				// $(this).parent().parent().removeClass('is-active');
+				$(this).parent().parent().parent().find('.js-params').removeClass('is-active');
+				$(this).parent().parent().addClass('is-active');
+				// $(this).parent().parent().find('.form__moreinfo').show();
+				// $(this).parent().parent().find('.form__moreinfo').show();
+			}
+		});
+	} formBlocks();
+
 	function request() {
 		$('.js-request-trigger').on('click', function() {
 			$(this).parent()

@@ -64,12 +64,17 @@ a
 		left: -6px
 		+s(tooltip)
 .form__control
-	width: 257px
+	width: 257px 
 	float: right
+	.js-params
+		&.is-active
+			.form__moreinfo
+				display: block
 .form__control_copy
 	.input
 		margin-right: 5px
 .form__moreinfo
+	display: none
 	margin-top: 10px
 	.progress
 		margin-left: -43px

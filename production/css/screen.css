@@ -940,10 +940,11 @@ a:hover { text-decoration: none; }
 .form__label i { position: absolute; top: 2px; left: -6px; background: url('../../src/img/icons-se731121497.png') 0 -697px no-repeat; width: 11px; height: 11px; }
 
 .form__control { width: 257px; float: right; }
+.form__control .js-params.is-active .form__moreinfo { display: block; }
 
 .form__control_copy .input { margin-right: 5px; }
 
-.form__moreinfo { margin-top: 10px; }
+.form__moreinfo { display: none; margin-top: 10px; }
 .form__moreinfo .progress { margin-left: -43px; }
 .form__moreinfo.form__moreinfo_adr .input { margin-left: -19px; width: 230px; }
 .form__moreinfo.form__moreinfo_file .form__moreinfo-label { float: none; }
