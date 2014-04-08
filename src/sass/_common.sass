@@ -317,18 +317,65 @@ a
 		&:first-child
 			&:before
 				display: none
-		> p
-			margin-bottom: 0.7em
-		> ul
-			li
-				padding-left: 9px
-				margin-top: 0.7em
-				&:first-child
-					margin-top: 0
-				&:before
-					content: "\f105"
-					+fa
-					margin-right: 5px
+	p
+		margin-bottom: 0.7em
+	p + h1, p + h2, p + h3
+		margin-top: 1.4em
+	ul, ol
+		li
+			margin-top: 0.7em
+			&:first-child
+				margin-top: 0
+	ol
+		list-style: none
+		counter-reset: point
+		li
+			position: relative
+			padding-left: 20px
+			&:before
+				position: absolute
+				left: -5px
+				top: -2px
+				width: 18px
+				// height: 18px
+				line-height: 12px
+				background: #efefef
+				+border-radius(50%)
+				font-size: 13px
+				// line-height: 18px
+				padding: 3px 0
+				text-align: center
+				content: counter(point)
+				counter-increment: point 1
+
+	ul
+		li
+			padding-left: 9px
+			&:before
+				content: "\f105"
+				+fa
+				margin-right: 5px
+	table
+		margin-top: 20px
+		margin-bottom: 10px
+		td, th
+			border: 1px solid #e8e8e8
+			padding: 10px 15px
+			min-width: 230px
+		th
+			font-size: $size-h2
+			font-family: $font-alt
+			text-transform: uppercase
+			font-weight: normal
+			font-style: normal
+			text-align: left
+	a[href^="http"]
+		&:after
+			+fa
+			// display: inline-block
+			content: "\f08e"
+			display: inline
+			margin-left: 5px
 	.share-widget
 		margin-top: 40px
 		margin-bottom: -10px
@@ -671,4 +718,9 @@ a
 	height: 100%
 
 
-
+.pagination
+	padding: 20px 27px 45px
+	a
+		text-transform: uppercase
+		color: $color-blue
+		text-decoration: none
