@@ -969,7 +969,7 @@ a:hover { text-decoration: none; }
 
 .input_xsmall { width: 40px; padding-left: 8px; padding-right: 8px; }
 
-.textarea { width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 9px 15px; line-height: 19px; font-size: 13px; font-family: "Roboto", Arial, "Helvetica Neue", Helvetica, sans-serif; border: 1px solid #d2d2d2; background: #fafafa; color: #767676; height: 88px; resize: none; }
+.textarea { display: block; width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 9px 15px; line-height: 19px; font-size: 13px; font-family: "Roboto", Arial, "Helvetica Neue", Helvetica, sans-serif; border: 1px solid #d2d2d2; background: #fafafa; color: #767676; height: 88px; resize: none; }
 .textarea:-moz-placeholder, .textarea::-moz-placeholder { color: #767676; opacity: 1; }
 .textarea::-webkit-input-placeholder { color: #767676; }
 .textarea:focus:-moz-placeholder, .textarea:focus::-moz-placeholder { color: transparent; opacity: 1; }
@@ -1003,8 +1003,12 @@ a:hover { text-decoration: none; }
 .checkbox label input, .checkbox label i { position: absolute; top: 0; left: 0; }
 .checkbox label input:checked + i:after { content: ""; position: absolute; top: 0; left: 0; background: url('../../src/img/icons-se731121497.png') 0 -673px no-repeat; width: 14px; height: 14px; }
 
-.btn { display: block; text-align: center; font-size: 13px; line-height: 1; font-family: "Roboto Condensed", Arial, "Helvetica Neue", Helvetica, sans-serif; text-decoration: none; background: #00aeef; color: white; padding: 17px 10px; }
-.btn b { display: block; font-size: 18px; font-weight: normal; text-transform: uppercase; }
+.btn-block { display: block; text-align: center; font-size: 13px; line-height: 1; font-family: "Roboto Condensed", Arial, "Helvetica Neue", Helvetica, sans-serif; text-decoration: none; background: #00aeef; color: white; padding: 17px 10px; }
+.btn-block b { display: block; font-size: 18px; font-weight: normal; text-transform: uppercase; }
+
+.btn { display: inline-block; background: #00aeef; color: white; font-size: 15px; line-height: 17px; width: 206px; text-transform: uppercase; text-decoration: none; padding: 11px 10px; text-align: center; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; font-family: "Roboto Condensed", Arial, "Helvetica Neue", Helvetica, sans-serif; -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -ms-font-smoothing: antialiased; -o-font-smoothing: antialiased; }
+
+.btn_link { background: transparent; color: #767676; }
 
 .article .row { position: relative; padding: 25px 27px; }
 .article .row:first-child:before { display: none; }

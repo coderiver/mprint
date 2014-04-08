@@ -145,6 +145,7 @@ a
 	padding-right: 8px
 	// text-align: center
 .textarea
+	display: block
 	width: 100%
 	+box
 	padding: 9px 15px
@@ -268,7 +269,7 @@ a
 			left: 0
 			+s(checkbox_checked)
 
-.btn
+.btn-block
 	display: block
 	text-align: center
 	font-size: $size-base
@@ -283,6 +284,24 @@ a
 		font-size: $size-h2
 		font-weight: normal
 		text-transform: uppercase
+
+.btn
+	display: inline-block
+	background: $color-blue
+	color: $color-invert
+	font-size: $size-lg
+	line-height: 17px
+	width: 206px
+	text-transform: uppercase
+	text-decoration: none
+	padding: 11px 10px
+	text-align: center
+	+box
+	font-family: $font-alt
+	+font-smoothing
+.btn_link
+	background: transparent
+	color: #767676
 
 .article
 	.row
@@ -629,7 +648,6 @@ a
 		display: inline-block
 		vertical-align: middle
 		+s(file)
-
 
 +keyframes(progress-animate)
 	0%
