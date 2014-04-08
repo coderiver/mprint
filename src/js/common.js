@@ -1,21 +1,13 @@
 $(document).ready(function() {
 
 	function formBlocks() {
-		// $('.form__moreinfo').hide();
-
 		$('.js-params input').on('click', function() {
 			if ($(this).parent().parent().hasClass('is-active')) {
 				$(this).parent().parent().removeClass('is-active');
-				// $(this).parent().parent().addClass('is-active');
-				// $(this).parent().parent().find('.form__moreinfo').hide();
 			}
-			// $(this).parent().parent().addClass('is-active');
 			else {
-				// $(this).parent().parent().removeClass('is-active');
 				$(this).parent().parent().parent().find('.js-params').removeClass('is-active');
 				$(this).parent().parent().addClass('is-active');
-				// $(this).parent().parent().find('.form__moreinfo').show();
-				// $(this).parent().parent().find('.form__moreinfo').show();
 			}
 		});
 	} formBlocks();
@@ -24,7 +16,6 @@ $(document).ready(function() {
 		$('.js-request-trigger').on('click', function() {
 			$(this).parent()
 				.find('.b-request__content')
-					// .slideDown('fast');
 					.addClass('is-open');
 			$(this).remove();
 			return false;
@@ -63,7 +54,6 @@ $(document).ready(function() {
 		var el = $('.js-sidebar'),
 				el_top = ($('.page').offset().top),
 				el_bottom = ($('.page').offset().top),
-				// top = $('.js-navbar').outerHeight(),
 				rt = ($(window).width() - ($('.page').offset().left + $('.page').outerWidth()));
 				el_height = $('.js-sidebar').outerHeight();
 
@@ -81,7 +71,6 @@ $(document).ready(function() {
 
 	function sideAccord() {
 		$('.js-sidenav .sidenav__head').on('click', function() {
-			// alert('gogogo');
 			$('.js-sidenav').children('li').removeClass('is-active');
 			$(this).parent().addClass('is-active');
 		});
@@ -140,6 +129,7 @@ $(document).ready(function() {
 		$('.js-select').removeClass('is-open');
 	});
 
+	//scroll document
 	$(window).scroll(function() {
 		if ($('.js-navbar').length) {
 			fixNavbar();
@@ -148,12 +138,10 @@ $(document).ready(function() {
 		posSidebar();
 
 	});
+
+	//resize document
 	$(window).resize(function() {
 		posSidebar();
 	});
-
-	// skrollr.init({
-	//	forceHeight: false
-	// });
 
 });
