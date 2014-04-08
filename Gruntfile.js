@@ -30,7 +30,7 @@
               dest: "production/fonts"
             }, {
               expand: true,
-              cwd: "src/js",
+              cwd: "src/js/",
               src: ["**"],
               dest: "production/js"
             }, {
