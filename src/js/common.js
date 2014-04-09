@@ -116,7 +116,8 @@ $(document).ready(function() {
 			event.stopPropagation();
 		});
 		item.bind("click",function(){
-			$(this).toggleClass("is-selected");
+			item.removeClass("is-selected");
+			$(this).addClass("is-selected");
 			var text = $(this).text();
 			var id = $(this).attr("data-id");
 			$(this).parents(".js-select").find(".js-select-text").text(text);

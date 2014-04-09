@@ -987,7 +987,7 @@ a:hover { text-decoration: none; }
 .select.is-open .select__drop { display: block; }
 .select .select__drop { display: none; position: absolute; top: 100%; left: -1px; right: -1px; background-color: #fafafa; z-index: 100; border: 1px solid #d2d2d2; }
 .select .select__drop ul { margin: 0; }
-.select .select__drop li { padding: 2px 11px; margin: 0; }
+.select .select__drop li { padding: 2px 11px !important; margin: 0; }
 .select .select__drop li:before { content: none; }
 .select .select__drop li:hover { background-color: rgba(204, 204, 204, 0.4); cursor: pointer; }
 .select .select__drop li span { padding: 0; }
