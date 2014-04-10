@@ -6,6 +6,41 @@
 	img //tmp
 		display: block
 		min-width: 100%
+.teaser__pager
+	position: absolute
+	z-index: 105
+	bottom: 30px
+	right: 40px
+	span
+		display: inline-block
+		width: 14px
+		height: 14px
+		+border-radius(50%)
+		background: #353535
+		cursor: pointer
+		+hidetext
+		margin-left: 6px
+		&.is-active
+			background: #d0d0d0
+.teaser__text
+	position: absolute
+	top: 30px
+	right: 40px
+	color: $color-base
+	text-align: right
+.teaser__title
+	font-family: $font-alt
+	font-size: 46px
+	text-transform: uppercase
+	font-weight: normal
+	line-height: 1
+.teaser__desc
+	font-size: $size-h2
+	text-transform: uppercase
+	margin-bottom: 20px
+	line-height: 1.1
+.teaser__action
+
 
 .main-services
 	overflow: hidden

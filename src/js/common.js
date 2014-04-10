@@ -1,5 +1,19 @@
 $(document).ready(function() {
 
+	$('.js-teaser-slider').cycle({
+		fx: "scrollHorz",
+		timeout: 0,
+		log: false,
+		slideActiveClass: "is-active",
+		pagerActiveClass: "is-active",
+		disabledClass: "is-disabled",
+		slideClass: "teaser__slider-item",
+		// allowWrap: "true",
+		pager: ".teaser__pager",
+		pagerTemplate: "<span>•</span>",
+		slides: ".teaser__slide",
+	});
+
 	function formBlocks() {
 		$('.js-params input').on('click', function() {
 			if ($(this).parent().parent().hasClass('is-active')) {

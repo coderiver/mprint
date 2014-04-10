@@ -1009,9 +1009,11 @@ a:hover { text-decoration: none; }
 .btn-block { display: block; text-align: center; font-size: 13px; line-height: 1; font-family: "Roboto Condensed", Arial, "Helvetica Neue", Helvetica, sans-serif; text-decoration: none; background: #00aeef; color: white; padding: 17px 10px; }
 .btn-block b { display: block; font-size: 18px; font-weight: normal; text-transform: uppercase; }
 
-.btn { display: inline-block; background: #00aeef; color: white; font-size: 15px; line-height: 17px; width: 206px; text-transform: uppercase; text-decoration: none; padding: 11px 10px; text-align: center; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; font-family: "Roboto Condensed", Arial, "Helvetica Neue", Helvetica, sans-serif; -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -ms-font-smoothing: antialiased; -o-font-smoothing: antialiased; }
+.btn { display: inline-block; background: #00aeef; color: white; font-size: 15px; line-height: 17px; min-width: 206px; text-transform: uppercase; text-decoration: none; padding: 11px 10px; text-align: center; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; font-family: "Roboto Condensed", Arial, "Helvetica Neue", Helvetica, sans-serif; -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -ms-font-smoothing: antialiased; -o-font-smoothing: antialiased; }
 
 .btn_link { background: transparent; color: #767676; }
+
+.btn_default { font-size: 13px; padding: 7px 10px; min-width: 110px; }
 
 .article .row { position: relative; padding: 25px 27px; }
 .article .row:first-child:before { display: none; }
@@ -1239,6 +1241,16 @@ a:hover { text-decoration: none; }
 
 .teaser__slider { height: 480px; overflow: hidden; }
 .teaser__slider img { display: block; min-width: 100%; }
+
+.teaser__pager { position: absolute; z-index: 105; bottom: 30px; right: 40px; }
+.teaser__pager span { display: inline-block; width: 14px; height: 14px; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; background: #353535; cursor: pointer; font: 0/0 a; text-shadow: none; color: transparent; margin-left: 6px; }
+.teaser__pager span.is-active { background: #d0d0d0; }
+
+.teaser__text { position: absolute; top: 30px; right: 40px; color: #353535; text-align: right; }
+
+.teaser__title { font-family: "Roboto Condensed", Arial, "Helvetica Neue", Helvetica, sans-serif; font-size: 46px; text-transform: uppercase; font-weight: normal; line-height: 1; }
+
+.teaser__desc { font-size: 18px; text-transform: uppercase; margin-bottom: 20px; line-height: 1.1; }
 
 .main-services { overflow: hidden; height: 480px; }
 @media only screen and (max-width: 1220px) { .main-services { height: 240px; } }
