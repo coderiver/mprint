@@ -13,6 +13,7 @@
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
 
 	<script src="js/jquery.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script>
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/20140216/jquery.cycle2.min.js"></script>
 	<script src="js/common.js"></script>
@@ -294,7 +295,15 @@
 				<div class="subscribe col-2 is-hidden-sm">
 					<div class="subscribe__icon"><i class="icon-bullhorn"></i></div>
 					<h2 class="subscribe__title">Хотите быть в курсе?</h2>
-					<span class="subscribe__link g-pseudo">Подпишитесь на новости</span>
+					<span class="subscribe__link g-pseudo js-subscribe">Подпишитесь на новости</span>
+					<div class="subscribe__form">
+						<form action="#">
+							<legend class="subscribe__legend">Подписка на новости</legend>
+							<input type="text" class="input" placeholder="Ваше имя*">
+							<input type="email" class="input" placeholder="E-mail адрес*">
+							<button class="btn btn-block">Подписаться</button>
+						</form>
+					</div>
 				</div>
 				<!-- end subscribe -->
 				<div class="social-widget col-2 is-hidden-sm">

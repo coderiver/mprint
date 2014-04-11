@@ -1021,6 +1021,7 @@ a:hover { text-decoration: none; }
 .article p + h1, .article p + h2, .article p + h3 { margin-top: 1.4em; }
 .article ul li, .article ol li { margin-top: 0.7em; }
 .article ul li:first-child, .article ol li:first-child { margin-top: 0; }
+.article blockquote { color: white; background: #00aeef; margin-bottom: 0.7em; padding: 10px; }
 .article ol { list-style: none; counter-reset: point; }
 .article ol li { position: relative; padding-left: 20px; }
 .article ol li:before { position: absolute; left: -5px; top: -2px; width: 18px; line-height: 12px; background: #efefef; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; font-size: 13px; padding: 3px 0; text-align: center; content: counter(point); counter-increment: point 1; }
@@ -1299,6 +1300,12 @@ a:hover { text-decoration: none; }
 .latest-works { height: 317px; }
 
 .subscribe { height: 240px; background: #417184; text-align: center; color: white; font-family: "Roboto", Arial, "Helvetica Neue", Helvetica, sans-serif; }
+
+.subscribe__form { display: none; position: absolute; background: white; color: #353535; top: 0; left: 0; right: 0; bottom: 0; padding: 20px; text-align: left; }
+.subscribe__form .btn { min-width: 1px; width: 100%; display: block; background: #4698b1; }
+.subscribe__form .input { margin-bottom: 15px; }
+
+.subscribe__legend { text-transform: uppercase; font-size: 16px; color: #353535; font-weight: 500; line-height: 1; margin-bottom: 20px; }
 
 .subscribe__icon { padding-top: 26px; margin-bottom: 20px; }
 .subscribe__icon i { font-size: 68px; }

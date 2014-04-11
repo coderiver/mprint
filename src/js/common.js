@@ -1,5 +1,9 @@
 $(document).ready(function() {
 
+	$('.js-subscribe').on('click', function() {
+		$(this).parent().find('.subscribe__form').toggle("slide", { direction: "left" }, 300);
+	});
+
 	$('.js-teaser-slider').cycle({
 		fx: "scrollHorz",
 		timeout: 0,
