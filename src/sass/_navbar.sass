@@ -14,11 +14,12 @@
 	width: 1200px
 	margin-left: auto
 	margin-right: auto
+	z-index: 1000
 	+r(w1220)
 		width: 960px
 	&.is-fixed
 		position: fixed
-		z-index: 1000
+		// z-index: 1000
 
 .sitenav
 	top: -1px
@@ -42,9 +43,62 @@
 		border-color: $color-base
 		a
 			color: $color-invert
+	&:hover
+		.dropdown
+			display: block
 	&:first-child
 		border: none
 		// margin-left: 0
+	.dropdown
+		position: absolute
+		top: 100%
+		left: 0px
+		background: $color-invert
+		text-align: left
+		margin-top: -1px
+		display: none
+		&:before
+			@extend %dline
+		// ul
+		// 	position: relative
+		li
+			position: relative
+			// padding: 0 27px
+			color: $color-base
+			border-top: 1px solid #e8e8e8
+			ul
+				display: none
+				position: absolute
+				left: 100%
+				top: -1px
+				text-transform: none
+				background: $color-invert
+				border-left: 1px solid #e8e8e8
+				li
+					border-bottom: 1px solid #e8e8e8
+					border-top: none
+					&:first-child
+						border-top: 1px solid $color-invert
+						&:hover
+							border-top: 1px solid #e8e8e8
+					// &:hover
+					// 	border-top: 1px solid #e8e8e8
+			.dropdown__arrow
+				position: absolute
+				right: 22px
+			&:first-child
+				border-top: none
+			&.is-active, &:hover
+				background: #efefef
+				.dropdown__arrow
+					+rotate(180)
+			&:hover
+				ul
+					display: block
+			a
+				position: relative
+				color: $color-base
+				padding: 13px 65px 13px 27px
 	&.sitenav__clause_adv
 		&:before
 			position: absolute
