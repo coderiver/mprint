@@ -22,7 +22,7 @@
               expand: true,
               cwd: "src/img/",
               src: ["**"],
-              dest: "production/img"
+              dest: "production/img/"
             }, {
               expand: true,
               cwd: "src/fonts/",

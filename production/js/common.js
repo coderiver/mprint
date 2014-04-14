@@ -30,6 +30,14 @@ $(document).ready(function() {
 		});
 	} formBlocks();
 
+	function navRequest() {
+		$('.js-request').on('click', function() {
+			$(this).parent().toggleClass('is-active');
+			// $(this).parent().find('.request__dropdown').slideDown('fast');
+		});
+	} navRequest();
+
+
 	function request() {
 		$('.js-request-trigger').on('click', function() {
 			$(this).parent()

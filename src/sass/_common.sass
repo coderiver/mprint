@@ -18,6 +18,7 @@ a
 	text-decoration: none
 	&:hover
 		text-decoration: none
+		color: darken($link-color-base, 10%)
 
 =fa
 	display: inline-block
@@ -44,6 +45,8 @@ a
 			line-height: 1
 			height: auto
 			// padding-top: 4px
+	&.form__group_fileload
+		margin-bottom: 40px
 .form__label
 	position: relative
 	display: block
@@ -129,6 +132,25 @@ a
 			left: -18px
 			+s(three)
 			content: ""
+
+.upload
+	padding-left: 27px
+	.btn-loadfile
+		margin-bottom: 10px
+.upload__files
+	border-top: 1px solid #e8e8e8
+	li
+		padding: 10px 0
+		border-bottom: 1px solid #e8e8e8
+		.progress
+			width: 100%
+.upload__info
+	+clr
+	margin-top: 8px
+	.upload__filename
+		float: left
+	.upload__actions
+		float: right
 .input
 	display: inline-block
 	vertical-align: middle
@@ -311,7 +333,10 @@ a
 		color: $color-invert
 .btn_link
 	background: transparent
-	color: #767676
+	color: $color-dark
+	&:hover
+		background: transparent
+		color: darken($color-dark, 10%)
 .btn_default
 	font-size: $size-base
 	padding: 7px 10px

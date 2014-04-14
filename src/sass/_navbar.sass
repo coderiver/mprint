@@ -202,20 +202,29 @@
 		// 	border-top: 1px dashed #bbb
 
 .request
+	position: relative
 	height: 70px
 	top: -1px
-	background: #7bc100
 	color: $color-invert
+	background: #7bc100
 	+transition(background .3s)
-	&:hover
+	&:hover, &.is-active
 		background: $bg-invert
+	&.is-active
+		.request__dropdown
+			display: block
+
 .request__trigger
-	position: relative
-	cursor: default
+	position: absolute
+	cursor: pointer
 	top: 0
 	left: 0
 	right: 0
 	height: 100%
+
+	// &:hover
+	// 	.request__dropdown
+	// 		display: block
 .request__triggerlabel
 	position: relative
 	width: 170px
@@ -247,3 +256,23 @@
 		left: 50%
 		right: auto
 		margin-left: -10px
+.request__dropdown
+	display: none
+	position: absolute
+	top: 100%
+	right: 0
+	background: $bg-base
+	color: $color-base
+	width: 480px
+	height: 481px
+	margin-top: -1px
+	padding: 22px 27px
+	+box
+	&:before
+		@extend %dline
+	&:after
+		position: absolute
+		bottom: 0
+		left: 0
+		+s(request_bg)
+		content: ""

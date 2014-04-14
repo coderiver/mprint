@@ -24,7 +24,7 @@
 						<li class="sitenav__clause sitenav__clause_print">
 							<a href="#0">Интерьерная печать</a>
 						</li>
-						<li class="sitenav__clause is-active">
+						<li class="sitenav__clause">
 							<a href="#0">Новости</a>
 						</li>
 						<li class="sitenav__clause">
@@ -67,12 +67,55 @@
 
 				<!-- begin request -->
 				<div class="request col-2 col-sm-1">
-					<div class="request__trigger">
-							<div class="request__triggerlabel is-hidden-sm">
-								Задать вопрос<br>
-								<span>или загрузить файл</span>
+					<div class="request__trigger js-request">
+						<div class="request__triggerlabel is-hidden-sm">
+							Задать вопрос<br>
+							<span>или загрузить файл</span>
+						</div>
+						<i class="request__triggericon fa fa-upload"></i>
+					</div>
+					<div class="request__dropdown">
+						<form action="#0">
+							<div class="form__group">
+								<input type="text" class="input input_small" placeholder="Ваше имя*">
+								<input type="text" class="input input_small pull-right" placeholder="Название компании">
 							</div>
-							<i class="request__triggericon fa fa-upload"></i>
+							<div class="form__group">
+								<input type="tel" class="input input_small" placeholder="Номер телефона">
+								<input type="email" class="input input_small pull-right" placeholder="E-mail адрес">
+							</div>
+							<div class="form__group">
+								<textarea name="" id="" cols="" rows="" class="textarea" placeholder="Добавьте комментарий к заказу"></textarea>
+							</div>
+							<div class="form__group form__group_fileload">
+								<div class="upload">
+									<div class="btn-loadfile">
+										<input type="file">
+										<i></i>
+										Выберите еще один файл
+									</div>
+									<ul class="upload__files">
+										<li>
+											<div class="progress is-animate">
+												<div class="progress__bar" style="width: 51%;"></div>
+											</div>
+										</li>
+									</ul>
+									<div class="upload__info">
+										<div class="upload__filename">main_design_for_the_mainpage.cdr</div>
+										<div class="upload__actions">
+											<a href="#0">загрузить</a>
+											<a href="#0">удалить</a>
+										</div>
+									</div>
+
+								</div>
+							</div>
+							<div class="form__action clearfix">
+								<button type="submit" class="btn">Отправить</button>
+								<a href="#0" class="btn btn_link pull-right">Очистить форму</a>
+							</div>
+						</form>
 					</div>
 				</div>
 				<!-- end request -->
