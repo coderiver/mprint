@@ -1010,6 +1010,7 @@ a:hover { text-decoration: none; }
 .btn-block b { display: block; font-size: 18px; font-weight: normal; text-transform: uppercase; }
 
 .btn { display: inline-block; background: #00aeef; color: white; font-size: 15px; line-height: 17px; min-width: 206px; text-transform: uppercase; text-decoration: none; padding: 11px 10px; text-align: center; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; font-family: "Roboto Condensed", Arial, "Helvetica Neue", Helvetica, sans-serif; -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -ms-font-smoothing: antialiased; -o-font-smoothing: antialiased; }
+.btn:hover { background: #009bd5; color: white; }
 
 .btn_link { background: transparent; color: #767676; }
 
@@ -1053,11 +1054,13 @@ a:hover { text-decoration: none; }
 
 .page-header { position: relative; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 0 27px; height: 84px; line-height: 84px; }
 .page-header .title { margin-bottom: 0; display: inline-block; vertical-align: middle; line-height: 1; }
-.page-header .link-more { position: absolute; right: 41px; top: 39px; line-height: 1; text-transform: uppercase; font-family: "Roboto Condensed", Arial, "Helvetica Neue", Helvetica, sans-serif; font-size: 13px; }
+.page-header .link-more { position: absolute; right: 41px; top: 39px; line-height: 1; text-transform: uppercase; font-family: "Roboto Condensed", Arial, "Helvetica Neue", Helvetica, sans-serif; font-size: 13px; color: #00aeef; }
+.page-header .link-more:hover { color: #0089bc; }
 
 .headline { position: relative; height: 77px; line-height: 77px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; position: relative; padding: 0 27px; }
 .headline .title { display: inline-block; vertical-align: middle; line-height: 1; margin-bottom: 0 !important; }
-.headline .link-more { position: absolute; right: 41px; top: 39px; line-height: 1; text-transform: uppercase; font-family: "Roboto Condensed", Arial, "Helvetica Neue", Helvetica, sans-serif; font-size: 13px; }
+.headline .link-more { position: absolute; right: 41px; top: 39px; line-height: 1; text-transform: uppercase; font-family: "Roboto Condensed", Arial, "Helvetica Neue", Helvetica, sans-serif; font-size: 13px; color: #00aeef; }
+.headline .link-more:hover { color: #0089bc; }
 
 .caption { padding: 25px 27px; }
 .caption p { margin-bottom: 0.7em; }
@@ -1068,7 +1071,8 @@ a:hover { text-decoration: none; }
 .info { *zoom: 1; }
 .info:after { content: " "; display: table; clear: both; }
 .info .g-date { float: left; }
-.info .link-more { float: right; }
+.info .link-more { float: right; color: #00aeef; }
+.info .link-more:hover { color: #0089bc; }
 
 .g-date { display: inline-block; color: #b6b6b6; font-size: 13px; }
 
@@ -1089,7 +1093,8 @@ a:hover { text-decoration: none; }
 .preview .icon-zoom { position: absolute; top: 60px; left: 50%; margin-left: -36px; -webkit-transition: 0.3s all; -moz-transition: 0.3s all; -o-transition: 0.3s all; transition: 0.3s all; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; -webkit-transform: scale(0, 0); -moz-transform: scale(0, 0); -ms-transform: scale(0, 0); -o-transform: scale(0, 0); transform: scale(0, 0); }
 .preview .caption { position: absolute; bottom: -240px; left: 0; right: 0; padding: 10px 15px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; background: white; -webkit-transition: 0.3s all; -moz-transition: 0.3s all; -o-transition: 0.3s all; transition: 0.3s all; }
 .preview .caption p { margin-bottom: 0; }
-.preview .info .link-more { float: none; }
+.preview .info .link-more { float: none; color: #00aeef; }
+.preview .info .link-more:hover { color: #0089bc; }
 
 .box-body { position: relative; *zoom: 1; }
 .box-body:after { content: " "; display: table; clear: both; }
@@ -1316,6 +1321,7 @@ a:hover { text-decoration: none; }
 
 .subscribe__form { display: none; position: absolute; background: white; color: #353535; top: 0; left: 0; right: 0; bottom: 0; padding: 20px; text-align: left; }
 .subscribe__form .btn { min-width: 1px; width: 100%; display: block; background: #4698b1; }
+.subscribe__form .btn:hover { background: #3f889f; }
 .subscribe__form .input { margin-bottom: 15px; }
 
 .subscribe__legend { text-transform: uppercase; font-size: 16px; color: #353535; font-weight: 500; line-height: 1; margin-bottom: 20px; }

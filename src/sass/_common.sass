@@ -306,6 +306,9 @@ a
 	+box
 	font-family: $font-alt
 	+font-smoothing
+	&:hover
+		background: darken($color-blue, 5%)
+		color: $color-invert
 .btn_link
 	background: transparent
 	color: #767676
@@ -455,6 +458,9 @@ a
 		text-transform: uppercase
 		font-family: $font-alt
 		font-size: $size-base
+		color: $link-color-base
+		&:hover
+			color: darken($link-color-base, 10%)
 
 .headline
 	position: relative
@@ -476,6 +482,9 @@ a
 		text-transform: uppercase
 		font-family: $font-alt
 		font-size: $size-base
+		color: $link-color-base
+		&:hover
+			color: darken($link-color-base, 10%)
 
 
 
@@ -499,6 +508,9 @@ a
 		float: left
 	.link-more
 		float: right
+		color: $link-color-base
+		&:hover
+			color: darken($link-color-base, 10%)
 
 .g-date
 	display: inline-block
@@ -584,6 +596,9 @@ a
 			margin-bottom: 0
 	.info .link-more
 		float: none
+		color: $link-color-base
+		&:hover
+			color: darken($link-color-base, 10%)
 
 
 .box-body

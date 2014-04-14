@@ -197,6 +197,7 @@
 	color: $color-invert
 	font-family: $font-base
 
+$btn-subscribe-color: #4698b1
 .subscribe__form
 	display: none
 	position: absolute
@@ -208,11 +209,14 @@
 	bottom: 0
 	padding: 20px
 	text-align: left
+
 	.btn
 		min-width: 1px
 		width: 100%
 		display: block
-		background: #4698b1
+		background: $btn-subscribe-color
+		&:hover
+			background: darken($btn-subscribe-color, 5%)
 	.input
 		margin-bottom: 15px
 .subscribe__legend
