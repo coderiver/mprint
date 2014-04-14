@@ -1160,9 +1160,11 @@ a:hover { text-decoration: none; }
 .lang { position: relative; display: inline-block; vertical-align: top; margin: 0 25px 0 32px; padding-left: 24px; }
 .lang:before { position: absolute; top: 0; left: 0; height: 46px; width: 1px; background: rgba(255, 255, 255, 0.33); content: ""; }
 
-.lang__trigger { cursor: pointer; }
+.lang__trigger { position: relative; cursor: pointer; }
 .lang__trigger:hover span { border: none; }
 .lang__trigger i { margin-left: 5px; }
+
+.lang__select { position: absolute; top: 0; right: 0; bottom: 0; left: 0; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; cursor: pointer; }
 
 .navbar { position: absolute; top: 0; left: 0; right: 0; *zoom: 1; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; height: 70px; border: 1px solid #e8e8e8; border-width: 1px 0; background-color: white; width: 1200px; margin-left: auto; margin-right: auto; z-index: 1000; }
 .navbar:after { content: " "; display: table; clear: both; }
