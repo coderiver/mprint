@@ -1115,15 +1115,16 @@ a:hover { text-decoration: none; color: #0089bc; }
 
 .loadmoar { padding-top: 25px; padding-bottom: 20px; text-align: center; clear: both; }
 .loadmoar a { height: 60px; line-height: 1; display: inline-block; position: relative; font-family: "Roboto Condensed", Arial, "Helvetica Neue", Helvetica, sans-serif; font-size: 16px; text-transform: uppercase; color: #00aeef; text-decoration: none; }
+.loadmoar a:hover { color: #009bd5; }
 .loadmoar a:before { position: absolute; bottom: 0; left: 50%; margin-left: -32px; background: url('../img/icons-sd324c813be.png') 0 -684px no-repeat; width: 63px; height: 31px; content: ""; }
 
-.article .row:before, .dline, .dline-vert, .main-services__cover:before, .spring-discounts:before, .catalog .item .thumbnail:before, .news .item:before, .dline_bottom, .spring-discounts .headline:before, .faq .page-header:before, .contact .page-header:before, .dline_right, .sitenav__clause .dropdown:before, .search__dropdown:before, .request__dropdown:before, .main-services__list li:before, .about .caption:before, .spring-discounts .caption:before, .latest-works .headline:before, .catalog .item:before, .contact .thumbnail:before { position: absolute; top: 0; left: 0; right: 0; height: 1px; background: url("../img/dline.png"); background-repeat: repeat-x; content: ""; z-index: 10; }
+.article .row:before, .dline, .dline-vert, .main-services__cover:before, .spring-discounts:before, .catalog .item .thumbnail:before, .dline_bottom, .spring-discounts .headline:before, .faq .page-header:before, .contact .page-header:before, .dline_right, .sitenav__clause .dropdown:before, .search__dropdown:before, .request__dropdown:before, .main-services__list li:before, .about .caption:before, .spring-discounts .caption:before, .latest-works .headline:before, .catalog .item:before, .contact .thumbnail:before { position: absolute; top: 0; left: 0; right: 0; height: 1px; background: url("../img/dline.png"); background-repeat: repeat-x; content: ""; z-index: 10; }
 
-.dline-vert, .main-services__cover:before, .spring-discounts:before, .catalog .item .thumbnail:before, .news .item:before { right: auto; height: auto; bottom: 0; width: 1px; background-repeat: repeat-y; }
+.dline-vert, .main-services__cover:before, .spring-discounts:before, .catalog .item .thumbnail:before { right: auto; height: auto; bottom: 0; width: 1px; background-repeat: repeat-y; }
 
 .dline_bottom, .spring-discounts .headline:before, .faq .page-header:before, .contact .page-header:before { top: auto; bottom: 0; }
 
-.dline_right, .main-services__cover:before, .catalog .item .thumbnail:before, .news .item:before { top: 0; left: auto; bottom: 0; right: 0; }
+.dline_right, .main-services__cover:before, .catalog .item .thumbnail:before { top: 0; left: auto; bottom: 0; right: 0; }
 
 .dline_dark, .main-services__cover:before { background: url("../img/dline_dark.png"); }
 
@@ -1393,9 +1394,13 @@ a:hover { text-decoration: none; color: #0089bc; }
 .contact__form { display: none; }
 .contact__form.is-open { display: block; }
 
-.news .row { overflow: hidden; }
-.news .item { height: 480px; }
-.news .item:before { right: -1px; }
-.news .item .headline { height: 85px; line-height: 85px; background: #353535; }
+.news .row { position: relative; overflow: hidden; font-size: 0; }
+.news .item { display: inline-block; vertical-align: top; float: none; font-size: 13px; }
+.news .item.is-preload { display: none; }
+.news .item .headline { padding: 0; height: 85px; line-height: 85px; }
+.news .item .headline a { display: block; background: #353535; padding: 0 27px; }
+.news .item .headline a:hover { background: #555555; }
 .news .item .title { color: white; }
-.news .item .caption { height: 395px; overflow: hidden; }
+.news .item .caption { overflow: hidden; }
+
+.news__line { background: url("../img/dline.png"); position: absolute; top: 0; left: 0; bottom: 0; width: 1px; background-repeat: repeat-y; content: ""; z-index: 100; }

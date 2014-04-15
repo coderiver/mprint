@@ -1,18 +1,38 @@
 .news
 	.row
+		position: relative
 		overflow: hidden
+		font-size: 0
 	.item
-		height: 480px
-		&:before
-			@extend %dline_vert
-			@extend %dline_right
-			right: -1px
+		// height: 480px
+		display: inline-block
+		vertical-align: top
+		float: none
+		font-size: $size-base
+		&.is-preload
+			display: none
 		.headline
+			padding: 0
 			height: 85px
 			line-height: 85px
-			background: $bg-invert
+			a
+				display: block
+				background: $bg-invert
+				padding: 0 27px
+				&:hover
+					background: #555
 		.title
 			color: $color-invert
 		.caption
-			height: 395px
+			// height: 395px
 			overflow: hidden
+.news__line
+	background: url('../img/dline.png')
+	position: absolute
+	top: 0
+	left: 0
+	bottom: 0
+	width: 1px
+	background-repeat: repeat-y
+	content: ""
+	z-index: 100

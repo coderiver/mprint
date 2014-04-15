@@ -1,5 +1,10 @@
 $(document).ready(function() {
 
+	$('.js-newsloader').on('click', function() {
+		$(this).parent().find('.item').removeClass('is-preload');
+		return false;
+	});
+
 	$('.js-contact-form').on('click', function() {
 		$(this).parent().find('.contact__form').addClass('is-open');
 		$(this).remove();
