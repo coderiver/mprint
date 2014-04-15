@@ -1,5 +1,11 @@
 $(document).ready(function() {
 
+	$('.js-contact-form').on('click', function() {
+		$(this).parent().find('.contact__form').addClass('is-open');
+		$(this).remove();
+		return false;
+	});
+
 	$('.js-subscribe').on('click', function() {
 		$(this).parent().find('.subscribe__form').toggle("slide", { direction: "left" }, 300);
 	});

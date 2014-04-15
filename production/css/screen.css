@@ -1019,9 +1019,6 @@ a:hover { text-decoration: none; color: #0089bc; }
 .checkbox label input, .checkbox label i { position: absolute; top: 0; left: 0; }
 .checkbox label input:checked + i:after { content: ""; position: absolute; top: 0; left: 0; background: url('../img/icons-sd324c813be.png') 0 -752px no-repeat; width: 14px; height: 14px; }
 
-.btn-block { display: block; text-align: center; font-size: 13px; line-height: 1; font-family: "Roboto Condensed", Arial, "Helvetica Neue", Helvetica, sans-serif; text-decoration: none; background: #00aeef; color: white; padding: 17px 10px; }
-.btn-block b { display: block; font-size: 18px; font-weight: normal; text-transform: uppercase; }
-
 .btn { display: inline-block; background: #00aeef; color: white; font-size: 15px; line-height: 17px; min-width: 206px; text-transform: uppercase; text-decoration: none; padding: 11px 10px; text-align: center; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; font-family: "Roboto Condensed", Arial, "Helvetica Neue", Helvetica, sans-serif; -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -ms-font-smoothing: antialiased; -o-font-smoothing: antialiased; }
 .btn:hover { background: #009bd5; color: white; }
 
@@ -1029,6 +1026,9 @@ a:hover { text-decoration: none; color: #0089bc; }
 .btn_link:hover { background: transparent; color: #5d5d5d; }
 
 .btn_default { font-size: 13px; padding: 7px 10px; min-width: 110px; }
+
+.btn-block { display: block; text-align: center; font-size: 13px; line-height: 1; font-family: "Roboto Condensed", Arial, "Helvetica Neue", Helvetica, sans-serif; text-decoration: none; background: #00aeef; color: white; padding: 17px 10px; }
+.btn-block b { display: block; font-size: 18px; font-weight: normal; text-transform: uppercase; }
 
 .article .row { position: relative; padding: 25px 27px; }
 .article .row:first-child:before { display: none; }
@@ -1389,6 +1389,9 @@ a:hover { text-decoration: none; color: #0089bc; }
 .contact .caption { padding: 25px 27px 14px; }
 
 .contact__action { padding: 30px 27px; }
+
+.contact__form { display: none; }
+.contact__form.is-open { display: block; }
 
 .news .row { overflow: hidden; }
 .news .item { height: 480px; }

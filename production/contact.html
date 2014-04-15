@@ -222,7 +222,48 @@
 						<img src="img/contact.jpg" alt="img">
 					</div>
 					<div class="contact__action">
-						<a href="#" class="btn-block"><b>Напишите нам онлайн</b> поболтайте с нами, мы любим болтать</a>
+						<a href="#" class="btn btn-block js-contact-form"><b>Напишите нам онлайн</b> поболтайте с нами, мы любим болтать</a>
+						<form class="contact__form" action="#0">
+							<div class="form__group">
+								<input type="text" class="input input_small" placeholder="Ваше имя*">
+								<input type="text" class="input input_small pull-right" placeholder="Название компании">
+							</div>
+							<div class="form__group">
+								<input type="tel" class="input input_small" placeholder="Номер телефона">
+								<input type="email" class="input input_small pull-right" placeholder="E-mail адрес">
+							</div>
+							<div class="form__group">
+								<textarea name="" id="" cols="" rows="" class="textarea" placeholder="Добавьте комментарий к заказу"></textarea>
+							</div>
+							<div class="form__group form__group_fileload">
+								<div class="upload">
+									<div class="btn-loadfile">
+										<input type="file">
+										<i></i>
+										Выберите еще один файл
+									</div>
+									<ul class="upload__files">
+										<li>
+											<div class="progress is-animate">
+												<div class="progress__bar" style="width: 51%;"></div>
+											</div>
+										</li>
+									</ul>
+									<div class="upload__info">
+										<div class="upload__filename">main_design_for_the_mainpage.cdr</div>
+										<div class="upload__actions">
+											<a href="#0">загрузить</a>
+											<a href="#0">удалить</a>
+										</div>
+									</div>
+
+								</div>
+							</div>
+							<div class="form__action clearfix">
+								<button type="submit" class="btn">Отправить</button>
+								<a href="#0" class="btn btn_link pull-right">Очистить форму</a>
+							</div>
+						</form>
 					</div>
 				</div>
 				<div class="col-6 col-sm-4">
