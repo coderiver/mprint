@@ -3,17 +3,63 @@
 <!--[if gt IE 8]><!--><html><!--<![endif]-->
 <head>
 	<meta charset="utf-8">
-	<title>service.html</title>
-	@@include('_headerscripts.html')
+	<title>service_popup.html</title>
+		<meta name="viewport" content="initial-scale=1">
+	<link rel="stylesheet" media="screen" href="css/screen.css" >
+
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,700,300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic,900,900italic,300italic,300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
+
+	<script src="js/jquery.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/20140216/jquery.cycle2.min.js"></script>
+	<script src="http://malsup.github.io/jquery.cycle2.carousel.js"></script>
+	<script src="js/common.js"></script>
 </head>
 <body>
 <div id="parallax-bg" style="background-image: url('img/main_bg.jpg')"></div>
 <!-- begin  out-->
 <div class="out">
-	@@include('_header.html')
+		<!-- begin header -->
+	<div class="header">
+		<div class="container">
+			<div class="row">
+				<div class="header__logo col-2">
+					<a href="#0">MPrint</a>
+				</div>
+				<div class="header__meta col-7 col-sm-5">
+					<div class="contacts">
+						<ul class="contacts__group">
+							<li>(+372) 56&nbsp;226&nbsp;517</li>
+							<li>(+372) 644 65&nbsp;56</li>
+						</ul>
+						<ul class="contacts__group">
+							<li><i class="fa fa-map-marker"></i> <a href="#0" class="g-pseudo">Peterburi tee 47, Tallinn</a></li>
+							<li><i class="fa fa-clock-o"></i> Пн&nbsp;&mdash; Пт: 9&nbsp;&mdash; 17:30</li>
+						</ul>
+						<ul class="contacts__group">
+							<li><i class="fa fa-envelope"></i> <a href="#0" class="g-pseudo">info@mprint.ee</a></li>
+						</ul>
+					</div>
+					<div class="lang">
+						<div class="lang__trigger">
+							<span class="g-pseudo">Русский</span> <i class="fa fa-angle-down"></i>
+							<select class="lang__select">
+								<option>Русский</option>
+								<option>Английский</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end header -->
 	<!-- begin page -->
 	<div class="page service">
-
 		<!-- begin popup -->
 		<div class="popup is-open">
 			<div class="popup__close"></div>
@@ -42,7 +88,129 @@
 		</div>
 		<!-- end popup -->
 
-		@@include('_navbar.html')
+				<!-- begin navbar -->
+		<div class="navbar js-navbar">
+				<!-- begin sitenav -->
+				<nav class="sitenav col-6">
+					<ul class="sitenav__ul">
+						<li class="sitenav__clause sitenav__clause_adv has-dropdown">
+							<a href="#0">Изготовление рекламы</a>
+							<div class="dropdown">
+								<ul>
+									<li><a href="#0">Печатная продукция <span class="dropdown__arrow"><i class="fa fa-angle-left"></i></span></a></li>
+									<li><a href="#0">Широкоформатная печать <span class="dropdown__arrow"><i class="fa fa-angle-left"></i></span></a>
+											<ul>
+												<li><a href="#0">Билборды</a></li>
+												<li><a href="#0">Вывески</a></li>
+												<li><a href="#0">Баннеры</a></li>
+											</ul>
+									</li>
+									<li><a href="#0">Roll-Up и стенды <span class="dropdown__arrow"><i class="fa fa-angle-left"></i></span></a></li>
+									<li><a href="#0">Световые короба и буквы <span class="dropdown__arrow"><i class="fa fa-angle-left"></i></span></a></li>
+									<li><a href="#0">Баннеры и биллборды <span class="dropdown__arrow"><i class="fa fa-angle-left"></i></span></a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="sitenav__clause sitenav__clause_print">
+							<a href="#0">Интерьерная печать</a>
+						</li>
+						<li class="sitenav__clause">
+							<a href="#0">Новости</a>
+						</li>
+						<li class="sitenav__clause">
+							<a href="#0">О&nbsp;компании</a>
+						</li>
+						<li class="sitenav__clause">
+							<a href="#0">Контакт</a>
+						</li>
+					</ul>
+				</nav>
+				<!-- end sitenav -->
+
+				<!-- begin search -->
+				<div class="search col-2 col-sm-1 js-searchsuggest">
+					<form action="#0">
+						<input type="text" class="search__query is-hidden-sm" placeholder="Товары и&nbsp;услуги..." value="Рекламны">
+						<button type="submit" class="search__submit"><i class="fa fa-search"></i></button>
+						<div class="search__dropdown col-4 col-sm-2">
+							<ul>
+								<li>
+									<a href="#0"><mark>Релкамн</mark>ый щит</a>
+								</li>
+								<li class="is-selected">
+									<a href="#0"><mark>Релкамн</mark>ый буклет</a>
+								</li>
+								<li>
+									<a href="#0"><mark>Релкамн</mark>ая шляпа</a>
+								</li>
+								<li>
+									<a href="#0"><mark>Релкамн</mark>ые штучки</a>
+								</li>
+								<li>
+									<a href="#0">Разработка <mark>релкамн</mark>ых концепций</a>
+								</li>
+							</ul>
+						</div>
+					</form>
+				</div>
+				<!-- end search -->
+
+				<!-- begin request -->
+				<div class="request col-2 col-sm-1">
+					<div class="request__trigger js-request">
+						<div class="request__triggerlabel is-hidden-sm">
+							Задать вопрос<br>
+							<span>или загрузить файл</span>
+						</div>
+						<i class="request__triggericon fa fa-upload"></i>
+					</div>
+					<div class="request__dropdown">
+						<form action="#0">
+							<div class="form__group">
+								<input type="text" class="input input_small" placeholder="Ваше имя*">
+								<input type="text" class="input input_small pull-right" placeholder="Название компании">
+							</div>
+							<div class="form__group">
+								<input type="tel" class="input input_small" placeholder="Номер телефона">
+								<input type="email" class="input input_small pull-right" placeholder="E-mail адрес">
+							</div>
+							<div class="form__group">
+								<textarea name="" id="" cols="" rows="" class="textarea" placeholder="Добавьте комментарий к заказу"></textarea>
+							</div>
+							<div class="form__group form__group_fileload">
+								<div class="upload">
+									<div class="btn-loadfile">
+										<input type="file">
+										<i></i>
+										Выберите еще один файл
+									</div>
+									<ul class="upload__files">
+										<li>
+											<div class="progress is-animate">
+												<div class="progress__bar" style="width: 51%;"></div>
+											</div>
+										</li>
+									</ul>
+									<div class="upload__info">
+										<div class="upload__filename">main_design_for_the_mainpage.cdr</div>
+										<div class="upload__actions">
+											<a href="#0">загрузить</a>
+											<a href="#0">удалить</a>
+										</div>
+									</div>
+
+								</div>
+							</div>
+							<div class="form__action clearfix">
+								<button type="submit" class="btn">Отправить</button>
+								<a href="#0" class="btn btn_link pull-right">Очистить форму</a>
+							</div>
+						</form>
+					</div>
+				</div>
+				<!-- end request -->
+		</div>
+		<!-- end navbar -->
 
 		<!-- begin content -->
 		<div class="content">
@@ -474,6 +642,32 @@
 	<div class="push"></div>
 </div>
 <!-- end out-->
-@@include('_footer.html', {"state": ""})
+<!-- begin footer -->
+<div class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-2">
+				<div class="footer__copy">Copyright 2014 Mprint</div>
+				<div class="footer__design">Designed by&nbsp;Aprol Designs</div>
+			</div>
+			<div class="footer__meta col-5">
+				<div class="footer__social ">
+					<span class="footer__social-title">Подписаться<br> на новости</span>
+					<ul>
+						<li><a href="#0"><i class="fa fa-facebook"></i><span>Facebook</span></a></li>
+						<li><a href="#0"><i class="fa fa-rss"></i><span>RSS</span></a></li>
+						<li><a href="#0"><i class="fa fa-pinterest"></i><span>Pinterest</span></a></li>
+						<li><a href="#0"><i class="fa fa-vk"></i><span>VK</span></a></li>
+					</ul>
+				</div>
+				<div class="footer__contacts">
+					<p>(+372) 56&nbsp;226&nbsp;517, (+372) 644 65&nbsp;56</p>
+					<p><i class="fa fa-map-marker"></i> Peterburi tee 47, Tallinn <i class="fa fa-envelope"></i> <a href="#0" class="g-pseudo">info@mprint.ee</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- end footer -->
 </body>
 </html>

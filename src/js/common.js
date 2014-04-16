@@ -1,5 +1,34 @@
 $(document).ready(function() {
 
+	$('.js-sliderbox').each(function(){
+		var p = this.parentNode;
+
+		$(this).cycle({
+			fx: "fade",
+			timeout:  0,
+			carouselVisible: 1,
+			slideActiveClass: "is-active",
+			pagerActiveClass: "is-active",
+			disabledClass: "is-disabled",
+			slideClass: "sliderbox__slide",
+			allowWrap: "false",
+			carouselFluid: "true",
+			slides: $('.sliderbox__slide', p),
+			prev:   $('.sliderbox__prev', p),
+			next:   $('.sliderbox__next', p),
+		});
+
+	});
+
+	$('.icon-zoom').on('click', function() {
+		$('.popup').addClass('is-open');
+	});
+
+	$('.popup__close').on('click', function() {
+		$(this).parent().removeClass('is-open');
+	});
+
+
 	$('.js-newsloader').on('click', function() {
 		$(this).parent().find('.item').removeClass('is-preload');
 		return false;

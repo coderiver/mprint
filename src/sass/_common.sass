@@ -631,19 +631,6 @@ a
 	position: relative
 	+clr
 
-// .box
-// 	.thumbnail
-// 		float: left
-// 		width: 240px
-// 		height: 240px
-// 		overflow: hidden
-// 		img
-// 			display: block
-// 			max-width: 100%
-// 			min-height: 100%
-// 	.caption
-// 		overflow: hidden
-
 
 .loadmoar
 	padding-top: 25px
@@ -779,3 +766,67 @@ a
 		text-transform: uppercase
 		color: $color-blue
 		text-decoration: none
+
+.popup
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	background: rgba(#fff, .95)
+	z-index: 1010
+	display: none
+	&.is-open
+		display: block
+.popup__close
+	+s(close)
+	cursor: pointer
+	position: absolute
+	top: 40px
+	right: 35px
+.popup__content
+	padding: 100px
+
+
+.sliderbox
+	position: relative
+	// overflow: visible !important
+.sliderbox__slide
+	width: 100%
+	display: block
+.sliderbox__picture
+	height: auto
+	display: block
+	margin-bottom: 15px
+	img
+		display: block
+		max-width: 100%
+		margin-left: auto
+.sliderbox__info
+	+clr
+	padding: 0 25px
+	.link-more
+		float: right
+.sliderbox__prev,
+.sliderbox__next
+	position: absolute
+	top: 50%
+	margin-top: -48px
+	cursor: pointer
+	+hidetext
+	z-index: 100
+.sliderbox__prev
+	+s(sl_prev)
+	left: -75px
+.sliderbox__next
+	+s(sl_next)
+	right: -75px
+
+
+
+
+
+
+
+
+
