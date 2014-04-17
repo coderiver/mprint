@@ -39,40 +39,42 @@
 
 				<!-- begin search -->
 				<div class="search col-2 col-sm-1 js-searchsuggest">
-					<form action="#0">
-						<input type="text" class="search__query is-hidden-sm" placeholder="Товары и&nbsp;услуги..." value="Рекламны">
+					<div class="search__inner">
+						<input type="text" class="search__query" placeholder="Товары и&nbsp;услуги..." value="Рекламны">
 						<button type="submit" class="search__submit"><i class="fa fa-search"></i></button>
-						<div class="search__dropdown col-4 col-sm-2">
-							<ul>
-								<li>
-									<a href="#0"><mark>Релкамн</mark>ый щит</a>
-								</li>
-								<li class="is-selected">
-									<a href="#0"><mark>Релкамн</mark>ый буклет</a>
-								</li>
-								<li>
-									<a href="#0"><mark>Релкамн</mark>ая шляпа</a>
-								</li>
-								<li>
-									<a href="#0"><mark>Релкамн</mark>ые штучки</a>
-								</li>
-								<li>
-									<a href="#0">Разработка <mark>релкамн</mark>ых концепций</a>
-								</li>
-							</ul>
-						</div>
-					</form>
+					</div>
+					<div class="search__dropdown col-4 col-sm-2">
+						<ul>
+							<li>
+								<a href="#0"><mark>Релкамн</mark>ый щит</a>
+							</li>
+							<li class="is-selected">
+								<a href="#0"><mark>Релкамн</mark>ый буклет</a>
+							</li>
+							<li>
+								<a href="#0"><mark>Релкамн</mark>ая шляпа</a>
+							</li>
+							<li>
+								<a href="#0"><mark>Релкамн</mark>ые штучки</a>
+							</li>
+							<li>
+								<a href="#0">Разработка <mark>релкамн</mark>ых концепций</a>
+							</li>
+						</ul>
+					</div>
 				</div>
 				<!-- end search -->
 
 				<!-- begin request -->
 				<div class="request col-2 col-sm-1">
 					<div class="request__trigger js-request">
-						<div class="request__triggerlabel is-hidden-sm">
+						<div class="request__triggerlabel">
 							Задать вопрос<br>
 							<span>или загрузить файл</span>
 						</div>
-						<i class="request__triggericon fa fa-upload"></i>
+						<div class="request__ticon">
+							<i class="fa fa-upload"></i>
+						</div>
 					</div>
 					<div class="request__dropdown">
 						<form action="#0">
