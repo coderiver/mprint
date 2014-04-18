@@ -1,5 +1,15 @@
 $(document).ready(function() {
 
+	$('.js-briefbtn').on('click', function() {
+		$(this).toggleClass('is-active');
+		$('.kitchenform').slideToggle('fast');
+	});
+
+	$('.js-glazingbead li').on('click', function() {
+		$('.js-glazingbead li').removeClass('is-active');
+		$(this).addClass('is-active');
+	});
+
 	$('.js-sliderbox').each(function(){
 		var p = this.parentNode;
 
