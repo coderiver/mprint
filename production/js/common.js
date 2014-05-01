@@ -147,18 +147,56 @@ $(document).ready(function() {
 
 	function sideAccord() {
 		$('.js-sidenav .sidenav__head').on('click', function() {
+			if ($(this).parent('li').children('ul').hasClass('sidenav__sub')){
+				$('.js-sidenav').children('li').removeClass('is-active');
+				$(this).parent().addClass('is-active');
+			}
+		});
+		// return false;
+	} sideAccord();
+	
+	function sideAccordPort() {
+		$('.js-sidenav .sidenav__head').on('click', function() {
+			var selected_id = $(this).attr('attr-id');
+			$("html, body").animate({ scrollTop: ($("#"+selected_id).offset().top-68) }, 1000);
 			$('.js-sidenav').children('li').removeClass('is-active');
 			$(this).parent().addClass('is-active');
 		});
 		// return false;
-	} sideAccord();
+	} sideAccordPort();
 
 	function searchSuggest() {
 		var el = $('.js-searchsuggest'),
 				el_drop = ('.search__dropdown');
 
-		el.on('click', function() {
-			$(this).find(el_drop).addClass('is-open').slideDown('fast');
+		$("#s").on('keyup', function(e) {
+			
+			var data = {
+				action: 'search_auto',
+				str: $(this).val()
+			};
+			
+			var ajaxurl = $("#ajax_path").val();
+			
+			if ($(this).val().length > 2){
+				$("#search_results_loader").show();
+				el.find(el_drop).addClass('is-open').slideDown('fast');
+				jQuery.post(ajaxurl, data, function(response) {
+					if (response){
+						$("#search_results").html('').html(response);
+						el.find(el_drop).addClass('is-open').slideDown('fast');
+					}else{
+						el.find( el_drop ).removeClass('is-open').slideUp('fast');
+					}
+					$("#search_results_loader").hide();
+				});
+			}else{
+				$("#search_results").html('');
+				el.find( el_drop ).removeClass('is-open').slideUp('fast');
+				$("#search_results_loader").hide();
+			}
+			
+			
 		});
 
 		//click document
@@ -220,5 +258,36 @@ $(document).ready(function() {
 	$(window).resize(function() {
 		posSidebar();
 	});
+	
+	$('.request__dropdown').find('form').submit(function(){ // Andrei added
+		// get all files and save to hidden field
+		var file_urls = '';
+		$(".download_div").each(function(index, element) {
+			var c_url = $(this).children("div").children('a').attr('href');
+           	file_urls += c_url+'&nbsp;<br>';
+        });
+		$("#uploaded_files").val(file_urls);
+	});
+	
 
 });
+
+function clearFields(form_el){
+	
+	$(form_el).find('input[type=text]').each(function(index, element) {
+        $(this).val('');
+    });
+	$(form_el).find('input[type=tel]').each(function(index, element) {
+        $(this).val('');
+    });
+	$(form_el).find('input[type=email]').each(function(index, element) {
+        $(this).val('');
+    });
+	$(form_el).find('textarea').each(function(index, element) {
+        $(this).val('');
+    });
+	
+	$(".download_div").each(function(index, element) {
+		$(this).remove();
+	});
+}
