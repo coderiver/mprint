@@ -30,13 +30,13 @@ $(document).ready(function() {
 
 	});
 
-	$('.icon-zoom').on('click', function() {
-		$('.popup').addClass('is-open');
-	});
-
-	$('.popup__close').on('click', function() {
-		$(this).parent().removeClass('is-open');
-	});
+	// $('.icon-zoom').on('click', function() {
+	// 	$('.popup').addClass('is-open');
+	// });
+	$('.popup__close').parent().removeClass('is-open');
+	// $('.popup__close').on('click', function() {
+	// 	$(this).parent().removeClass('is-open');
+	// });
 
 
 	$('.js-newsloader').on('click', function() {
@@ -269,7 +269,7 @@ $(document).ready(function() {
 		$("#uploaded_files").val(file_urls);
 	});
 	
-
+$('.fancybox').fancybox();
 });
 
 function clearFields(form_el){

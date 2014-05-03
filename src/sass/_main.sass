@@ -3,7 +3,7 @@
 .teaser__slider
 	height: 480px
 	overflow: hidden
-	img //tmp
+	img
 		display: block
 		min-width: 100%
 .teaser__pager
@@ -173,15 +173,14 @@
 			@extend %dline_bottom
 			display: block
 			+r(w1220)
-				@extend %dline_bottom
 				display: none
 	.caption
 		overflow: hidden
 		&:before
 			@extend %dline
 			display: none
+			@extend .dline
 			+r(w1220)
-				@extend %dline
 				display: block
 	.thumbnail
 		position: relative

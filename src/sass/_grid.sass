@@ -39,7 +39,11 @@ $gridColumns-sm: 8
 @for $n from 1 through $gridColumns-sm
 	+r(w1220)
 		.col-sm-#{$n}
-			@extend %grid
+			//@extend %grid
+			position: relative
+			float: left
+			min-height: 1px
+			+box
 			width: (($n * $gridWidth-sm) / $gridColumns-sm)
 
 .is-hidden-sm
