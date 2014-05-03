@@ -56,7 +56,7 @@ $(document).ready(function() {
 
 	$('.js-teaser-slider').cycle({
 		fx: "scrollHorz",
-		timeout: 0,
+		timeout: 2000,
 		log: false,
 		slideActiveClass: "is-active",
 		pagerActiveClass: "is-active",

@@ -1310,7 +1310,7 @@ span.wpcf7-form-control-wrap { position: static; }
 .sidenav .sidenav__sub a { display: block; position: relative; padding: 2px 35px; font-size: 15px; color: #353535; text-decoration: none; }
 .sidenav .sidenav__sub li { margin-bottom: 10px; }
 .sidenav .sidenav__sub li.is-active a:before, .sidenav .sidenav__sub li:hover a:before { position: absolute; top: 50%; margin-top: -4px; left: 24px; background: url('../img/icons-s79bfb5b612.png') 0 -182px no-repeat; width: 5px; height: 8px; content: ""; }
-.sidenav .sidenav__head { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; border: 1px solid #e8e8e8; border-width: 1px 0 0; cursor: pointer; height: 41px; line-height: 41px; }
+.sidenav .sidenav__head { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; border: 1px solid #e8e8e8; border-width: 1px 0 0; cursor: pointer; padding: 10px 0; }
 .sidenav .sidenav__head span { font-size: 15px; position: relative; display: block; padding: 0 45px 0 25px; text-transform: uppercase; }
 .sidenav .sidenav__head i { position: absolute; right: 28px; top: 50%; margin-top: -3px; background: url('../img/icons-s79bfb5b612.png') 0 -41px no-repeat; width: 9px; height: 6px; }
 .sidenav > li.is-active .sidenav__head i { background: url('../img/icons-s79bfb5b612.png') 0 -57px no-repeat; width: 9px; height: 6px; }
