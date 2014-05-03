@@ -86,12 +86,13 @@
 			.dropdown__arrow
 				position: absolute
 				right: 22px
+				+rotate(180)
 			&:first-child
 				border-top: none
 			&.is-active, &:hover
 				background: #efefef
 				.dropdown__arrow
-					+rotate(180)
+					+rotate(0)
 			&:hover
 				ul
 					display: block
