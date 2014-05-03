@@ -1051,7 +1051,6 @@ a:hover { text-decoration: none; color: #0089bc; }
 .share-widget__content img { display: block; }
 
 .g-pseudo { text-decoration: none !important; border-bottom: 1px dashed; }
-.g-pseudo:hover { text-decoration: none !important; border-bottom: none; }
 
 .g-pseudo-dark { color: #353535; text-decoration: none !important; border-bottom: 1px dashed #353535; }
 .g-pseudo-dark:hover { text-decoration: none !important; border-bottom: none; }
@@ -1182,6 +1181,7 @@ span.wpcf7-form-control-wrap { position: static; }
 .header:after { content: " "; display: table; clear: both; }
 .header:before { position: absolute; top: 0; left: 0; right: 0; height: 4px; background: #353535; content: ""; }
 .header a { color: white; }
+.header a:hover { opacity: 0.7; }
 
 .header__logo a { display: block; background: url('../img/icons-s79bfb5b612.png') 0 -417px no-repeat; width: 198px; height: 60px; font: 0/0 a; text-shadow: none; color: transparent; }
 
@@ -1197,7 +1197,7 @@ span.wpcf7-form-control-wrap { position: static; }
 .lang:before { position: absolute; top: 0; left: 0; height: 46px; width: 1px; background: rgba(255, 255, 255, 0.33); content: ""; }
 
 .lang__trigger { position: relative; cursor: pointer; }
-.lang__trigger:hover span { border: none; }
+.lang__trigger:hover span { opacity: 0.7; }
 .lang__trigger i { margin-left: 5px; }
 
 .lang__select { position: absolute; top: 0; right: 0; bottom: 0; left: 0; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; cursor: pointer; }
@@ -1296,9 +1296,12 @@ span.wpcf7-form-control-wrap { position: static; }
 .footer__contacts { margin-left: 30px; display: inline-block; vertical-align: top; }
 
 .footer__social { position: relative; display: inline-block; vertical-align: top; line-height: 1.1; padding-right: 45px; }
+.footer__social a { text-decoration: none; }
+.footer__social a:hover { color: white; }
 .footer__social:before { position: absolute; top: -5px; right: 0; height: 46px; width: 1px; background: rgba(255, 255, 255, 0.33); content: ""; }
 .footer__social ul { display: inline-block; vertical-align: top; padding-top: 2px; }
 .footer__social li { display: inline-block; vertical-align: middle; font-size: 22px; margin-left: 19px; }
+.footer__social li a:hover i { color: white; }
 .footer__social li:first-child { margin-left: 0; }
 .footer__social li span { font: 0/0 a; text-shadow: none; color: transparent; }
 

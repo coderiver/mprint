@@ -47,6 +47,7 @@ $(document).ready(function() {
 	$('.js-contact-form').on('click', function() {
 		$(this).parent().find('.contact__form').addClass('is-open');
 		$(this).remove();
+		$('#mapframe').height($('.content').height());
 		return false;
 	});
 
