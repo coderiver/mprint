@@ -1,5 +1,5 @@
 $(document).ready(function() {
-
+	$('.draggable').draggable();
 	$('.js-briefbtn').on('click', function() {
 		$(this).toggleClass('is-active');
 		$('.kitchenform').slideToggle('fast');

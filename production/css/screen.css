@@ -1550,7 +1550,8 @@ span.wpcf7-form-control-wrap { position: static; }
 
 .k2 { position: absolute; bottom: 59px; left: 218px; width: 654px; height: 433px; }
 .k2 .k__bg { position: absolute; top: 0; left: 0; width: 654px; height: 433px; z-index: 10; background: url(../img/k2.png) no-repeat 0 0; pointer-events: none; }
-.k2 .k__wall { width: 602px; height: 142px; cursor: move; position: absolute; z-index: 9; position: absolute; top: 137px; left: 29px; background: green; }
+.k2 .k__wall { width: 602px; height: 142px; position: absolute; z-index: 9; position: absolute; top: 137px; left: 29px; overflow: hidden; }
+.k2 .k__wall i { cursor: move; position: absolute; top: 0; left: 0; }
 
 /*! fancyBox v2.1.5 fancyapps.com | fancyapps.com/fancybox/#license */
 .fancybox-wrap, .fancybox-skin, .fancybox-outer, .fancybox-inner, .fancybox-image, .fancybox-wrap iframe, .fancybox-wrap object, .fancybox-nav, .fancybox-nav span, .fancybox-tmp { padding: 0; margin: 0; border: 0; outline: none; vertical-align: top; }
