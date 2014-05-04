@@ -22,12 +22,144 @@
 		font-size: 13px 
 		color: #353535
 		line-height: 1.2  
-	div
-		display: inline-block
-		vertical-align: top
-	.controls__type1
-		+s(type1)
-	.controls__type2
-		+s(type2)
-	.controls__type3
-		+s(type3)
+		+text-shadow(0 1px 0 #fff)
+	.controls__type
+		margin-bottom: 24px 
+		font-size: 0 
+		label
+			display: block
+			text-align: center
+			margin-bottom: 8px 
+		div
+			display: inline-block
+			vertical-align: top
+			cursor: pointer
+			&.is-active,&:hover
+				opacity: .4 
+		.controls__type1
+			+s(type1)
+			margin-right: 16px 
+		.controls__type2
+			+s(type2)
+			margin-right: 16px 
+		.controls__type3
+			+s(type3)
+	.controls__color
+		margin-bottom: 14px 
+		label
+			display: block
+			text-align: center
+			margin-bottom: 8px 
+		.controls__colorwrap
+			width: 160px - 21px
+			padding-left: 21px 
+			height: 41px - 10px
+			padding-top: 10px 
+			margin: 0 auto 
+			border-radius: 20px 
+			background-color: rgba(255,255,255,.38)
+			+box-shadow(0 1px 0 #fff, inset 0 1px 3px rgba(0,0,0,.45))
+			div
+				display: inline-block
+				margin-right: 12px 
+				border-radius: 20px 
+				width: 18px
+				height: 19px
+				@include box-shadow(0 1px 0 rgba(0,0,0,.2), inset 0 1px 0 rgba(255,255,255,.72))
+				cursor: pointer
+				&:hover,&.is-active
+					opacity: .4 
+		.controls__color1
+			@include background-image(linear-gradient(bottom, #0b0b0b 0%, #676767 100%))
+		.controls__color2
+			@include background-image(linear-gradient(bottom, #dcdcdc 0%, #fff 100%))
+		.controls__color3
+			@include background-image(linear-gradient(bottom, #81592f 0%, #d9b377 100%))
+		.controls__color4
+			@include background-image(linear-gradient(bottom, #6D4E33 0%, #5F462D 100%))
+	.controls__aspect
+		position: relative
+		margin-bottom: 36px 
+		label
+			cursor: pointer
+		.controls__help
+			position: absolute
+			right: 0
+			top: 0
+			font-size: 9px   
+			height: 11px 
+			width: 11px 
+			text-align: center
+			line-height: 11px
+			color: #E7E3D3
+			background: #383838  
+			border-radius: 11px 
+			font-style: normal 
+			cursor: pointer
+			&:hover
+				background: #009BD5 
+		.controls__aspectcheck
+			+s(checkbox1)
+			cursor: pointer
+			float: left
+			margin-right: 8px 
+			margin-top: 4px 
+		&.is-checked
+			.controls__aspectcheck
+				+s(checkbox1_checked)
+	.controls__input
+		border-radius: 16px 
+		background-color: rgba(255,255,255,.38)
+		+box-shadow(0 1px 0 #fff, inset 0 1px 3px rgba(0,0,0,.45))
+		font-size: 18px 
+		color: #010101
+		font-weight: bold 
+		padding: 10px 
+	.controls__changephoto,.controls__zoom 
+		display: block
+		width: 155px
+		margin: 0 auto 15px auto
+		height: 37px
+		background-color: rgba(255,255,255,.38)
+		@include box-shadow(0 1px 0 rgba(0,0,0,.32), inset 0 1px 0 #fff)
+		border-radius: 20px 
+		+text-shadow(0 1px 0 #fff)
+	.controls__changephoto
+		margin-top: 36px 
+		color: #000
+		line-height: 37px
+		text-align: center 
+		i
+			margin-right: 11px 
+	.controls__zoom
+		font-size: 18px 
+		position: relative
+		.controls__zoomin
+			left: 50% 
+			border-left: 1px solid #F9F8F5 
+			box-shadow: -1px 0 0 #CAC8BF
+		div
+			position: absolute
+			width: 50%
+			left: 0 
+			cursor: pointer
+			height: 37px  
+			text-align: center
+			line-height: 40px 
+	.controls__size
+		margin-bottom: 11px 
+		label
+			display: inline-block
+			vertical-align: middle
+			width: 65px 
+		input
+			vertical-align: middle
+			width: 57px - 20px
+			text-align: center 
+		.controls__units
+			vertical-align: middle
+			color: #000 
+			font-size: 13px 
+			+text-shadow(0 1px 0 #fff)
+			display: inline-block
+

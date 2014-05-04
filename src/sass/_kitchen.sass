@@ -78,6 +78,7 @@
 	width: 480px
 	margin-left: auto
 	margin-right: auto
+	position: relative
 	+box
 
 .kitchenform__row
@@ -88,6 +89,7 @@
 	&:first-child
 		&:before
 			content: none
+			
 
 
 
@@ -194,6 +196,38 @@
 		display: inline-block
 		vertical-align: middle
 
-
+.itogo
+	width: 258px - 32px
+	border: 1px solid #d2d2d2
+	background-color: #fafafa
+	padding: 16px 
+	text-align: center
+	position: absolute
+	right: -300px 
+	top: 0 
+	margin-top: 15px 
+	&:before
+		content: ' '
+		+s(arrow1)
+		position: absolute
+		top: 10px 
+		left: -16px 
+	.itogo__title
+		font-size: 18px 
+		text-transform: uppercase
+		color: #353535
+	.itogo__value
+		color: #353535
+		font-size: 42px  
+		padding: 45px 0 
+	.itogo__submit
+		height: 39px
+		background-color: #00adef
+		line-height: 39px
+		text-align: center
+		display: block 
+		color: #fff
+		&:hover
+			color: #fff 
 
 

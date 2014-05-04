@@ -23,6 +23,11 @@
               cwd: "src/img/",
               src: ["**"],
               dest: "production/img/"
+            },{
+              expand: true,
+              cwd: "src/img/icons/",
+              src: ["**"],
+              dest: "production/img/icons/"
             }, {
               expand: true,
               cwd: "src/fonts/",

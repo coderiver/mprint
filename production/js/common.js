@@ -271,6 +271,11 @@ $(document).ready(function() {
 	});
 	
 $('.fancybox').fancybox();
+
+$(".controls__aspect").click(function(event) {
+	$(this).toggleClass('is-checked');
+});
+
 });
 
 function clearFields(form_el){
