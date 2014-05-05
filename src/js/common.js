@@ -1,5 +1,25 @@
 $(document).ready(function() {
 	$(".itogo").sticky({topSpacing:110});
+	$('.js-zoomout').click(function(event) {
+		n = parseInt($(".draggable").attr('data-zoom'));
+		if(n>1 && n<10){
+			n = n - 1;
+			$(".draggable").removeClass('is-size1 is-size2 is-size3 is-size4 is-size5 is-size6 is-size7 is-size8 is-size9 is-size10')
+			$(".draggable").addClass('is-size'+n);
+			$(".draggable").attr('data-zoom', n);
+		}
+		return false;
+	});
+	$('.js-zoomin').click(function(event) {
+		n = parseInt($(".draggable").attr('data-zoom'));
+		if(n>1 && n<10){
+			n = n + 1;
+			$(".draggable").removeClass('is-size1 is-size2 is-size3 is-size4 is-size5 is-size6 is-size7 is-size8 is-size9 is-size10')
+			$(".draggable").addClass('is-size'+n);
+			$(".draggable").attr('data-zoom', n);
+		}
+		return false;
+	});
 	// $(window).scroll(function(event) {
 	// 	ft = $('.itogo')[0].getBoundingClientRect().top;
 	// 	if(ft>110){
