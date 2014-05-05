@@ -1,4 +1,14 @@
 $(document).ready(function() {
+	$(".itogo").sticky({topSpacing:110});
+	// $(window).scroll(function(event) {
+	// 	ft = $('.itogo')[0].getBoundingClientRect().top;
+	// 	if(ft>110){
+	// 		$('.itogo').removeClass('is-fixed');
+	// 	}
+	// 	else{
+	// 		$('.itogo').addClass('is-fixed');
+	// 	}
+	// });
 	$('.draggable').draggable();
 	$('.js-briefbtn').on('click', function() {
 		$(this).toggleClass('is-active');
