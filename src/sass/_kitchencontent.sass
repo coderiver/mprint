@@ -234,6 +234,43 @@
 				+s(rotate1)
 				position: relative
 				top: 20px 
+.k3
+	@extend .k1
+	.k__wall
+		left: 26px 
+	.k__rotate
+		left: auto 
+		right: 0 
+	.k__bg
+		background: url(../img/k3-white.png) no-repeat 0 0 
+	&.c1 .k__bg
+		background: url(../img/k3-black.png) no-repeat 0 0 
+	&.c2 .k__bg
+		background: url(../img/k3-white.png) no-repeat 0 0 
+	&.c3 .k__bg
+		background: url(../img/k3-beige.png) no-repeat 0 0 
+	&.c4 .k__bg
+		background: url(../img/k3-wood.png) no-repeat 0 0 
+	&.is-rotated
+		.k__bg
+			background: url(../img/k3r-white.png) no-repeat 0 0 
+		&.c1 .k__bg
+			background: url(../img/k3r-black.png) no-repeat 0 0 
+		&.c2 .k__bg
+			background: url(../img/k3r-white.png) no-repeat 0 0 
+		&.c3 .k__bg
+			background: url(../img/k3r-beige.png) no-repeat 0 0 
+		&.c4 .k__bg
+			background: url(../img/k3r-wood.png) no-repeat 0 0 
+		.k__wall
+			left: auto
+			right: 10px 
+		.k__rotate
+			left: auto 
+			right: auto 
+			left: 3px 
+
+
 		
 .k__content
 	left: 210px
