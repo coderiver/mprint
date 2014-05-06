@@ -1,4 +1,14 @@
 $(document).ready(function() {
+	$('.controls__colorwrap div').click(function(event) {
+		val = $(this).attr('data-class');
+		$('.k__content').removeClass('c1 c2 c3 c4').addClass(val);
+	});
+	$('.controls__type div').click(function(event) {
+		val = $(this).attr('data-type');
+		$(this).siblings().removeClass('is-active');
+		$(this).addClass('is-active');
+		$('.k__content').removeClass('k1 k2 k3').addClass('k'+val);
+	});
 	$(".itogo").sticky({topSpacing:110});
 	$('.js-zoomout').click(function(event) {
 		n = parseInt($(".draggable").attr('data-zoom'));
