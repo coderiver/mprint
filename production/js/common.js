@@ -3,6 +3,9 @@ $(document).ready(function() {
 		val = $(this).attr('data-class');
 		$('.k__content').removeClass('c1 c2 c3 c4').addClass(val);
 	});
+	$('.k__rotate').click(function(event) {
+		$('.k__content').toggleClass('is-rotated');
+	});
 	$('.controls__type div').click(function(event) {
 		val = $(this).attr('data-type');
 		$(this).siblings().removeClass('is-active');
