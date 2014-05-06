@@ -7,7 +7,10 @@
 	@@include('_headerscripts.html')
 </head>
 <body>
+
+
 <div id="parallax-bg" style="background-image: url('img/main_bg.jpg')"></div>
+
 <!-- begin  out-->
 <div class="out">
 	@@include('_header.html')
@@ -16,6 +19,23 @@
 		@@include('_navbar.html')
 		<!-- begin content -->
 		<div class="content">
+			<script>
+				$(document).ready(function() {
+					$("#wall").one('load', function(){
+						$(this).show().BlaCrop({
+							area_width: 602, 
+							area_height: 142,
+							crop_result: "/user_image_resize.php",
+							error_msg: 'Error',
+							zoom_in_button: '#zoomin',
+							zoom_out_button: '#zoomout',
+							save_button: '#iu-save-pr',
+							block: '#iu-block-pr',
+							message: '#iu-message-pr'
+						});
+					}).attr('src', 'http://placekitten.com/800/800');
+				});
+			</script>
 			<!-- begin k  -->
 			<div class="k">
 				<h2 class="k__title">Стеновые панели для кухни с фотопечатью</h2>
@@ -27,7 +47,7 @@
 					</div>
 					<div class="k__bg"></div>
 					<div class="k__wall">
-						<i style="background:url(img/wall.jpg) no-repeat 0 0;width: 1600px;height: 900px;" class="draggable is-size5" data-zoom="5"></i>
+						<img id="wall" style="display: none;" src="">
 					</div>
 				</div>
 
@@ -73,8 +93,8 @@
 					<!-- end size -->
 					<a href="#" class="controls__changephoto"><i class="fa fa-picture-o"></i>Изменить фото</a>
 					<div class="controls__zoom">
-						<div class="controls__zoomout js-zoomout"><i class="fa fa-minus"></i></div>
-						<div class="controls__zoomin js-zoomin"><i class="fa fa-plus"></i></div>
+						<div class="controls__zoomout js-zoomout" id="zoomout"><i class="fa fa-minus"></i></div>
+						<div class="controls__zoomin js-zoomin" id="zoomin"><i class="fa fa-plus"></i></div>
 					</div>
 				</div>
 				<!-- end controls -->
