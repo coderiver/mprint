@@ -350,6 +350,151 @@ $btn-subscribe-color: #4698b1
 		a
 			text-transform: uppercase
 
+.overkitchen
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	background: #fff
+	z-index: 1010
+	overflow: hidden
+	.overkitchen__head
+		border-bottom: 1px solid #e8e8e8
+		// margin-bottom: 1px
+	.overkitchen__close
+		position: absolute
+		top: 23px
+		right: 21px
+		+s(close)
+		cursor: pointer
+	.overkitchen__menu
+		ul
+			+clr
+		li
+			position: relative
+			float: left
+			&.is-active
+				a
+					background: #fff
+					height: 70px
+					margin-bottom: -1px
+			&.last
+				a
+					&:before
+						margin-left: -1px
+		a
+			display: block
+			height: 69px
+			width: 240px
+			+box
+			padding: 16px 30px
+			font-family: $font-alt
+			text-transform: uppercase
+			color: #353535
+			text-decoration: none
+			font-size: 15px
+			background: #efefef
+			&:before
+				position: absolute
+				left: 100%
+				top: 0
+				+s(overk_shadow)
+				content: ""
+				z-index: 1
+	.overkitchen__inner
+		padding: 30px 16px 30px 30px
+	.overkitchen__content
+		.l-sidebar
+			position: static
+			&:before
+				top: 69px
+				left: auto
+				right: 240px
+		.sidenav
+			&:before
+				content: none
+		.l-main
+			&:before
+				content: none
+
+.fots
+	.fots__i
+		margin-right: 10px
+		position: relative
+		height: 185px
+		overflow: hidden
+		margin-top: 10px
+		&:first-child
+			margin-top: 0
+		&:hover
+			.fots__overlay
+				+opacity(1)
+			.fots__price
+				+opacity(0)
+	.fots__pic
+		img
+			display: block
+			min-height: 100%
+			min-width: 100%
+	.fots__overlay
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		background: rgba(#000, .5)
+		+opacity(0)
+		+transition(.2s)
+	.fots__btn
+		position: absolute
+		top: 50%
+		margin-top: -18px
+		left: 50%
+		margin-left: -158px
+		display: inline-block
+		background-color: rgba(0,0,0,.5)
+		@include box-shadow(0 1px 0 rgba(255,255,255,.22), inset 0 1px 3px rgba(0,0,0,.68))
+		font-size: 15px
+		color: #fff
+		text-transform: uppercase
+		font-family: $font-alt
+		text-decoration: none
+		width: 316px
+		text-align: center
+		height: 36px
+		line-height: 36px
+		+border-radius(20px)
+	.fots__price
+		position: absolute
+		bottom: 0
+		right: 0
+		background: rgba(#000,.7)
+		+opacity(1)
+		+transition(.2s)
+		color: #fff
+		padding: 0 24px
+		height: 46px
+		line-height: 46px
+	.fots__pricelabel
+		display: inline-block
+		vertical-align: middle
+		line-height: 1
+		font-size: 12px
+	.fots__pricenum
+		display: inline-block
+		vertical-align: middle
+		line-height: 1
+		margin-left: 15px
+		font-size: 18px
+		font-family: $font-alt
+
+
+
+
+
+
+
 
 
 

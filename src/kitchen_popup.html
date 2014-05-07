@@ -4,27 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>kitchen.html</title>
-		<meta name="viewport" content="width=1200">
-	<link rel="stylesheet" media="screen" href="css/screen.css" >
-
-	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,700,300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic,900,900italic,300italic,300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-
-	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
-
-	<script src="js/jquery.js"></script>
-	<script src="js/ui.js"></script>
-	<script src="js/modernizr.js"></script>
-	<script src="js/sticky.js"></script>
-	<!--<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>-->
-	<!--<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script> -->
-	<script src="js/cycle.js"></script>
-	<!--<script src="http://malsup.github.io/jquery.cycle2.carousel.js"></script>-->
-	<script src="js/fancybox.js"></script>
-	<script src="js/crop.js"></script>
-	<script src="js/jquery.mousewheel.js"></script>
-	<script src="js/jquery.jscrollpane.min.js"></script>
-	<script src="js/common.js"></script>
+	@@include('_headerscripts.html')
 </head>
 <body>
 
@@ -33,168 +13,10 @@
 
 <!-- begin  out-->
 <div class="out">
-		<!-- begin header -->
-	<div class="header">
-		<div class="container">
-			<div class="row">
-				<div class="header__logo col-2">
-					<a href="#0">MPrint</a>
-				</div>
-				<div class="header__meta col-7 col-sm-5">
-					<div class="contacts">
-						<ul class="contacts__group">
-							<li>(+372) 56&nbsp;226&nbsp;517</li>
-							<li>(+372) 644 65&nbsp;56</li>
-						</ul>
-						<ul class="contacts__group">
-							<li><i class="fa fa-map-marker"></i> <a href="#0" class="g-pseudo">Peterburi tee 47, Tallinn</a></li>
-							<li><i class="fa fa-clock-o"></i> Пн&nbsp;&mdash; Пт: 9&nbsp;&mdash; 17:30</li>
-						</ul>
-						<ul class="contacts__group">
-							<li><i class="fa fa-envelope"></i> <a href="#0" class="g-pseudo">info@mprint.ee</a></li>
-						</ul>
-					</div>
-					<div class="lang">
-						<div class="lang__trigger">
-							<span class="g-pseudo">Русский</span> <i class="fa fa-angle-down"></i>
-							<select class="lang__select">
-								<option>Русский</option>
-								<option>Английский</option>
-							</select>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- end header -->
+	@@include('_header.html')
 	<!-- begin page -->
 	<div class="page kitchen">
-				<!-- begin navbar -->
-		<div class="navbar js-navbar">
-				<!-- begin sitenav -->
-				<nav class="sitenav col-6">
-					<ul class="sitenav__ul">
-						<li class="sitenav__clause sitenav__clause_adv has-dropdown">
-							<a href="#0">Изготовление рекламы</a>
-							<div class="dropdown">
-								<ul>
-									<li><a href="#0">Печатная продукция <span class="dropdown__arrow"><i class="fa fa-angle-left"></i></span></a></li>
-									<li><a href="#0">Широкоформатная печать <span class="dropdown__arrow"><i class="fa fa-angle-left"></i></span></a>
-											<ul>
-												<li><a href="#0">Билборды</a></li>
-												<li><a href="#0">Вывески</a></li>
-												<li><a href="#0">Баннеры</a></li>
-											</ul>
-									</li>
-									<li><a href="#0">Roll-Up и стенды <span class="dropdown__arrow"><i class="fa fa-angle-left"></i></span></a></li>
-									<li><a href="#0">Световые короба и буквы <span class="dropdown__arrow"><i class="fa fa-angle-left"></i></span></a></li>
-									<li><a href="#0">Баннеры и биллборды <span class="dropdown__arrow"><i class="fa fa-angle-left"></i></span></a></li>
-								</ul>
-							</div>
-						</li>
-						<li class="sitenav__clause sitenav__clause_print">
-							<a href="#0">Интерьерная печать</a>
-						</li>
-						<li class="sitenav__clause">
-							<a href="#0">Новости</a>
-						</li>
-						<li class="sitenav__clause">
-							<a href="#0">О&nbsp;компании</a>
-						</li>
-						<li class="sitenav__clause">
-							<a href="#0">Контакт</a>
-						</li>
-					</ul>
-				</nav>
-				<!-- end sitenav -->
-
-				<!-- begin search -->
-				<div class="search col-2 col-sm-1 js-searchsuggest">
-					<div class="search__inner">
-						<input type="text" class="search__query" placeholder="Товары и&nbsp;услуги..." value="Рекламны">
-						<button type="submit" class="search__submit"><i class="fa fa-search"></i></button>
-					</div>
-					<div class="search__dropdown col-4 col-sm-2">
-						<ul>
-							<li>
-								<a href="#0"><mark>Релкамн</mark>ый щит</a>
-							</li>
-							<li class="is-selected">
-								<a href="#0"><mark>Релкамн</mark>ый буклет</a>
-							</li>
-							<li>
-								<a href="#0"><mark>Релкамн</mark>ая шляпа</a>
-							</li>
-							<li>
-								<a href="#0"><mark>Релкамн</mark>ые штучки</a>
-							</li>
-							<li>
-								<a href="#0">Разработка <mark>релкамн</mark>ых концепций</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<!-- end search -->
-
-				<!-- begin request -->
-				<div class="request col-2 col-sm-1">
-					<div class="request__trigger js-request">
-						<div class="request__triggerlabel">
-							Задать вопрос<br>
-							<span>или загрузить файл</span>
-						</div>
-						<div class="request__ticon">
-							<i class="fa fa-upload"></i>
-						</div>
-					</div>
-					<div class="request__dropdown">
-						<form action="#0">
-							<div class="form__group">
-								<input type="text" class="input input_small" placeholder="Ваше имя*">
-								<input type="text" class="input input_small pull-right" placeholder="Название компании">
-							</div>
-							<div class="form__group">
-								<input type="tel" class="input input_small" placeholder="Номер телефона">
-								<input type="email" class="input input_small pull-right" placeholder="E-mail адрес">
-							</div>
-							<div class="form__group">
-								<textarea name="" id="" cols="" rows="" class="textarea" placeholder="Добавьте комментарий к заказу"></textarea>
-							</div>
-							<div class="form__group form__group_fileload">
-								<div class="upload">
-									<div class="btn-loadfile">
-										<input type="file">
-										<i></i>
-										Выберите еще один файл
-									</div>
-									<ul class="upload__files">
-										<li>
-											<div class="progress is-animate">
-												<div class="progress__bar" style="width: 51%;"></div>
-											</div>
-										</li>
-									</ul>
-									<div class="upload__info">
-										<div class="upload__filename">main_design_for_the_mainpage.cdr</div>
-										<div class="upload__actions">
-											<a href="#0">загрузить</a>
-											<a href="#0">удалить</a>
-										</div>
-									</div>
-
-								</div>
-							</div>
-							<div class="form__action clearfix">
-								<button type="submit" class="btn">Отправить</button>
-								<a href="#0" class="btn btn_link pull-right">Очистить форму</a>
-							</div>
-						</form>
-					</div>
-				</div>
-				<!-- end request -->
-		</div>
-		<!-- end navbar -->
+		@@include('_navbar.html')
 		<!-- begin content -->
 		<div class="content">
 			<script>
@@ -298,7 +120,7 @@
 					</div>
 					<div class="col-6 col-sm-4">
 						<!-- begin brief -->
-						<div class="brief-btn js-briefbtn is-active">
+						<div class="brief-btn js-briefbtn">
 							<div class="brief-btn__content">
 								Получить ценовое предложение
 								<span>на печать этого изображения для вашей кухни</span>
@@ -314,7 +136,7 @@
 						</a>
 					</div>
 				</div>
-				<div class="kitchenform">
+				<div class="kitchenform" style="display:none;">
 					<div class="itogo__position">
 						<!-- begin itogo  -->
 						<div class="itogo">
@@ -744,38 +566,133 @@
 			</div>
 		</div>
 		<!-- end content -->
-
+		<div class="overkitchen">
+			<div class="overkitchen__head">
+				<div class="overkitchen__close"></div>
+				<div class="overkitchen__menu">
+					<ul>
+						<li class="is-active"><a href="#">Выбрать изображение из каталога</a></li>
+						<li><a href="#">Выбрать изображение на Shutterstock.com</a></li>
+						<li class="last"><a href="#">Загрузить свое изображение</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="overkitchen__content content">
+				<div class="layout">
+					<div class="l-main">
+						<div class="overkitchen__inner">
+							<div class="fots scroll-pane">
+								<div class="fots__i">
+									<div class="fots__pic">
+										<img src="img/f1.jpg" alt="img">
+									</div>
+									<a href="#" class="fots__overlay">
+										<div class="fots__btn">выбрать это изображение</div>
+									</a>
+								</div>
+								<div class="fots__i">
+									<div class="fots__price">
+										<div class="fots__pricelabel">Стоимость<br> изображения:</div>
+										<div class="fots__pricenum">15 €</div>
+									</div>
+									<div class="fots__pic">
+										<img src="img/f2.jpg" alt="img">
+									</div>
+									<a href="#" class="fots__overlay">
+										<div class="fots__btn">выбрать это изображение</div>
+									</a>
+								</div>
+								<div class="fots__i">
+									<div class="fots__pic">
+										<img src="img/f3.jpg" alt="img">
+									</div>
+									<a href="#" class="fots__overlay">
+										<div class="fots__btn">выбрать это изображение</div>
+									</a>
+								</div>
+								<div class="fots__i">
+									<div class="fots__pic">
+										<img src="img/f1.jpg" alt="img">
+									</div>
+									<a href="#" class="fots__overlay">
+										<div class="fots__btn">выбрать это изображение</div>
+									</a>
+								</div>
+								<div class="fots__i">
+									<div class="fots__pic">
+										<img src="img/f2.jpg" alt="img">
+									</div>
+									<a href="#" class="fots__overlay">
+										<div class="fots__btn">выбрать это изображение</div>
+									</a>
+								</div>
+							</div>
+							<!-- /.fots -->
+						</div>
+					</div>
+					<div class="l-sidebar">
+						<!-- begin sidenav -->
+						<ul class="sidenav js-sidenav">
+							<li class="is-active">
+								<div class="sidenav__head"><span>Печатная Продукция<i></i></span></div>
+								<ul class="sidenav__sub">
+									<li class="is-active"><a href="#">Визитки</a></li>
+									<li><a href="#">Флайеры</a></li>
+									<li><a href="#">Брошюры</a></li>
+									<li><a href="#">Фирменные бланки</a></li>
+									<li><a href="#">Буклеты</a></li>
+									<li><a href="#">Пластиковые карточки</a></li>
+									<li><a href="#">Постеры / плакаты</a></li>
+								</ul>
+							</li>
+							<li>
+								<div class="sidenav__head"><span>Наружная реклама<i></i></span></div>
+								<ul class="sidenav__sub">
+									<li><a href="#">Визитки</a></li>
+									<li><a href="#">Флайеры</a></li>
+									<li><a href="#">Брошюры</a></li>
+									<li><a href="#">Фирменные бланки</a></li>
+									<li><a href="#">Буклеты</a></li>
+									<li><a href="#">Пластиковые карточки</a></li>
+									<li><a href="#">Постеры / плакаты</a></li>
+								</ul>
+							</li>
+							<li>
+								<div class="sidenav__head"><span>Roll-Up стенды, рамки<i></i></span></div>
+								<ul class="sidenav__sub">
+									<li><a href="#">Визитки</a></li>
+									<li><a href="#">Флайеры</a></li>
+									<li><a href="#">Брошюры</a></li>
+									<li><a href="#">Фирменные бланки</a></li>
+									<li><a href="#">Буклеты</a></li>
+									<li><a href="#">Пластиковые карточки</a></li>
+									<li><a href="#">Постеры / плакаты</a></li>
+								</ul>
+							</li>
+							<li>
+								<div class="sidenav__head"><span>Дизайн<i></i></span></div>
+								<ul class="sidenav__sub">
+									<li><a href="#">Визитки</a></li>
+									<li><a href="#">Флайеры</a></li>
+									<li><a href="#">Брошюры</a></li>
+									<li><a href="#">Фирменные бланки</a></li>
+									<li><a href="#">Буклеты</a></li>
+									<li><a href="#">Пластиковые карточки</a></li>
+									<li><a href="#">Постеры / плакаты</a></li>
+								</ul>
+							</li>
+						</ul>
+						<!-- end sidenav -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /.overkitchen -->
 	</div>
 	<!-- end page -->
 	<div class="push"></div>
 </div>
 <!-- end out-->
-<!-- begin footer -->
-<div class="footer">
-	<div class="container">
-		<div class="row">
-			<div class="col-2">
-				<div class="footer__copy">Copyright 2014 Mprint</div>
-				<div class="footer__design">Designed by&nbsp;Aprol Designs</div>
-			</div>
-			<div class="footer__meta col-5">
-				<div class="footer__social ">
-					<span class="footer__social-title"><a href='#'>Подписаться<br> на новости</a></span>
-					<ul>
-						<li><a href="#0"><i class="fa fa-facebook"></i><span>Facebook</span></a></li>
-						<li><a href="#0"><i class="fa fa-rss"></i><span>RSS</span></a></li>
-						<li><a href="#0"><i class="fa fa-pinterest"></i><span>Pinterest</span></a></li>
-						<li><a href="#0"><i class="fa fa-vk"></i><span>VK</span></a></li>
-					</ul>
-				</div>
-				<div class="footer__contacts">
-					<p>(+372) 56&nbsp;226&nbsp;517, (+372) 644 65&nbsp;56</p>
-					<p><i class="fa fa-map-marker"></i> Peterburi tee 47, Tallinn <i class="fa fa-envelope"></i> <a href="#0" class="g-pseudo">info@mprint.ee</a></p>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- end footer -->
+@@include('_footer.html', {"state": ""})
 </body>
 </html>

@@ -1,0 +1,83 @@
+.jspContainer
+	overflow: hidden
+	position: relative
+
+.jspPane
+	position: absolute
+
+.jspVerticalBar
+	position: absolute
+	top: 0
+	right: 0
+	width: 6px
+	height: 100%
+	background: #efefef
+	.jspArrow
+		height: 6px
+		&:focus
+			outline: none
+
+.jspHorizontalBar
+	position: absolute
+	bottom: 0
+	left: 0
+	width: 100%
+	height: 6px
+	background: red
+	display: none
+	.jspTrack,
+	.jspDrag
+		float: left
+		height: 100%
+	.jspCap
+		float: left
+	.jspArrow
+		width: 6px
+		float: left
+		height: 100%
+
+.jspArrow
+	background: #50506d
+	text-indent: -20000px
+	display: block
+	cursor: pointer
+	padding: 0
+	margin: 0
+	.jspDisabled
+		cursor: default
+		background: #80808d
+
+.jspCap
+	display: none
+
+.jspTrack
+	background: #efefef
+	position: relative
+
+.jspDrag
+	background: #8d8d8d
+	position: relative
+	top: 0
+	left: 0
+	cursor: pointer
+
+.jspCorner
+	background: #eeeef4
+	float: left
+	height: 100%
+
+// Yuk! CSS Hack for IE6 3 pixel bug :(
+* html .jspCorner
+	margin: 0 -3px 0 0
+
+// Basic styles for jScrollPane container
+.scroll-pane
+	width: 100%
+	height: 680px
+	overflow: auto
+	&:focus
+		outline: 0
+
+.horizontal-only
+	height: auto
+	max-height: 200px
