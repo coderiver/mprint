@@ -1,6 +1,8 @@
 $(document).ready(function() {
 	$('.scroll-pane').jScrollPane();
-
+	$('.controls__aspect').click(function(event) {
+		$('.k__proportions').toggle();
+	});
 	$('.controls__colorwrap div').click(function(event) {
 		val = $(this).attr('data-class');
 		$('.k__content').removeClass('c1 c2 c3 c4').addClass(val);
