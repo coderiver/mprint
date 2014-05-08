@@ -3,6 +3,12 @@ $(document).ready(function() {
 	$('.controls__aspect').click(function(event) {
 		$('.k__proportions').toggle();
 	});
+
+	$('.footer__social-title a').on('click', function() {
+		$(this).parent().find('.footer__subscribe').toggleClass('is-active');
+		return false;
+	});
+
 	$('.controls__colorwrap div').click(function(event) {
 		val = $(this).attr('data-class');
 		$('.k__content').removeClass('c1 c2 c3 c4').addClass(val);

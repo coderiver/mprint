@@ -412,6 +412,7 @@ $btn-subscribe-color: #4698b1
 				left: auto
 				right: 240px
 		.sidenav
+			margin-top: -1px
 			&:before
 				content: none
 		.l-main
@@ -492,7 +493,34 @@ $btn-subscribe-color: #4698b1
 
 
 
-
+.hint
+	position: absolute
+	left: -30px
+	bottom: 100%
+	background-color: #fafafa
+	@include box-shadow(0 0 12px rgba(#000,.6))
+	+box
+	width: 240px
+	padding: 25px 20px 20px
+	z-index: 100
+	font-weight: normal
+	font-style: normal
+	margin-bottom: 17px
+	display: none
+	&:before
+		position: absolute
+		bottom: -16px
+		left: 26px
+		content: ""
+		+s(hint_arr)
+	h3
+		font-size: 18px
+		text-transform: uppercase
+		font-family: $font-alt
+		font-weight: normal
+	p
+		font-size: 13px
+		margin-bottom: 0
 
 
 

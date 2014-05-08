@@ -1,5 +1,13 @@
 $(document).ready(function() {
 	$('.scroll-pane').jScrollPane();
+	$('.controls__aspect').click(function(event) {
+		$('.k__proportions').toggle();
+	});
+
+	$('.footer__social-title a').on('click', function() {
+		$(this).parent().find('.footer__subscribe').toggleClass('is-active');
+		return false;
+	});
 
 	$('.controls__colorwrap div').click(function(event) {
 		val = $(this).attr('data-class');
