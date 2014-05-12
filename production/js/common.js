@@ -1,6 +1,8 @@
 $(document).ready(function() {
 
 
+
+
 if($('.k').length>0){
 
 	function preload(arrayOfImages) {
@@ -69,11 +71,60 @@ preload([
 	$('.k__rotate').click(function(event) {
 		$('.k__content').toggleClass('is-rotated');
 	});
+
+	$("#wall").one('load', function(){
+		$(this).show().BlaCrop({
+			area_width: 602, 
+			area_height: 142,
+			crop_result: "/user_image_resize.php",
+			error_msg: 'Error',
+			zoom_in_button: '#zoomin',
+			zoom_out_button: '#zoomout',
+			save_button: '#iu-save-pr',
+			block: '#iu-block-pr',
+			message: '#iu-message-pr'
+		});
+	}).attr('src', 'http://placekitten.com/800/800');
 	$('.controls__type div').click(function(event) {
 		val = $(this).attr('data-type');
 		$(this).siblings().removeClass('is-active');
 		$(this).addClass('is-active');
-		$('.k__content').removeClass('k1 k2 k3').addClass('k'+val);
+		$('.k__content').removeClass('k1 k2 k3 is-rotated').addClass('k'+val);
+		$('#bc-crop-area,#bc-faded-image').remove();
+		$('#wall').attr('src', '');
+		 if(val=='2'){
+		 	//alert('go1')
+			$("#wall").one('load', function(){
+				$(this).show().BlaCrop({
+					area_width: 602, 
+					area_height: 142,
+					crop_result: "/user_image_resize.php",
+					error_msg: 'Error',
+					zoom_in_button: '#zoomin',
+					zoom_out_button: '#zoomout',
+					save_button: '#iu-save-pr',
+					block: '#iu-block-pr',
+					message: '#iu-message-pr'
+				});
+			}).attr('src', 'http://placekitten.com/800/800');
+		 }
+		else{
+			//alert('go2');
+			$("#wall").one('load', function(){
+				$(this).show().BlaCrop({
+					area_width: 638,
+					area_height: 165,
+					crop_result: "/user_image_resize.php",
+					error_msg: 'Error',
+					zoom_in_button: '#zoomin',
+					zoom_out_button: '#zoomout',
+					save_button: '#iu-save-pr',
+					block: '#iu-block-pr',
+					message: '#iu-message-pr'
+				});
+			}).attr('src', 'http://placekitten.com/800/800');
+		}
+		
 	});
 	$(".itogo").sticky({topSpacing:110});
 	$('.js-zoomout').click(function(event) {

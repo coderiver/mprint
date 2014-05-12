@@ -200,12 +200,17 @@
 	width: 668px
 	height: 561px 
 	.k__wall
-		width: 548px 
-		height: 117px 
+		width: 548px + 92px
+		height: 117px
 		left: 92px 
+		left: 0 
 		top: 203px 
 		position: absolute
 		z-index: 8
+		
+		width: 646px 
+		height: 165px 
+		top: 174px 
 	.k__bg
 		background: url(../img/k1-white.png) no-repeat 0 0 
 	&.c1 .k__bg
@@ -236,6 +241,11 @@
 			height: 117px 
 			left: 10px
 			top: 202px 
+			
+			left: 4px
+			width: 412px  
+			top: 174px 
+			height: 160px 
 		.k__rotate
 			left: auto 
 			right: 4px
@@ -249,7 +259,7 @@
 .k3
 	@extend .k1
 	.k__wall
-		left: 26px 
+		left: 22px 
 	.k__rotate
 		left: auto 
 		right: 0 
@@ -301,6 +311,7 @@
 	width: 602px 
 	height: 142px 
 	position: absolute
+	// width: 650px 
 	z-index: 8
 	position: absolute
 	left: 29px 
