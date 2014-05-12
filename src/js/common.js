@@ -1,4 +1,55 @@
 $(document).ready(function() {
+
+
+if($('.k').length>0){
+
+	function preload(arrayOfImages) {
+    $(arrayOfImages).each(function(index){
+        $('<img />')
+        .attr('src', arrayOfImages[index])
+        .load(function(){
+            $('div.preload').append( $(this) );
+            // Your other custom code
+        });
+    });
+    //alert("Done Preloading...");
+    $('.k__preload').fadeOut('slow');
+}
+
+// Usage:
+
+preload([
+    'img/k1-beige.png',
+	'img/k1-black.png',
+	'img/k1-white.png',
+	'img/k1-wood.png',
+	'img/k1r-beige.png',
+	'img/k1r-black.png',
+	'img/k1r-white.png',
+	'img/k1r-wood.png',
+	'img/k2-beige.png',
+	'img/k2-black.png',
+	'img/k2-color1.png',
+	'img/k2-color2.png',
+	'img/k2-white.png',
+	'img/k2-wood.png',
+	'img/k2.png',
+	'img/k3-beige.png',
+	'img/k3-black.png',
+	'img/k3-white.png',
+	'img/k3-wood.png',
+	'img/k3r-beige.png',
+	'img/k3r-black.png',
+	'img/k3r-white.png',
+	'img/k3r-wood.png',
+	'img/kitchenbg.jpg'
+]);
+
+}
+
+
+
+
 	$('.scroll-pane').jScrollPane();
 	$('.controls__aspect').click(function(event) {
 		$('.k__proportions').toggle();
@@ -10,7 +61,9 @@ $(document).ready(function() {
 	});
 
 	$('.controls__colorwrap div').click(function(event) {
+		$('.controls__colorwrap div').removeClass('is-active');
 		val = $(this).attr('data-class');
+		$(this).addClass('is-active')
 		$('.k__content').removeClass('c1 c2 c3 c4').addClass(val);
 	});
 	$('.k__rotate').click(function(event) {

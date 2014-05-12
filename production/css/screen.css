@@ -1616,10 +1616,15 @@ span.wpcf7-form-control-wrap { position: static; }
 .controls .controls__color .controls__colorwrap { width: 139px; padding-left: 21px; height: 31px; padding-top: 10px; margin: 0 auto; border-radius: 20px; background-color: rgba(255, 255, 255, 0.38); -moz-box-shadow: 0 1px 0 white, inset 0 1px 3px rgba(0, 0, 0, 0.45); -webkit-box-shadow: 0 1px 0 white, inset 0 1px 3px rgba(0, 0, 0, 0.45); box-shadow: 0 1px 0 white, inset 0 1px 3px rgba(0, 0, 0, 0.45); }
 .controls .controls__color .controls__colorwrap div { display: inline-block; margin-right: 12px; border-radius: 20px; width: 18px; height: 19px; -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.72); -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.72); box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.72); cursor: pointer; }
 .controls .controls__color .controls__colorwrap div:hover, .controls .controls__color .controls__colorwrap div.is-active { opacity: 0.4; }
+.controls .controls__color .controls__colorwrap div.is-active { opacity: 1; }
 .controls .controls__color .controls__color1 { background-image: -moz-linear-gradient(bottom, #0b0b0b 0%, #676767 100%); background-image: -webkit-linear-gradient(bottom, #0b0b0b 0%, #676767 100%); background-image: linear-gradient(to top, #0b0b0b 0%, #676767 100%); }
+.controls .controls__color .controls__color1.is-active { background: #0b0b0b; }
 .controls .controls__color .controls__color2 { background-image: -moz-linear-gradient(bottom, #dcdcdc 0%, #ffffff 100%); background-image: -webkit-linear-gradient(bottom, #dcdcdc 0%, #ffffff 100%); background-image: linear-gradient(to top, #dcdcdc 0%, #ffffff 100%); }
+.controls .controls__color .controls__color2.is-active { background: gainsboro; }
 .controls .controls__color .controls__color3 { background-image: -moz-linear-gradient(bottom, #81592f 0%, #d9b377 100%); background-image: -webkit-linear-gradient(bottom, #81592f 0%, #d9b377 100%); background-image: linear-gradient(to top, #81592f 0%, #d9b377 100%); }
+.controls .controls__color .controls__color3.is-active { background: #81592f; }
 .controls .controls__color .controls__color4 { background-image: -moz-linear-gradient(bottom, #6d4e33 0%, #5f462d 100%); background-image: -webkit-linear-gradient(bottom, #6d4e33 0%, #5f462d 100%); background-image: linear-gradient(to top, #6d4e33 0%, #5f462d 100%); }
+.controls .controls__color .controls__color4.is-active { background: #6d4e33; }
 .controls .controls__aspect { position: relative; margin-bottom: 36px; }
 .controls .controls__aspect label { cursor: pointer; }
 .controls .controls__aspect .controls__help { position: absolute; right: 0; top: 0; font-size: 9px; height: 11px; width: 11px; text-align: center; line-height: 11px; color: #e7e3d3; background: #383838; border-radius: 11px; font-style: normal; cursor: pointer; }
@@ -1708,6 +1713,8 @@ span.wpcf7-form-control-wrap { position: static; }
 .k__proportions .k__pbottom { background: rgba(0, 0, 0, 0.4); position: absolute; top: 100%; left: -600px; right: -600px; height: 500px; }
 .k__proportions .k__pleft { background: rgba(0, 0, 0, 0.4); position: absolute; width: 600px; left: -600px; top: 0; bottom: 0; }
 .k__proportions .k__pright { background: rgba(0, 0, 0, 0.4); position: absolute; width: 600px; left: 100%; top: 0; bottom: 0; }
+
+.k__preload { position: absolute; z-index: 1000; background: rgba(255, 255, 255, 0.97); padding-top: 300px; text-align: center; top: 0; left: 0; right: 0; bottom: 0; }
 
 /*! fancyBox v2.1.5 fancyapps.com | fancyapps.com/fancybox/#license */
 .fancybox-wrap, .fancybox-skin, .fancybox-outer, .fancybox-inner, .fancybox-image, .fancybox-wrap iframe, .fancybox-wrap object, .fancybox-nav, .fancybox-nav span, .fancybox-tmp { padding: 0; margin: 0; border: 0; outline: none; vertical-align: top; }
