@@ -88,7 +88,9 @@
 			&.is-active
 				background: #81592f 
 		.controls__color4
-			@include background-image(linear-gradient(bottom, #6D4E33 0%, #5F462D 100%))
+			//@include background-image(linear-gradient(bottom, #6D4E33 0%, #5F462D 100%))
+			//@include background-image(linear-gradient(bottom, #835d39 0%, #533E2A 100%))
+			@include background-image(linear-gradient(bottom, #533d29 0%, #74573c 100%))
 			&.is-active
 				background: #6D4E33 
 	.controls__aspect
@@ -200,16 +202,17 @@
 	width: 668px
 	height: 561px 
 	.k__wall
-		width: 548px + 92px
+		width: 638px
 		height: 117px
+		height: 165px 
 		left: 92px 
-		left: 0 
+		left: 1px
 		top: 203px 
 		position: absolute
 		z-index: 8
 		
-		width: 646px 
-		height: 165px 
+		// width: 646px 
+		// height: 165px 
 		top: 174px 
 	.k__bg
 		background: url(../img/k1-white.png) no-repeat 0 0 
@@ -242,7 +245,7 @@
 			left: 10px
 			top: 202px 
 			
-			left: 4px
+			left: 9px
 			width: 412px  
 			top: 174px 
 			height: 160px 
@@ -259,7 +262,7 @@
 .k3
 	@extend .k1
 	.k__wall
-		left: 22px 
+		left: 29px 
 	.k__rotate
 		left: auto 
 		right: 0 

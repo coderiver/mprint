@@ -1623,7 +1623,7 @@ span.wpcf7-form-control-wrap { position: static; }
 .controls .controls__color .controls__color2.is-active { background: gainsboro; }
 .controls .controls__color .controls__color3 { background-image: -moz-linear-gradient(bottom, #81592f 0%, #d9b377 100%); background-image: -webkit-linear-gradient(bottom, #81592f 0%, #d9b377 100%); background-image: linear-gradient(to top, #81592f 0%, #d9b377 100%); }
 .controls .controls__color .controls__color3.is-active { background: #81592f; }
-.controls .controls__color .controls__color4 { background-image: -moz-linear-gradient(bottom, #6d4e33 0%, #5f462d 100%); background-image: -webkit-linear-gradient(bottom, #6d4e33 0%, #5f462d 100%); background-image: linear-gradient(to top, #6d4e33 0%, #5f462d 100%); }
+.controls .controls__color .controls__color4 { background-image: -moz-linear-gradient(bottom, #533d29 0%, #74573c 100%); background-image: -webkit-linear-gradient(bottom, #533d29 0%, #74573c 100%); background-image: linear-gradient(to top, #533d29 0%, #74573c 100%); }
 .controls .controls__color .controls__color4.is-active { background: #6d4e33; }
 .controls .controls__aspect { position: relative; margin-bottom: 36px; }
 .controls .controls__aspect label { cursor: pointer; }
@@ -1652,7 +1652,7 @@ span.wpcf7-form-control-wrap { position: static; }
 .k2 .k__rotate { display: none; }
 
 .k1, .k3 { position: absolute; bottom: 0; width: 668px; height: 561px; }
-.k1 .k__wall, .k3 .k__wall { width: 640px; height: 117px; left: 92px; left: 0; top: 203px; position: absolute; z-index: 8; width: 646px; height: 165px; top: 174px; }
+.k1 .k__wall, .k3 .k__wall { width: 638px; height: 117px; height: 165px; left: 92px; left: 1px; top: 203px; position: absolute; z-index: 8; top: 174px; }
 .k1 .k__bg, .k3 .k__bg { background: url(../img/k1-white.png) no-repeat 0 0; }
 .k1.c1 .k__bg, .c1.k3 .k__bg { background: url(../img/k1-black.png) no-repeat 0 0; }
 .k1.c2 .k__bg, .c2.k3 .k__bg { background: url(../img/k1-white.png) no-repeat 0 0; }
@@ -1664,12 +1664,12 @@ span.wpcf7-form-control-wrap { position: static; }
 .k1.is-rotated.c2 .k__bg, .is-rotated.c2.k3 .k__bg { background: url(../img/k1r-white.png) no-repeat 0 0; }
 .k1.is-rotated.c3 .k__bg, .is-rotated.c3.k3 .k__bg { background: url(../img/k1r-beige.png) no-repeat 0 0; }
 .k1.is-rotated.c4 .k__bg, .is-rotated.c4.k3 .k__bg { background: url(../img/k1r-wood.png) no-repeat 0 0; }
-.k1.is-rotated .k__wall, .is-rotated.k3 .k__wall { width: 340px; height: 117px; left: 10px; top: 202px; left: 4px; width: 412px; top: 174px; height: 160px; }
+.k1.is-rotated .k__wall, .is-rotated.k3 .k__wall { width: 340px; height: 117px; left: 10px; top: 202px; left: 9px; width: 412px; top: 174px; height: 160px; }
 .k1.is-rotated .k__rotate, .is-rotated.k3 .k__rotate { left: auto; right: 4px; width: 73px; }
 .k1.is-rotated .k__rotate span, .is-rotated.k3 .k__rotate span { display: none; }
 .k1.is-rotated .k__rotate i, .is-rotated.k3 .k__rotate i { background: url('../img/icons-s221d4ef61b.png') 0 -1049px no-repeat; width: 25px; height: 23px; position: relative; top: 20px; }
 
-.k3 .k__wall { left: 22px; }
+.k3 .k__wall { left: 29px; }
 .k3 .k__rotate { left: auto; right: 0; }
 .k3 .k__bg { background: url(../img/k3-white.png) no-repeat 0 0; }
 .k3.c1 .k__bg { background: url(../img/k3-black.png) no-repeat 0 0; }
