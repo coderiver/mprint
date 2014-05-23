@@ -1,27 +1,41 @@
 $(document).ready(function() {
 
-
+if($('html').hasClass('touch')){
+	$('.preview').each(function() {
+		$(this).append('<div class="touch-overlay"></div>');
+	});
+	$('.preview').on('click', function() {
+		if($(this).hasClass('is-clicked')){
+			$('.preview').removeClass('is-clicked');
+			$(this).removeClass('is-clicked');
+		}
+		else{
+			$('.preview').removeClass('is-clicked');
+			$(this).addClass('is-clicked');
+		}
+	});
+}
 
 
 if($('.k').length>0){
 
 	function preload(arrayOfImages) {
-    $(arrayOfImages).each(function(index){
-        $('<img />')
-        .attr('src', arrayOfImages[index])
-        .load(function(){
-            $('div.preload').append( $(this) );
-            // Your other custom code
-        });
-    });
-    //alert("Done Preloading...");
-    $('.k__preload').fadeOut('slow');
+		$(arrayOfImages).each(function(index){
+				$('<img />')
+				.attr('src', arrayOfImages[index])
+				.load(function(){
+						$('div.preload').append( $(this) );
+						// Your other custom code
+				});
+		});
+		//alert("Done Preloading...");
+		$('.k__preload').fadeOut('slow');
 }
 
 // Usage:
 
 preload([
-    'img/k1-beige.png',
+		'img/k1-beige.png',
 	'img/k1-black.png',
 	'img/k1-white.png',
 	'img/k1-wood.png',
@@ -93,7 +107,7 @@ preload([
 		$('#bc-crop-area,#bc-faded-image').remove();
 		$('#wall').attr('src', '');
 		 if(val=='2'){
-		 	//alert('go1')
+			//alert('go1')
 			$("#wall").one('load', function(){
 				$(this).show().BlaCrop({
 					area_width: 602, 
@@ -422,8 +436,8 @@ preload([
 		var file_urls = '';
 		$(".download_div").each(function(index, element) {
 			var c_url = $(this).children("div").children('a').attr('href');
-           	file_urls += c_url+'&nbsp;<br>';
-        });
+						file_urls += c_url+'&nbsp;<br>';
+				});
 		$("#uploaded_files").val(file_urls);
 	});
 	
@@ -438,17 +452,17 @@ $(".controls__aspect").click(function(event) {
 function clearFields(form_el){
 	
 	$(form_el).find('input[type=text]').each(function(index, element) {
-        $(this).val('');
-    });
+				$(this).val('');
+		});
 	$(form_el).find('input[type=tel]').each(function(index, element) {
-        $(this).val('');
-    });
+				$(this).val('');
+		});
 	$(form_el).find('input[type=email]').each(function(index, element) {
-        $(this).val('');
-    });
+				$(this).val('');
+		});
 	$(form_el).find('textarea').each(function(index, element) {
-        $(this).val('');
-    });
+				$(this).val('');
+		});
 	
 	$(".download_div").each(function(index, element) {
 		$(this).remove();

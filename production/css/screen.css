@@ -1132,6 +1132,8 @@ a:hover { text-decoration: none; color: #0089bc; }
 .items.works .loadmoar a span:before { position: absolute; bottom: 0; left: 50%; margin-left: -32px; background: url('../img/icons-s18899eded5.png') 0 -1158px no-repeat; width: 63px; height: 31px; content: ""; }
 
 .preview { position: relative; overflow: hidden; }
+.preview.is-clicked .touch-overlay { display: none; }
+.preview .touch-overlay { position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 1000; cursor: pointer; display: block; }
 .preview .thumbnail a:before { position: absolute; top: 0; left: 0; right: 0; bottom: 0; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100); opacity: 1; -webkit-transition: 0.3s all; -moz-transition: 0.3s all; -o-transition: 0.3s all; transition: 0.3s all; content: ""; background: rgba(255, 255, 255, 0.3); }
 .preview:hover .thumbnail a:before { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; }
 .preview:hover .icon-zoom { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100); opacity: 1; -webkit-transform: scale(1, 1); -moz-transform: scale(1, 1); -ms-transform: scale(1, 1); -o-transform: scale(1, 1); transform: scale(1, 1); }

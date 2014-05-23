@@ -587,6 +587,18 @@ a
 .preview
 	position: relative
 	overflow: hidden
+	&.is-clicked
+		.touch-overlay
+			display: none
+	.touch-overlay
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		z-index: 1000
+		cursor: pointer
+		display: block
 	.thumbnail a
 		&:before
 			position: absolute

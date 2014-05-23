@@ -1,0 +1,11 @@
+head.load(
+	"js/lib/jquery.js",
+	"js/lib/ui.js",
+	"js/lib/sticky.js",
+	"js/lib/cycle.js",
+	"js/lib/fancybox.js",
+	"js/lib/crop.js",
+	"js/lib/jquery.mousewheel.js",
+	"js/lib/jquery.jscrollpane.min.js",
+	"js/common.js"
+);
