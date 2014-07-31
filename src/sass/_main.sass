@@ -1,8 +1,9 @@
-
 .teaser
 .teaser__slider
 	height: 480px
 	overflow: hidden
+	+r(w1220)
+		height: 640px
 	img
 		display: block
 		min-width: 100%
@@ -22,7 +23,7 @@
 		margin-left: 6px
 		&.is-active
 			background: #d0d0d0
-.teaser__text
+.teaser__text 
 	position: absolute
 	top: 30px
 	right: 40px
@@ -49,7 +50,7 @@
 	overflow: hidden
 	height: 480px
 	+r(w1220)
-		height: 240px
+		height: 240px 
 .main-services__item
 	position: relative
 	overflow: hidden
@@ -406,6 +407,7 @@ $btn-subscribe-color: #4698b1
 		padding: 30px 16px 30px 30px
 	.overkitchen__content
 		.l-sidebar
+			display: block
 			position: static
 			&:before
 				top: 69px
@@ -416,6 +418,8 @@ $btn-subscribe-color: #4698b1
 			&:before
 				content: none
 		.l-main
+			+r(w1220)
+				width: 720px
 			&:before
 				content: none
 
@@ -522,7 +526,9 @@ $btn-subscribe-color: #4698b1
 		font-size: 13px
 		margin-bottom: 0
 
-
+#bc-crop-area
+	&.overflow-auto
+		overflow: auto !important
 
 
 

@@ -58,7 +58,7 @@ h2, .h2 { font-size: 18px; }
 
 h3, .h3 { font-size: 15px; }
 
-/*
+/*!
  *  Font Awesome 4.0.3 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
  */
@@ -955,6 +955,8 @@ h3, .h3 { font-size: 15px; }
 * ::-moz-selection { color: white; background: #00aeef; }
 * ::-webkit-selection { color: white; background: #00aeef; }
 
+html.no-desktop #bc-crop-area { overflow: auto !important; }
+
 body { font-family: "Roboto", Arial, "Helvetica Neue", Helvetica, sans-serif; font-size: 13px; -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -ms-font-smoothing: antialiased; -o-font-smoothing: antialiased; color: #353535; background-color: #353535; line-height: 1.2; min-width: 980px; }
 
 a { color: #00aeef; text-decoration: none; }
@@ -1373,6 +1375,7 @@ span.wpcf7-form-control-wrap { position: static; }
 .sidenav > li.is-active .sidenav__head, .sidenav > li:hover .sidenav__head { border-color: #efefef; background: #efefef; }
 
 .teaser__slider { height: 480px; overflow: hidden; }
+@media only screen and (max-width: 1220px) { .teaser__slider { height: 640px; } }
 .teaser__slider img { display: block; min-width: 100%; }
 
 .teaser__pager { position: absolute; z-index: 105; bottom: 30px; right: 40px; }
@@ -1487,10 +1490,11 @@ span.wpcf7-form-control-wrap { position: static; }
 .overkitchen .overkitchen__menu a { display: block; height: 69px; width: 240px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 16px 30px; font-family: "Roboto Condensed", Arial, "Helvetica Neue", Helvetica, sans-serif; text-transform: uppercase; color: #353535; text-decoration: none; font-size: 15px; background: #efefef; }
 .overkitchen .overkitchen__menu a:before { position: absolute; left: 100%; top: 0; background: url('../img/icons-s18899eded5.png') 0 -1052px no-repeat; width: 8px; height: 69px; content: ""; z-index: 1; }
 .overkitchen .overkitchen__inner { padding: 30px 16px 30px 30px; }
-.overkitchen .overkitchen__content .l-sidebar { position: static; }
+.overkitchen .overkitchen__content .l-sidebar { display: block; position: static; }
 .overkitchen .overkitchen__content .l-sidebar:before { top: 69px; left: auto; right: 240px; }
 .overkitchen .overkitchen__content .sidenav { margin-top: -1px; }
 .overkitchen .overkitchen__content .sidenav:before { content: none; }
+@media only screen and (max-width: 1220px) { .overkitchen .overkitchen__content .l-main { width: 720px; } }
 .overkitchen .overkitchen__content .l-main:before { content: none; }
 
 .fots .fots__i { margin-right: 10px; position: relative; height: 185px; overflow: hidden; margin-top: 10px; }
@@ -1508,6 +1512,8 @@ span.wpcf7-form-control-wrap { position: static; }
 .hint:before { position: absolute; bottom: -16px; left: 26px; content: ""; background: url('../img/icons-s18899eded5.png') 0 -1131px no-repeat; width: 18px; height: 17px; }
 .hint h3 { font-size: 18px; text-transform: uppercase; font-family: "Roboto Condensed", Arial, "Helvetica Neue", Helvetica, sans-serif; font-weight: normal; }
 .hint p { font-size: 13px; margin-bottom: 0; }
+
+#bc-crop-area.overflow-auto { overflow: auto !important; }
 
 .catalog .row { overflow: hidden; }
 .catalog .item { height: 395px; }
@@ -1731,7 +1737,7 @@ span.wpcf7-form-control-wrap { position: static; }
 
 .preload { display: none; }
 
-/* fancyBox v2.1.5 fancyapps.com | fancyapps.com/fancybox/#license */
+/*! fancyBox v2.1.5 fancyapps.com | fancyapps.com/fancybox/#license */
 .fancybox-wrap, .fancybox-skin, .fancybox-outer, .fancybox-inner, .fancybox-image, .fancybox-wrap iframe, .fancybox-wrap object, .fancybox-nav, .fancybox-nav span, .fancybox-tmp { padding: 0; margin: 0; border: 0; outline: none; vertical-align: top; }
 
 .fancybox-wrap { position: absolute; top: 0; left: 0; z-index: 8020; }

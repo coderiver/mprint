@@ -66,7 +66,9 @@ preload([
 
 
 
-	$('.scroll-pane').jScrollPane();
+	$('.scroll-pane').jScrollPane({
+		autoReinitialise: true
+	});
 	$('.controls__aspect').click(function(event) {
 		$('.k__proportions').toggle();
 	});
