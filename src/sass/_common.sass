@@ -4,11 +4,6 @@
 		color: $color-invert
 		background: $color-blue
 
-html
-	&.no-desktop
-		#bc-crop-area
-			overflow: auto !important
-
 body
 	font-family: $font-base
 	font-size: $size-base
@@ -17,6 +12,9 @@ body
 	background-color: $bg-invert
 	line-height: 1.2
 	min-width: 980px
+	&.mobile-device
+		#bc-crop-area
+			overflow: auto !important
 
 a
 	color: $link-color-base

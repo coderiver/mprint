@@ -955,9 +955,8 @@ h3, .h3 { font-size: 15px; }
 * ::-moz-selection { color: white; background: #00aeef; }
 * ::-webkit-selection { color: white; background: #00aeef; }
 
-html.no-desktop #bc-crop-area { overflow: auto !important; }
-
 body { font-family: "Roboto", Arial, "Helvetica Neue", Helvetica, sans-serif; font-size: 13px; -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -ms-font-smoothing: antialiased; -o-font-smoothing: antialiased; color: #353535; background-color: #353535; line-height: 1.2; min-width: 980px; }
+body.mobile-device #bc-crop-area { overflow: auto !important; }
 
 a { color: #00aeef; text-decoration: none; }
 a:hover { text-decoration: none; color: #0089bc; }
