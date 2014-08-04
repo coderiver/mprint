@@ -1258,10 +1258,11 @@ span.wpcf7-form-control-wrap { position: static; }
 
 .sitenav__ul { display: table; width: 100%; border-collapse: collapse; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
-.sitenav__clause { position: relative; display: table-cell; font-family: "Roboto Condensed", Arial, "Helvetica Neue", Helvetica, sans-serif; font-size: 15px; text-transform: uppercase; text-align: center; border-left: 1px solid #e8e8e8; -webkit-transition: 0.3s; -moz-transition: 0.3s; -o-transition: 0.3s; transition: 0.3s; }
+.sitenav__clause { position: relative; position: relative; display: table-cell; font-family: "Roboto Condensed", Arial, "Helvetica Neue", Helvetica, sans-serif; font-size: 15px; text-transform: uppercase; text-align: center; border-left: 1px solid #e8e8e8; -webkit-transition: 0.3s; -moz-transition: 0.3s; -o-transition: 0.3s; transition: 0.3s; }
 .sitenav__clause:hover, .sitenav__clause.is-active { background: #353535; border-color: #353535; }
 .sitenav__clause:hover a, .sitenav__clause.is-active a { color: white; }
-.sitenav__clause:hover .dropdown { display: block; }
+.touch .sitenav__clause:hover .dropdown { display: none; }
+.sitenav__clause:hover .dropdown, .sitenav__clause.is-touched .dropdown, .touch .sitenav__clause.is-touched .dropdown { display: block; }
 .sitenav__clause:first-child { border: none; }
 .sitenav__clause .dropdown { position: absolute; top: 100%; left: 0px; background: white; text-align: left; margin-top: -1px; display: none; }
 .sitenav__clause .dropdown li { position: relative; color: #353535; border-top: 1px solid #e8e8e8; }

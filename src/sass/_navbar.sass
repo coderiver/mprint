@@ -30,6 +30,7 @@
 	+box
 .sitenav__clause
 	position: relative
+	position: relative
 	display: table-cell
 	font-family: $font-alt
 	font-size: 15px
@@ -43,7 +44,11 @@
 		border-color: $color-base
 		a
 			color: $color-invert
-	&:hover
+	
+	.touch &:hover
+		.dropdown
+			display: none 
+	&:hover,&.is-touched, .touch &.is-touched
 		.dropdown
 			display: block
 	&:first-child
