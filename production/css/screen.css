@@ -1272,9 +1272,9 @@ span.wpcf7-form-control-wrap { position: static; }
 .sitenav__clause .dropdown li ul li:first-child:hover { border-top: 1px solid #e8e8e8; }
 .sitenav__clause .dropdown li .dropdown__arrow { position: absolute; right: 22px; -moz-transform: rotate(180deg); -o-transform: rotate(180deg); -webkit-transform: rotate(180deg); -ms-transform: rotate(180deg); transform: rotate(180deg); filter: progid:DXImageTransform.Microsoft.Matrix(M11=$m11, M12=$m12,M21=$m21, M22=$m22, sizingMethod='auto expand'); zoom: 1; }
 .sitenav__clause .dropdown li:first-child { border-top: none; }
-.sitenav__clause .dropdown li.is-active, .sitenav__clause .dropdown li:hover { background: #efefef; }
-.sitenav__clause .dropdown li.is-active .dropdown__arrow, .sitenav__clause .dropdown li:hover .dropdown__arrow { -moz-transform: rotate(0deg); -o-transform: rotate(0deg); -webkit-transform: rotate(0deg); -ms-transform: rotate(0deg); transform: rotate(0deg); filter: progid:DXImageTransform.Microsoft.Matrix(M11=$m11, M12=$m12,M21=$m21, M22=$m22, sizingMethod='auto expand'); zoom: 1; }
-.sitenav__clause .dropdown li:hover ul { display: block; }
+.sitenav__clause .dropdown li.is-active, .sitenav__clause .dropdown li:hover, .sitenav__clause .dropdown li.is-touched2 { background: #efefef; }
+.sitenav__clause .dropdown li.is-active .dropdown__arrow, .sitenav__clause .dropdown li:hover .dropdown__arrow, .sitenav__clause .dropdown li.is-touched2 .dropdown__arrow { -moz-transform: rotate(0deg); -o-transform: rotate(0deg); -webkit-transform: rotate(0deg); -ms-transform: rotate(0deg); transform: rotate(0deg); filter: progid:DXImageTransform.Microsoft.Matrix(M11=$m11, M12=$m12,M21=$m21, M22=$m22, sizingMethod='auto expand'); zoom: 1; }
+.sitenav__clause .dropdown li:hover ul, .sitenav__clause .dropdown li.is-touched2 ul { display: block; }
 .sitenav__clause .dropdown li a { position: relative; color: #353535; padding: 13px 65px 13px 27px; }
 .sitenav__clause.sitenav__clause_adv:before { position: absolute; top: 0; left: 0; width: 0px; height: 0px; border-style: solid; border-width: 20px 20px 0 0; border-color: #ec008c transparent transparent transparent; content: ""; }
 .sitenav__clause.sitenav__clause_adv:hover, .sitenav__clause.sitenav__clause_adv.is-active { background: #ec008c; border-color: #ec008c; }

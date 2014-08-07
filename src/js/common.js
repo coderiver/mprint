@@ -442,7 +442,20 @@ preload([
 			}
 			//alert('a');
 		});
+		$('.dropdown li').on('click', function(){
+
+			if($(this).hasClass('is-touched2')){
+				$(this).toggleClass('is-touched2');
+			}
+			else{
+				$(this).toggleClass('is-touched2');
+				return false;
+			}
+			//alert('a');
+		});
+
 	}
+	
 	//resize document
 	$(window).resize(function() {
 		if(!iOS) {posSidebar();}
