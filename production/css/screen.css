@@ -58,7 +58,7 @@ h2, .h2 { font-size: 18px; }
 
 h3, .h3 { font-size: 15px; }
 
-/*!
+/*
  *  Font Awesome 4.0.3 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
  */
@@ -1656,7 +1656,7 @@ span.wpcf7-form-control-wrap { position: static; }
 .controls .controls__changephoto i { margin-right: 11px; }
 .controls .controls__zoom { font-size: 18px; position: relative; }
 .controls .controls__zoom .controls__zoomin { left: 50%; border-left: 1px solid #f9f8f5; box-shadow: -1px 0 0 #cac8bf; }
-.controls .controls__zoom div { position: absolute; width: 50%; left: 0; cursor: pointer; height: 37px; text-align: center; line-height: 40px; }
+.controls .controls__zoom div { position: absolute; width: 50%; left: 0; cursor: pointer; height: 37px; text-align: center; line-height: 40px; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
 .controls .controls__size { margin-bottom: 11px; }
 .controls .controls__size label { display: inline-block; vertical-align: middle; width: 65px; }
 .controls .controls__size input { vertical-align: middle; width: 37px; text-align: center; }
@@ -1687,6 +1687,7 @@ span.wpcf7-form-control-wrap { position: static; }
 .k1.is-rotated .k__rotate, .is-rotated.k3 .k__rotate { left: auto; right: 4px; width: 73px; }
 .k1.is-rotated .k__rotate span, .is-rotated.k3 .k__rotate span { display: none; }
 .k1.is-rotated .k__rotate i, .is-rotated.k3 .k__rotate i { background: url('../img/icons-s18899eded5.png') 0 -1317px no-repeat; width: 25px; height: 23px; position: relative; top: 20px; }
+.k1.is-rotated #bc-croped-image, .is-rotated.k3 #bc-croped-image { margin-left: 243px; }
 
 .k3 .k__wall { left: 29px; }
 .k3 .k__rotate { left: auto; right: 0; }
@@ -1737,7 +1738,7 @@ span.wpcf7-form-control-wrap { position: static; }
 
 .preload { display: none; }
 
-/*! fancyBox v2.1.5 fancyapps.com | fancyapps.com/fancybox/#license */
+/* fancyBox v2.1.5 fancyapps.com | fancyapps.com/fancybox/#license */
 .fancybox-wrap, .fancybox-skin, .fancybox-outer, .fancybox-inner, .fancybox-image, .fancybox-wrap iframe, .fancybox-wrap object, .fancybox-nav, .fancybox-nav span, .fancybox-tmp { padding: 0; margin: 0; border: 0; outline: none; vertical-align: top; }
 
 .fancybox-wrap { position: absolute; top: 0; left: 0; z-index: 8020; }

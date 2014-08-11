@@ -162,6 +162,7 @@
 			height: 37px  
 			text-align: center
 			line-height: 40px 
+			+unselectable
 	.controls__size
 		margin-bottom: 11px 
 		label
@@ -256,10 +257,14 @@
 			span
 				display: none
 			i
-				+s(rotate1)
+				+s(rotate1) 
 				position: relative
 				top: 20px 
-.k3
+		//#bc-faded-image,
+		#bc-croped-image  
+			margin-left: 243px  
+
+.k3  
 	@extend .k1
 	.k__wall
 		left: 29px 
@@ -294,6 +299,8 @@
 			left: auto 
 			right: auto 
 			left: 3px 
+		//#bc-croped-image  
+		//	margin-left: -475px
 
 
 		
