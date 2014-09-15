@@ -100,7 +100,7 @@ preload([
 			block: '#iu-block-pr',
 			message: '#iu-message-pr'
 		});
-	}).attr('src', 'http://placekitten.com/800/800');
+	}).attr('src', 'http://lorempixel.com/800/800/animals/');
 	$('.controls__type div').click(function(event) {
 		val = $(this).attr('data-type');
 		$(this).siblings().removeClass('is-active');
@@ -122,7 +122,7 @@ preload([
 					block: '#iu-block-pr',
 					message: '#iu-message-pr'
 				});
-			}).attr('src', 'http://placekitten.com/800/800');
+			}).attr('src', 'http://lorempixel.com/800/800/animals/');
 		 }
 		else{
 			//alert('go2');
@@ -138,7 +138,7 @@ preload([
 					block: '#iu-block-pr',
 					message: '#iu-message-pr'
 				});
-			}).attr('src', 'http://placekitten.com/800/800');
+			}).attr('src', 'http://lorempixel.com/800/800/animals/');
 		}
 		
 	});
