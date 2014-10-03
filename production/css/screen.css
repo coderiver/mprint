@@ -1693,6 +1693,8 @@ span.wpcf7-form-control-wrap { position: static; }
 .k1.is-rotated .k__rotate i, .is-rotated.k3 .k__rotate i { background: url('../img/icons-s18899eded5.png') 0 -1317px no-repeat; width: 25px; height: 23px; position: relative; top: 20px; }
 
 .k3 .k__wall { left: 29px; }
+.k3 .k__wallo { overflow: hidden; width: 667px; height: 165px; overflow: hidden; position: absolute; left: 1px; top: 203px; }
+.k3 .k__wallo .k__wall { left: 20px; right: auto; }
 .k3 .k__rotate { left: auto; right: 0; }
 .k3 .k__bg { background: url(../img/k3-white.png) no-repeat 0 0; }
 .k3.c1 .k__bg { background: url(../img/k3-black.png) no-repeat 0 0; }
@@ -1705,6 +1707,8 @@ span.wpcf7-form-control-wrap { position: static; }
 .k3.is-rotated.c3 .k__bg { background: url(../img/k3r-beige.png) no-repeat 0 0; }
 .k3.is-rotated.c4 .k__bg { background: url(../img/k3r-wood.png) no-repeat 0 0; }
 .k3.is-rotated .k__wall { left: auto; right: 10px; }
+.k3.is-rotated .k__wallo { width: 407px; right: 15px; left: auto; overflow: hidden; }
+.k3.is-rotated .k__wallo .k__wall { width: 890px; right: 0; left: auto; }
 .k3.is-rotated .k__rotate { left: auto; right: auto; left: 3px; }
 
 .k__content { left: 210px; }
