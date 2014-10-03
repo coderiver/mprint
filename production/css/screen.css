@@ -1671,7 +1671,7 @@ span.wpcf7-form-control-wrap { position: static; }
 .k2 .k__rotate { display: none; }
 
 .k1, .k3 { position: absolute; bottom: 0; width: 668px; height: 561px; }
-.k1 .k__wallo, .k3 .k__wallo { width: 638px; height: 165px; overflow: hidden; position: absolute; left: 1px; top: 203px; z-index: 8; }
+.k1 .k__wallo, .k3 .k__wallo { width: 638px; height: 165px; overflow: hidden; position: absolute; left: 1px; top: 203px; z-index: 8; top: 173px; }
 .k1 .k__wallo .k__wall, .k3 .k__wallo .k__wall { top: 0; left: auto; right: 0; }
 .k1 .k__wall, .k3 .k__wall { width: 638px; width: 890px; height: 117px; height: 165px; left: 92px; left: 1px; top: 203px; position: absolute; z-index: 8; top: 174px; }
 .k1 .k__bg, .k3 .k__bg { background: url(../img/k1-white.png) no-repeat 0 0; }
@@ -1693,7 +1693,7 @@ span.wpcf7-form-control-wrap { position: static; }
 .k1.is-rotated .k__rotate i, .is-rotated.k3 .k__rotate i { background: url('../img/icons-s18899eded5.png') 0 -1317px no-repeat; width: 25px; height: 23px; position: relative; top: 20px; }
 
 .k3 .k__wall { left: 29px; }
-.k3 .k__wallo { overflow: hidden; width: 667px; height: 165px; overflow: hidden; position: absolute; left: 1px; top: 203px; }
+.k3 .k__wallo { overflow: hidden; width: 667px; height: 165px; overflow: hidden; position: absolute; left: 1px; top: 203px; top: 173px; }
 .k3 .k__wallo .k__wall { left: 20px; right: auto; }
 .k3 .k__rotate { left: auto; right: 0; }
 .k3 .k__bg { background: url(../img/k3-white.png) no-repeat 0 0; }
