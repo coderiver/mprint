@@ -1686,7 +1686,7 @@ span.wpcf7-form-control-wrap { position: static; }
 .k1.is-rotated.c3 .k__bg, .is-rotated.c3.k3 .k__bg { background: url(../img/k1r-beige.png) no-repeat 0 0; }
 .k1.is-rotated.c4 .k__bg, .is-rotated.c4.k3 .k__bg { background: url(../img/k1r-wood.png) no-repeat 0 0; }
 .k1.is-rotated .k__wall, .is-rotated.k3 .k__wall { width: 340px; height: 117px; left: 10px; top: 202px; left: 9px; width: 412px; top: 174px; height: 160px; }
-.k1.is-rotated .k__wallo, .is-rotated.k3 .k__wallo { width: 890px; }
+.k1.is-rotated .k__wallo, .is-rotated.k3 .k__wallo { width: 890px; left: 9px; }
 .k1.is-rotated .k__wallo .k__wall, .is-rotated.k3 .k__wallo .k__wall { position: absolute; left: 0; top: 0; }
 .k1.is-rotated .k__rotate, .is-rotated.k3 .k__rotate { left: auto; right: 4px; width: 73px; }
 .k1.is-rotated .k__rotate span, .is-rotated.k3 .k__rotate span { display: none; }
