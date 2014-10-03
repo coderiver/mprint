@@ -100,7 +100,7 @@ preload([
 			block: '#iu-block-pr',
 			message: '#iu-message-pr'
 		});
-	}).attr('src', 'http://lorempixel.com/800/800/animals/');
+	}).attr('src', 'http://lorempixel.com/1800/1800/animals/');
 	$('.controls__type div').click(function(event) {
 		val = $(this).attr('data-type');
 		$(this).siblings().removeClass('is-active');
@@ -113,6 +113,8 @@ preload([
 			$("#wall").one('load', function(){
 				$(this).show().BlaCrop({
 					area_width: 602, 
+					// area_width: 8, 
+
 					area_height: 142,
 					crop_result: "/user_image_resize.php",
 					error_msg: 'Error',
@@ -122,13 +124,14 @@ preload([
 					block: '#iu-block-pr',
 					message: '#iu-message-pr'
 				});
-			}).attr('src', 'http://lorempixel.com/800/800/animals/');
+			}).attr('src', 'http://lorempixel.com/1800/1800/animals/');
 		 }
 		else{
 			//alert('go2');
 			$("#wall").one('load', function(){
 				$(this).show().BlaCrop({
-					area_width: 638,
+					area_width: 890,
+					// area_width: 638,
 					area_height: 165,
 					crop_result: "/user_image_resize.php",
 					error_msg: 'Error',
@@ -138,7 +141,7 @@ preload([
 					block: '#iu-block-pr',
 					message: '#iu-message-pr'
 				});
-			}).attr('src', 'http://lorempixel.com/800/800/animals/');
+			}).attr('src', 'http://lorempixel.com/1800/1800/animals/');
 		}
 		
 	});
